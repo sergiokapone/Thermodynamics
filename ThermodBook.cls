@@ -162,8 +162,8 @@
 %%% -------------------------------------------------------
 
 
-\RequirePackage{lualatex-math}
 \RequirePackage{amsmath}
+\RequirePackage{lualatex-math}
 \RequirePackage[math-style=TeX,bold-style=TeX]{unicode-math}
 \setmathfont[math-style=TeX]{Stix Two Math}
 %\numberwithin{equation}{chapter}
