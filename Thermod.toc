@@ -8,4 +8,20 @@
 \contentsline {section}{\numberline {1.6}6}{12}{section.34}%
 \contentsline {section}{\numberline {1.7}7}{12}{section.35}%
 \contentsline {section}{\numberline {1.8}Математичний апарат термодинаміки}{15}{section.41}%
+\contentsline {chapter}{\numberline {2}Теплота. Перший закон термодинаміки}{17}{chapter.45}%
+\contentsline {section}{\numberline {2.1}1}{17}{section.46}%
+\contentsline {paragraph}{ }{17}{paragraph*.47}%
+\contentsline {section}{\numberline {2.2}2}{18}{section.52}%
+\contentsline {section}{\numberline {2.3}3}{19}{section.55}%
+\contentsline {section}{\numberline {2.4}4}{21}{section.62}%
+\contentsline {section}{\numberline {2.5}5}{22}{section.66}%
+\contentsline {section}{\numberline {2.6}6}{23}{section.76}%
+\contentsline {section}{\numberline {2.7}7}{24}{section.77}%
+\contentsline {section}{\numberline {2.8}8}{25}{section.85}%
+\contentsline {section}{\numberline {2.9}9}{25}{section.88}%
+\contentsline {section}{\numberline {2.10}10}{27}{section.96}%
+\contentsline {section}{\numberline {2.11}11}{28}{section.101}%
+\contentsline {section}{\numberline {2.12}12}{29}{section.106}%
+\contentsline {section}{\numberline {2.13}13}{30}{section.111}%
+\contentsline {section}{\numberline {2.14}14}{31}{section.121}%
 \contentsfinish 
