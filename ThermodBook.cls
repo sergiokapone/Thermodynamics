@@ -161,7 +161,7 @@
 %%% -------------------------------------------------------
 
 
-\RequirePackage{gensymb}
+%\RequirePackage{gensymb}
 \RequirePackage{amsmath}
 \RequirePackage{lualatex-math}
 \RequirePackage[math-style=TeX,bold-style=TeX]{unicode-math}
