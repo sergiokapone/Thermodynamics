@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.12.27)  21 FEB 2024 14:40
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.12.27)  28 FEB 2024 00:47
  restricted system commands enabled.
 **Thermod.tex
 (./Thermod.tex
@@ -2551,61 +2551,180 @@ File: uesint.fd
 \openout2 = intro.aux
 
 No file intro.tex.
-(./Lec2/Lec2.tex
-Output from handle answer going to Lec2/Lec2-Answers.tex
+(./Lec1/Lec1.tex
+Output from handle answer going to Lec1/Lec1-Answers.tex
 \answer@file=\write6
 
-\openout6 = Lec2/Lec2-Answers.tex
+\openout6 = Lec1/Lec1-Answers.tex
 Розділ 1.
+
+Overfull \hbox (7.5687pt too wide) in paragraph at lines 8--8
+ []
+ []
+
+<Lec1/Landau.jpg, id=132, 412.54124pt x 583.17876pt>
+File: Lec1/Landau.jpg Graphic file (type jpg)
+<use Lec1/Landau.jpg>
+Package luatex.def Info: Lec1/Landau.jpg  used on input line 31.
+(luatex.def)             Requested size: 96.73788pt x 136.74448pt.
 [4
 
 
 
 
-] [5] [6] [7] [8]
+<./Lec1/Landau.jpg>]
+<Lec1/ThermodSysA.png, id=144, 258.21469pt x 151.3153pt>
+File: Lec1/ThermodSysA.png Graphic file (type png)
+<use Lec1/ThermodSysA.png>
+Package luatex.def Info: Lec1/ThermodSysA.png  used on input line 60.
+(luatex.def)             Requested size: 217.66211pt x 127.55652pt.
+<Lec1/ThermodSysB.png, id=145, 224.33812pt x 152.82094pt>
+File: Lec1/ThermodSysB.png Graphic file (type png)
+<use Lec1/ThermodSysB.png>
+Package luatex.def Info: Lec1/ThermodSysB.png  used on input line 65.
+(luatex.def)             Requested size: 217.66211pt x 148.27808pt.
+ [5<./Lec1/ThermodSysA.png><./Lec1/ThermodSysB.png>]
+<Lec1/Fowler.jpg, id=151, 36.135pt x 47.09595pt>
+File: Lec1/Fowler.jpg Graphic file (type jpg)
+<use Lec1/Fowler.jpg>
+Package luatex.def Info: Lec1/Fowler.jpg  used on input line 88.
+(luatex.def)             Requested size: 96.73788pt x 126.08855pt.
+<Lec1/Maxwell.png, id=152, 412.54124pt x 515.9275pt>
+File: Lec1/Maxwell.png Graphic file (type png)
+<use Lec1/Maxwell.png>
+Package luatex.def Info: Lec1/Maxwell.png  used on input line 95.
+(luatex.def)             Requested size: 96.73788pt x 120.97531pt.
+
+Overfull \hbox (17.47308pt too wide) in paragraph at lines 110--111
+ [][] 
+ []
+
+[6<./Lec1/Fowler.jpg><./Lec1/Maxwell.png>] [7] [8]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+<Lec1/Avogadro.png, id=190, 144.54pt x 200.75pt>
+File: Lec1/Avogadro.png Graphic file (type png)
+<use Lec1/Avogadro.png>
+Package luatex.def Info: Lec1/Avogadro.png  used on input line 242.
+(luatex.def)             Requested size: 96.73788pt x 134.35782pt.
+ [9] [10<./Lec1/Avogadro.png>] [11] [12] (./Lec1/isothermic.tikz) [13] (./Lec1/
+isobaric.tikz) [14] [15])
+(./Lec2/Lec2.tex
+Output from handle answer going to Lec2/Lec2-Answers.tex
+File answer already open
+[16]
+Розділ 2.
+[17
+
+] [18] [19] [20] [21]
 Missing character: There is no Т (U+0422) in font cmmi12!
-[9]
+[22]
 Overfull \hbox (1.29498pt too wide) in paragraph at lines 157--158
 []\TU/stix(0)/m/n/14.4 Більш то-чні ви-мі-ри, про-ве-де-
 ні Том-со-ном ра-зом з Джо-у-лем (про-цес Джо
 уля-
  []
 
-[10]
+[23]
 
 LaTeX Warning: Command \i invalid in math mode on input line 171.
 
-[11] [12]
+[24] [25]
 Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
-[13] [14] [15] [16] [17] [18]
-<Lec2/rankincycle.png, id=300, 206.27063pt x 170.13562pt>
-File: Lec2/rankincycle.png Graphic file (type png)
-<use Lec2/rankincycle.png>
-Package luatex.def Info: Lec2/rankincycle.png  used on input line 444.
-(luatex.def)             Requested size: 193.47578pt x 159.58481pt.
+[26] [27] [28] [29] [30] [31]
+<Lec2/rankin_cycle.png, id=447, 197.23688pt x 134.75343pt>
+File: Lec2/rankin_cycle.png Graphic file (type png)
+<use Lec2/rankin_cycle.png>
+Package luatex.def Info: Lec2/rankin_cycle.png  used on input line 444.
+(luatex.def)             Requested size: 193.47578pt x 132.18494pt.
 
 Missing character: There is no А (U+0410) in font cmmi12!
+[32<./Lec2/rankin_cycle.png>]
+<Lec2/steam_engine.png, id=462, 244.66406pt x 530.73282pt>
+File: Lec2/steam_engine.png Graphic file (type png)
+<use Lec2/steam_engine.png>
+Package luatex.def Info: Lec2/steam_engine.png  used on input line 457.
+(luatex.def)             Requested size: 241.84843pt x 524.63348pt.
+<Lec2/otto_cycle.png, id=466, 145.29282pt x 147.55125pt>
+File: Lec2/otto_cycle.png Graphic file (type png)
+<use Lec2/otto_cycle.png>
+Package luatex.def Info: Lec2/otto_cycle.png  used on input line 475.
+(luatex.def)             Requested size: 193.47578pt x 196.49733pt.
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 450.
+Underfull \vbox (badness 1472) has occurred while \output is active []
 
-<Lec2/steamengine.png, id=304, 244.66406pt x 530.73282pt>
-File: Lec2/steamengine.png Graphic file (type png)
-<use Lec2/steamengine.png>
-Package luatex.def Info: Lec2/steamengine.png  used on input line 452.
-(luatex.def)             Requested size: 193.47578pt x 419.70354pt.
-[19<./Lec2/rankincycle.png>])
+ [33<./Lec2/steam_engine.png>]
+<Lec2/diesel_cycle.png, id=478, 173.89969pt x 129.48375pt>
+File: Lec2/diesel_cycle.png Graphic file (type png)
+<use Lec2/diesel_cycle.png>
+Package luatex.def Info: Lec2/diesel_cycle.png  used on input line 484.
+(luatex.def)             Requested size: 193.47578pt x 144.0665pt.
+<Lec2/combustion_engine.png, id=483, 411.78844pt x 212.29312pt>
+File: Lec2/combustion_engine.png Graphic file (type png)
+<use Lec2/combustion_engine.png>
+Package luatex.def Info: Lec2/combustion_engine.png  used on input line 493.
+(luatex.def)             Requested size: 483.69687pt x 249.3667pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Lec2/diesel_engine.png, id=486, 1090.0725pt x 496.10344pt>
+File: Lec2/diesel_engine.png Graphic file (type png)
+<use Lec2/diesel_engine.png>
+Package luatex.def Info: Lec2/diesel_engine.png  used on input line 506.
+(luatex.def)             Requested size: 483.69687pt x 220.13324pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34<./Lec2/otto_cycle.png><./Lec2/diesel_cycle.png>]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `CMUTypewriterText' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [35<./Lec2/combustion_engine.png><./Lec2/diesel_engine.png>] [36]
+<Lec2/stirling_cycle.png, id=522, 391.4625pt x 408.02437pt>
+File: Lec2/stirling_cycle.png Graphic file (type png)
+<use Lec2/stirling_cycle.png>
+Package luatex.def Info: Lec2/stirling_cycle.png  used on input line 554.
+(luatex.def)             Requested size: 193.47578pt x 201.6645pt.
+<Lec2/stirling_engine.png, id=523, 469.755pt x 433.62pt>
+File: Lec2/stirling_engine.png Graphic file (type png)
+<use Lec2/stirling_engine.png>
+Package luatex.def Info: Lec2/stirling_engine.png  used on input line 559.
+(luatex.def)             Requested size: 217.66211pt x 200.91663pt.
+<Lec2/heatpumps_cycle.png, id=526, 173.14688pt x 167.87718pt>
+File: Lec2/heatpumps_cycle.png Graphic file (type png)
+<use Lec2/heatpumps_cycle.png>
+Package luatex.def Info: Lec2/heatpumps_cycle.png  used on input line 579.
+(luatex.def)             Requested size: 169.29684pt x 164.14964pt.
+ [37<./Lec2/stirling_cycle.png><./Lec2/stirling_engine.png><./Lec2/heatpumps_cyc
+le.png>]
+<Lec2/heatpumps_scheme.png, id=541, 338.76563pt x 277.035pt>
+File: Lec2/heatpumps_scheme.png Graphic file (type png)
+<use Lec2/heatpumps_scheme.png>
+Package luatex.def Info: Lec2/heatpumps_scheme.png  used on input line 603.
+(luatex.def)             Requested size: 483.69687pt x 395.57368pt.
+)
 
 LaTeX Warning: Empty bibliography on input line 118.
 
-[20<./Lec2/steamengine.png>]
+[38<./Lec2/heatpumps_scheme.png>]
 \tf@thm=\write7
 
 \openout7 = Thermod.thm
- [21
+ [39
 
 ]
 
@@ -2630,30 +2749,31 @@ Package logreq Info: Writing requests to 'Thermod.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 70550 strings out of 476506
+ 71402 strings out of 476506
  125161,3417909 words of node,token memory allocated
- 2714 words of node memory still in use:
+ 3366 words of node memory still in use:
    32 hlist, 2 vlist, 14 rule, 1 local_par, 12 glue, 4 kern, 1 penalty, 3 glyph,
- 545 attribute, 86 glue_spec, 203 attribute_list, 2 write, 48 pdf_literal, 1 pdf
+ 785 attribute, 86 glue_spec, 283 attribute_list, 2 write, 48 pdf_literal, 3 pdf
 _action nodes
-   avail lists: 1:1,2:1549,3:936,4:54,5:364,6:58,7:8695,8:68,9:842,10:31,11:1241
+   avail lists: 1:2,2:2706,3:940,4:62,5:365,6:92,7:8697,8:98,9:1089,10:42,11:124
+1
+ 91394 multiletter control sequences out of 65536+600000
+ 169 fonts using 80327079 bytes
+ 115i,17n,136p,3043b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/cm-unicode/cmuntt.otf><c:/texl
+ive/2023/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><c:/
+texlive/2023/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf>
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/cm-unicode/cmunss.otf><c:/texl
+ive/2023/texmf-dist/fonts/opentype/public/stix/STIX-Italic.otf><c:/texlive/2023/
+texmf-dist/fonts/opentype/public/stix/STIX-Regular.otf><c:/texlive/2023/texmf-di
+st/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><c:/texlive/2023/texm
+f-dist/fonts/opentype/public/stix/STIX-Bold.otf><c:/texlive/2023/texmf-dist/font
+s/opentype/public/cm-unicode/cmunsx.otf><c:/texlive/2023/texmf-dist/fonts/type1/
+public/esint-type1/esint10.pfb>
+Output written on Thermod.pdf (40 pages, 1319108 bytes).
 
- 90692 multiletter control sequences out of 65536+600000
- 141 fonts using 62980471 bytes
- 115i,10n,111p,2495b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.
-otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regu
-lar.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/cm-unicode/cmunss.otf>
-<c:/texlive/2023/texmf-dist/fonts/opentype/public/stix/STIX-Italic.otf><c:/texli
-ve/2023/texmf-dist/fonts/opentype/public/stix/STIX-Regular.otf><c:/texlive/2023/
-texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><c:/texlive/2
-023/texmf-dist/fonts/opentype/public/stix/STIX-Bold.otf><c:/texlive/2023/texmf-d
-ist/fonts/opentype/public/cm-unicode/cmunsx.otf><c:/texlive/2023/texmf-dist/font
-s/type1/public/esint-type1/esint10.pfb>
-Output written on Thermod.pdf (22 pages, 407325 bytes).
-
-PDF statistics: 442 PDF objects out of 1000 (max. 8388607)
- 360 compressed objects within 4 object streams
- 113 named destinations out of 1000 (max. 131072)
- 392 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 711 PDF objects out of 1000 (max. 8388607)
+ 585 compressed objects within 6 object streams
+ 194 named destinations out of 1000 (max. 131072)
+ 488 words of extra memory for PDF output out of 10000 (max. 100000000)
 
