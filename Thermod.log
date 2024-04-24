@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.4.23)  24 APR 2024 18:56
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.4.23)  25 APR 2024 01:04
  restricted system commands enabled.
 **Thermod.tex
 (./Thermod.tex
@@ -2547,49 +2547,26 @@ File: uesint.fd
 \openout2 = intro.aux
 
 No file intro.tex.
-(./Lec3/Lec3.tex
-Output from handle answer going to Lec3/Lec3-Answers.tex
+(./Lec4/Lec4.tex
+Output from handle answer going to Lec4/Lec4-Answers.tex
 \answer@file=\write6
 
-\openout6 = Lec3/Lec3-Answers.tex
+\openout6 = Lec4/Lec4-Answers.tex
 Розділ 1.
 [4
 
 
 
 
-]
-Missing character: There is no Т (U+0422) in font cmmi12!
-[5]
-Missing character: There is no А (U+0410) in font cmmi12!
-Missing character: There is no А (U+0410) in font cmmi12!
-<Lec3/karno_theorem_1.png, id=124, 284.56313pt x 177.66376pt>
-File: Lec3/karno_theorem_1.png Graphic file (type png)
-<use Lec3/karno_theorem_1.png>
-Package luatex.def Info: Lec3/karno_theorem_1.png  used on input line 77.
-(luatex.def)             Requested size: 241.84843pt x 151.00134pt.
-[6<./Lec3/karno_theorem_1.png>] [7] [8]
-Missing character: There is no Т (U+0422) in font cmmi12!
-Missing character: There is no Р (U+0420) in font cmmi12!
+] [5])
 
-Underfull \vbox (badness 1371) has occurred while \output is active []
+LaTeX Warning: Empty bibliography on input line 120.
 
- [9]
-[10] [11] [12]
-Missing character: There is no Т (U+0422) in font cmmi12!
-Missing character: There is no Т (U+0422) in font cmmi12!
-[13]
-Missing character: There is no Т (U+0422) in font cmmi12!
-Missing character: There is no Т (U+0422) in font cmmi12!
-[14] [15] [16] [17] [18])
-
-LaTeX Warning: Empty bibliography on input line 119.
-
-[19]
+[6]
 \tf@thm=\write7
 
 \openout7 = Thermod.thm
- [20
+ [7
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -2613,29 +2590,27 @@ Package logreq Info: Writing requests to 'Thermod.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 70666 strings out of 476435
+ 70475 strings out of 476435
  125161,3417909 words of node,token memory allocated
- 2522 words of node memory still in use:
-   32 hlist, 2 vlist, 14 rule, 1 local_par, 6 glue, 4 kern, 1 penalty, 3 glyph, 
-491 attribute, 86 glue_spec, 185 attribute_list, 2 write, 48 pdf_literal nodes
-   avail lists: 1:1,2:1622,3:936,4:49,5:377,6:68,7:6929,8:85,9:855,10:28,11:1068
-
- 90894 multiletter control sequences out of 65536+600000
- 123 fonts using 53304655 bytes
- 115i,10n,111p,2672b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 1779 words of node memory still in use:
+   32 hlist, 2 vlist, 14 rule, 1 local_par, 5 glue, 4 kern, 1 penalty, 3 glyph, 
+215 attribute, 86 glue_spec, 93 attribute_list, 2 write, 48 pdf_literal nodes
+   avail lists: 1:1,2:1989,3:936,4:28,5:303,6:39,7:4534,8:93,9:704,10:14,11:603
+ 90777 multiletter control sequences out of 65536+600000
+ 106 fonts using 42026279 bytes
+ 115i,10n,111p,1065b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.
-otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regu
-lar.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/cm-unicode/cmunss.otf>
-<c:/texlive/2024/texmf-dist/fonts/opentype/public/stix/STIX-Italic.otf><c:/texli
-ve/2024/texmf-dist/fonts/opentype/public/stix/STIX-Regular.otf><c:/texlive/2024/
-texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><c:/texlive/2
-024/texmf-dist/fonts/opentype/public/stix/STIX-Bold.otf><c:/texlive/2024/texmf-d
-ist/fonts/opentype/public/cm-unicode/cmunsx.otf><c:/texlive/2024/texmf-dist/font
-s/type1/public/esint-type1/esint10.pfb>
-Output written on Thermod.pdf (21 pages, 172962 bytes).
+otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/cm-unicode/cmunss.otf><c:/
+texlive/2024/texmf-dist/fonts/opentype/public/stix/STIX-Italic.otf><c:/texlive/2
+024/texmf-dist/fonts/opentype/public/stix/STIX-Regular.otf><c:/texlive/2024/texm
+f-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><c:/texlive/2024/
+texmf-dist/fonts/opentype/public/stix/STIX-Bold.otf><c:/texlive/2024/texmf-dist/
+fonts/opentype/public/cm-unicode/cmunsx.otf><c:/texlive/2024/texmf-dist/fonts/ty
+pe1/public/esint-type1/esint10.pfb>
+Output written on Thermod.pdf (8 pages, 73934 bytes).
 
-PDF statistics: 433 PDF objects out of 1000 (max. 8388607)
- 355 compressed objects within 4 object streams
- 101 named destinations out of 1000 (max. 131072)
- 416 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 185 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 131072)
+ 280 words of extra memory for PDF output out of 10000 (max. 100000000)
 
