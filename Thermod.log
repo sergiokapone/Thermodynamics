@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.4.23)  25 APR 2024 22:49
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.4.23)  25 APR 2024 23:15
  restricted system commands enabled.
 **Thermod.tex
 (./Thermod.tex
@@ -2576,30 +2576,31 @@ File: uesint.fd
 \openout2 = intro.aux
 
 No file intro.tex.
-(./Lec4/Lec4.tex
-Output from handle answer going to Lec4/Lec4-Answers.tex
+(./Lec5/Lec5.tex
+Output from handle answer going to Lec5/Lec5-Answers.tex
 \answer@file=\write6
 
-\openout6 = Lec4/Lec4-Answers.tex
+\openout6 = Lec5/Lec5-Answers.tex
 Розділ 1.
+Missing character: There is no Т (U+0422) in font cmmi12!
 [4
 
 
 
 
-] [5] [6] [7] [8]
+]
 
-LaTeX Warning: Reference `3.30' on page 9 undefined on input line 175.
+LaTeX Warning: Reference `4.20' on page 5 undefined on input line 46.
 
-[9])
+)
 
-LaTeX Warning: Empty bibliography on input line 121.
+LaTeX Warning: Empty bibliography on input line 122.
 
-[10]
+[5]
 \tf@thm=\write7
 
 \openout7 = Thermod.thm
- [11
+ [6
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -2623,29 +2624,26 @@ Package logreq Info: Writing requests to 'Thermod.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 70984 strings out of 476435
+ 70838 strings out of 476435
  125161,3417909 words of node,token memory allocated
- 2201 words of node memory still in use:
-   32 hlist, 2 vlist, 14 rule, 1 local_par, 7 glue, 4 kern, 1 penalty, 3 glyph, 
-368 attribute, 86 glue_spec, 144 attribute_list, 2 write, 48 pdf_literal nodes
-   avail lists: 1:1,2:1785,3:936,4:44,5:475,6:39,7:5392,8:141,9:1388,10:18,11:71
-9
- 91217 multiletter control sequences out of 65536+600000
- 143 fonts using 55525951 bytes
- 115i,15n,111p,1147b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 1683 words of node memory still in use:
+   32 hlist, 2 vlist, 14 rule, 1 local_par, 5 glue, 4 kern, 1 penalty, 3 glyph, 
+179 attribute, 86 glue_spec, 81 attribute_list, 2 write, 48 pdf_literal nodes
+   avail lists: 1:1,2:2037,3:936,4:26,5:210,6:39,7:4450,8:52,9:704,10:15,11:652
+ 91122 multiletter control sequences out of 65536+600000
+ 114 fonts using 41434031 bytes
+ 115i,10n,111p,1118b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.
-otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regu
-lar.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/cm-unicode/cmunss.otf>
-<c:/texlive/2024/texmf-dist/fonts/opentype/public/stix/STIX-Italic.otf><c:/texli
-ve/2024/texmf-dist/fonts/opentype/public/stix/STIX-Regular.otf><c:/texlive/2024/
-texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><c:/texlive/2
-024/texmf-dist/fonts/opentype/public/stix/STIX-Bold.otf><c:/texlive/2024/texmf-d
-ist/fonts/opentype/public/cm-unicode/cmunsx.otf><c:/texlive/2024/texmf-dist/font
-s/type1/public/esint-type1/esint10.pfb>
-Output written on Thermod.pdf (12 pages, 100883 bytes).
+otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/cm-unicode/cmunss.otf><c:/
+texlive/2024/texmf-dist/fonts/opentype/public/stix/STIX-Italic.otf><c:/texlive/2
+024/texmf-dist/fonts/opentype/public/stix/STIX-Regular.otf><c:/texlive/2024/texm
+f-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><c:/texlive/2024/
+texmf-dist/fonts/opentype/public/stix/STIX-Bold.otf><c:/texlive/2024/texmf-dist/
+fonts/opentype/public/cm-unicode/cmunsx.otf>
+Output written on Thermod.pdf (7 pages, 61948 bytes).
 
-PDF statistics: 290 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 131072)
- 320 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 160 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 131072)
+ 280 words of extra memory for PDF output out of 10000 (max. 100000000)
 
