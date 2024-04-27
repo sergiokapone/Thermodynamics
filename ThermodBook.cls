@@ -11,7 +11,6 @@
 
 
 
-
 %%% --------------------------------------------------------
 %%> \section{Class options}
 %%% --------------------------------------------------------
@@ -162,6 +161,7 @@
 %%% -------------------------------------------------------
 
 
+%\RequirePackage{gensymb}
 \RequirePackage{amsmath}
 \RequirePackage{lualatex-math}
 \RequirePackage[math-style=TeX,bold-style=TeX]{unicode-math}
@@ -183,7 +183,6 @@
 
 \RequirePackage{mhchem}
 \RequirePackage{icomma}
-
 
 
 
