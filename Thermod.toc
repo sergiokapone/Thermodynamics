@@ -1,4 +1,5 @@
 \babel@toc {ukrainian}{}\relax 
 \contentsline {chapter}{\numberline {1}\enquote {Теорема Нернста} та третій закон термодинаміки}{4}{chapter.2}%
 \contentsline {section}{\numberline {1.1}1}{4}{section.3}%
+\contentsline {section}{\numberline {1.2}2}{5}{section.7}%
 \contentsfinish 

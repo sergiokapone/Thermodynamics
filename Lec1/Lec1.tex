@@ -373,16 +373,16 @@ colbacktitle=themecolordark]
 \end{equation*}
 де $\sigma$ --- поверхневий натяг, $\Sigma$ --- площа плівки.
 
-Зрештою, робота може здійснюватися й полем. Наприклад, в електродинаміці показується, що для намагнічування полем $\vec{H}$ на величину $d\vec{M}$⃗ феромагнітний матеріал, необхідно здійснити роботу (наприклад пропустити струм через обмотку соленоїда):
+Зрештою, робота може здійснюватися й полем. Наприклад, в електродинаміці показується, що для намагнічування полем $\vec{\mathcal{H}}$ на величину $d\vec{\mathcal{M}}$⃗ феромагнітний матеріал, необхідно здійснити роботу (наприклад пропустити струм через обмотку соленоїда):
 \begin{equation*}
-    A=-\vec{H} d\vec{M} = - (H_x dM_x+H_y dM_y + H_z dM_z).
+    A=-\vec{\mathcal{H}} d\vec{\mathcal{M}} = - (\mathcal{H}_x d\mathcal{M}_x+\mathcal{H}_y d\mathcal{M}_y + \mathcal{H}_z d\mathcal{M}_z).
 \end{equation*}
 
 Аналогічно, необхідна для поляризації ізотропного діелектрика:
 \begin{equation*}
-    \delta A = - \vec{E} d\vec{P}
+    \delta A = - \vec{\mathcal{E}} d\vec{\mathcal{P}}
 \end{equation*}
-де $\vec{E}$ --- напруженість електричного поля, $\vec{P}$ --- вектор поляризації діелектрика.
+де $\vec{\mathcal{E}}$ --- напруженість електричного поля, $\vec{\mathcal{P}}$ --- вектор поляризації діелектрика.
 
 Необхідно зауважити що робота, здійснювана при квазістатичному рівноважному процесі завжди більша ніж при нерівноважному $\delta A > \delta A_{\text{(н.р.)}}$. Особливо наочно це видно у прикладі з розширенням газу. При нерівноважному розширенні зовнішній тиск завжди менший внутрішнього (граничний випадок розширення у вакуум). Як видно із рисунку $p' dV < p dV$.
 
@@ -452,7 +452,7 @@ colbacktitle=themecolordark]
 
 Якщо виконується \eqref{eq:ddP}, то \eqref{eq:dP} є повним диференціалом, а сама функція $P$ є функцією стану. Це в свою чергу означає, що інтеграл по замкненому контуру від повного диференціалу в циклічному процесі дорівнює нулю. Наприклад, для температури отримаємо $\oint dT = 0$. З точки зору фізики це співвідношення очевидне, а математично може бути доведено за допомогою співвідношення Гріна:
 \begin{equation*}
-    \oint dT = \int \left[  \left(\frac{\partial T}{\partial V}\right)_P dV +  \left(\frac{\partial T}{\partial P}\right)_V dP \right] = \int\limits_S \left(\frac{\partial^2 T}{\partial V \partial P} - \frac{\partial^2 T}{\partial P \partial V}\right) dPdV = 0
+    \oint dT = \int\left\{\left(\frac{\partial T}{\partial V}\right)_P dV +  \left(\frac{\partial T}{\partial P}\right)_V dP\right\} = \int\limits_S \left(\frac{\partial^2 T}{\partial V \partial P} - \frac{\partial^2 T}{\partial P \partial V}\right) dPdV = 0
 \end{equation*}
 в силу співвідношення \eqref{eq:-1}.
 
