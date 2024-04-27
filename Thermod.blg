@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Thermod.blg'
+[153] biber-MSWIN32:340> INFO - === 
+[203] Biber.pm:419> INFO - Reading 'Thermod.bcf'
+[438] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[466] Biber.pm:4419> INFO - Processing section 0
+[482] Biber.pm:4610> INFO - Looking for bibtex file 'QchemBook.bib' for section 0
+[1056] Utils.pm:410> ERROR - Cannot find 'QchemBook.bib'!
+[1057] Biber.pm:136> INFO - ERRORS: 1
