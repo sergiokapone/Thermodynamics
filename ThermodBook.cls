@@ -11,7 +11,6 @@
 
 
 
-
 %%% --------------------------------------------------------
 %%> \section{Class options}
 %%% --------------------------------------------------------
@@ -162,6 +161,10 @@
 %%% -------------------------------------------------------
 
 
+<<<<<<< Updated upstream
+%\RequirePackage{gensymb}
+=======
+>>>>>>> Stashed changes
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{lualatex-math}
@@ -184,7 +187,6 @@
 
 \RequirePackage{mhchem}
 \RequirePackage{icomma}
-
 
 
 
