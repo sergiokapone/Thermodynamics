@@ -166,6 +166,7 @@
 =======
 >>>>>>> Stashed changes
 \RequirePackage{amsmath}
+\RequirePackage{amssymb}
 \RequirePackage{lualatex-math}
 \RequirePackage[math-style=TeX,bold-style=TeX]{unicode-math}
 \setmathfont[math-style=TeX]{Stix Two Math}
