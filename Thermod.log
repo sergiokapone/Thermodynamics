@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.12.27)  28 FEB 2024 00:47
+=======
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.12.27)  19 FEB 2024 15:33
+>>>>>>> Stashed changes
  restricted system commands enabled.
 **Thermod.tex
 (./Thermod.tex
@@ -2297,10 +2301,14 @@ Package xassoccnt Warning: Warning: Package "calc" is loaded -- this is not
 \@numnormal=\count571
 \@framewidth=\dimen386
 \@wherebottom=\dimen387
+<<<<<<< Updated upstream
 ))
 (c:/texlive/2023/texmf-dist/tex/latex/gensymb/gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
 ) (./CoverPage.tex)
+=======
+)) (./CoverPage.tex)
+>>>>>>> Stashed changes
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -2495,6 +2503,7 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thermod.bbl' found.
  (./Thermod.bbl)
+<<<<<<< Updated upstream
 Package biblatex Info: Reference section=0 on input line 39.
 Package biblatex Info: Reference segment=0 on input line 39.
 LaTeX Info: Redefining \celsius on input line 39.
@@ -2509,6 +2518,10 @@ Package gensymb Info: Using \upOmega for \ohm on input line 39.
 
 Package gensymb Warning: Not defining \micro.
 
+=======
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
+>>>>>>> Stashed changes
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `CMUSansSerif' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -2525,8 +2538,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `StixTwoMath' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+<<<<<<< Updated upstream
 LaTeX Font Info:    Trying to load font information for U+esint on input line 4
 2.
+=======
+LaTeX Font Info:    Trying to load font information for U+esint on input line 3
+8.
+>>>>>>> Stashed changes
 (c:/texlive/2023/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 ) [1
@@ -2749,6 +2767,7 @@ Package logreq Info: Writing requests to 'Thermod.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
+<<<<<<< Updated upstream
  71402 strings out of 476506
  125161,3417909 words of node,token memory allocated
  3366 words of node memory still in use:
@@ -2771,6 +2790,28 @@ f-dist/fonts/opentype/public/stix/STIX-Bold.otf><c:/texlive/2023/texmf-dist/font
 s/opentype/public/cm-unicode/cmunsx.otf><c:/texlive/2023/texmf-dist/fonts/type1/
 public/esint-type1/esint10.pfb>
 Output written on Thermod.pdf (40 pages, 1319108 bytes).
+=======
+ 70924 strings out of 476506
+ 125161,3417909 words of node,token memory allocated
+ 2051 words of node memory still in use:
+   32 hlist, 2 vlist, 14 rule, 1 local_par, 5 glue, 4 kern, 1 penalty, 3 glyph, 
+317 attribute, 86 glue_spec, 127 attribute_list, 2 write, 48 pdf_literal nodes
+   avail lists: 1:3,2:3332,3:937,4:65,5:252,6:66,7:7047,8:59,9:1089,10:44,11:109
+5
+ 91091 multiletter control sequences out of 65536+600000
+ 143 fonts using 66398343 bytes
+ 115i,17n,136p,3041b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.
+otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regu
+lar.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/cm-unicode/cmunss.otf>
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/stix/STIX-Italic.otf><c:/texli
+ve/2023/texmf-dist/fonts/opentype/public/stix/STIX-Regular.otf><c:/texlive/2023/
+texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><c:/texlive/2
+023/texmf-dist/fonts/opentype/public/stix/STIX-Bold.otf><c:/texlive/2023/texmf-d
+ist/fonts/opentype/public/cm-unicode/cmunsx.otf><c:/texlive/2023/texmf-dist/font
+s/type1/public/esint-type1/esint10.pfb>
+Output written on Thermod.pdf (18 pages, 475072 bytes).
+>>>>>>> Stashed changes
 
 PDF statistics: 711 PDF objects out of 1000 (max. 8388607)
  585 compressed objects within 6 object streams
