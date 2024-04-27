@@ -161,10 +161,7 @@
 %%% -------------------------------------------------------
 
 
-<<<<<<< Updated upstream
-%\RequirePackage{gensymb}
-=======
->>>>>>> Stashed changes
+\RequirePackage{gensymb}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{lualatex-math}
