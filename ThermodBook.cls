@@ -11,7 +11,6 @@
 
 
 
-
 %%% --------------------------------------------------------
 %%> \section{Class options}
 %%% --------------------------------------------------------
@@ -162,8 +161,10 @@
 %%% -------------------------------------------------------
 
 
-\RequirePackage{lualatex-math}
+\RequirePackage{gensymb}
 \RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{lualatex-math}
 \RequirePackage[math-style=TeX,bold-style=TeX]{unicode-math}
 \setmathfont[math-style=TeX]{Stix Two Math}
 %\numberwithin{equation}{chapter}
@@ -183,7 +184,6 @@
 
 \RequirePackage{mhchem}
 \RequirePackage{icomma}
-
 
 
 
