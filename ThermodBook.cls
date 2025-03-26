@@ -152,6 +152,7 @@
 \RequirePackage{subcaption}
 \renewcommand\thesubfigure{\alph{subfigure}}
 \RequirePackage{wrapfig}
+\RequirePackage{wrapstuff}
 
 
 
