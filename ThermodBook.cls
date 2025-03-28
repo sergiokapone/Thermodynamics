@@ -4,7 +4,7 @@
 
 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesClass{ProblemBook}[2018/01/21]
+\ProvidesClass{ThermodBook}[2018/01/21]
 \LoadClass[onecolumn, twoside, 14pt]{extbook}
 
 

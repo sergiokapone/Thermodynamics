@@ -1,0 +1,76 @@
+\documentclass[%
+biblatex,
+%marginversioninfo
+]{ThermodBook}
+
+\usetikzlibrary{3d}
+
+\begin{document}
+
+
+
+
+\makeatletter
+\begin{tikzpicture}
+
+    \def\r{1}
+    \def\R{1.5}
+    \def\d{30}
+    \draw [fill=blue!30] (0,0) circle (\r);
+    \draw [blue, dashed] (0,0) circle (\R);
+    \foreach \a in {-30, 0, ..., 30} {
+    \draw[red, dash pattern={on 1 pt off 0.5pt}] (\a:\r) -- (\a:\R) arc(\a:{\a+\d}:\R) -- ({\a+\d}:\r)
+    arc({\a+\d}:\a:\r) --cycle;
+}
+\node at (0,0) {$P$};
+\node[anchor=east, font=\tiny] at (-15:1) {$d\sigma_i$};
+\node[font=\tiny, red, anchor=north] at (-30:{0.44*(\R+\r)}) {$dx_i$};
+\end{tikzpicture}
+
+
+
+
+
+%\tdplotsetmaincoords{70}{150}
+%\begin{tikzpicture}[tdplot_main_coords,line cap=round,line join=round,
+%    thick,>=Stealth,pics/dreibein/.style={code={%
+%      \foreach \XX [count=\YY from 0] in {#1}
+%      {
+%      \draw[->] (0,0,0) -- ($\XX1*(\dreibein\YY)$)
+%        node[above,dreibein/label, text=red]{$\sigma_{\pgfkeysvalueof{/tikz/dreibein/d}
+%        \pgfkeysvalueof{/tikz/dreibein/letters/\the\numexpr\YY+1}}$};}
+%    }},dreibein/.cd,label/.style={},d/.initial={},letters/.cd,
+%    1/.initial=x, 2/.initial=y, 3/.initial=z]
+% \draw[->] (0,0,0) coordinate (O) -- (4,0,0) node[above]{$x$};
+% \draw[->]  (O) -- (0,6,0) node[above]{$y$};
+% \draw[->]  (O) -- (0,0,6) node[left]{$z$};
+% \def\dreibein#1{\ifcase#1
+% {1,0,0}\or{0,1,0}\or{0,0,1}\fi}
+% \def\lstcols{"blue","cyan","cyan"}
+% \begin{scope}[shift={(0,4,4)}]
+%  \foreach \X [evaluate=\X as \Y using {int(Mod(\X+1,3))},
+%    evaluate=\X as \Z using {int(Mod(\X+2,3))}]in {0,1,2}
+%  {
+%%    \path ($-2*(\dreibein\X)$) pic[dreibein/label/.style={opacity=0}]{dreibein={-,-,-}};
+%   \pgfmathsetmacro{\mycolor}{{\lstcols}[\X]}
+%   \draw[fill=\mycolor,fill opacity=0.2] ($-2*(\dreibein\X)+2*(\dreibein\Y)+2*(\dreibein\Z)$)
+%    -- ($-2*(\dreibein\X)+2*(\dreibein\Y)-2*(\dreibein\Z)$)
+%    -- ($-2*(\dreibein\X)-2*(\dreibein\Y)-2*(\dreibein\Z)$)
+%    -- ($-2*(\dreibein\X)-2*(\dreibein\Y)+2*(\dreibein\Z)$) -- cycle;
+%   }
+%  \foreach \X [evaluate=\X as \Y using {int(Mod(\X+1,3))},
+%    evaluate=\X as \Z using {int(Mod(\X+2,3))}]in {0,1,2}
+%  {\pgfmathsetmacro{\mycolor}{{\lstcols}[\X]}
+%    \draw[fill=\mycolor,fill opacity=0.4] ($2*(\dreibein\X)+2*(\dreibein\Y)+2*(\dreibein\Z)$)
+%    -- ($2*(\dreibein\X)+2*(\dreibein\Y)-2*(\dreibein\Z)$)
+%    -- ($2*(\dreibein\X)-2*(\dreibein\Y)-2*(\dreibein\Z)$)
+%    -- ($2*(\dreibein\X)-2*(\dreibein\Y)+2*(\dreibein\Z)$) -- cycle;
+%   \path ($2*(\dreibein\X)$)
+%   pic[dreibein/d=\pgfkeysvalueof{/tikz/dreibein/letters/\the\numexpr\X+1}]{dreibein={+,+,+}};
+%   }
+% \end{scope}
+%\end{tikzpicture}
+
+
+\end{document}
+

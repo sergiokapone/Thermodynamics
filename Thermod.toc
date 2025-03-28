@@ -1,84 +1,11 @@
 \babel@toc {ukrainian}{}\relax 
-\contentsline {chapter}{\numberline {1}Основні поняття. \mbox {Нульовий закон термодинаміки}}{6}{chapter.2}%
-\contentsline {section}{\numberline {1.1}Вступ}{6}{section.3}%
-\contentsline {section}{\numberline {1.2}Термодинамічна рівновага. Нульовий закон}{9}{section.6}%
-\contentsline {section}{\numberline {1.3}Температура}{9}{section.8}%
-\contentsline {section}{\numberline {1.4}4}{11}{section.16}%
-\contentsline {section}{\numberline {1.5}Рівняння стану}{13}{section.26}%
-\contentsline {section}{\numberline {1.6}Термодинамічний контакт і процеси}{15}{section.32}%
-\contentsline {section}{\numberline {1.7}Робота термодинамічної системи}{15}{section.33}%
-\contentsline {section}{\numberline {1.8}Математичний апарат термодинаміки}{18}{section.38}%
-\contentsline {chapter}{\numberline {2}Теплота. Перший закон термодинаміки}{20}{chapter.42}%
-\contentsline {section}{\numberline {2.1}1}{20}{section.43}%
-\contentsline {paragraph}{ }{20}{paragraph*.44}%
-\contentsline {section}{\numberline {2.2}2}{21}{section.49}%
-\contentsline {section}{\numberline {2.3}3}{22}{section.52}%
-\contentsline {section}{\numberline {2.4}4}{24}{section.59}%
-\contentsline {section}{\numberline {2.5}5}{25}{section.63}%
-\contentsline {section}{\numberline {2.6}6}{26}{section.73}%
-\contentsline {section}{\numberline {2.7}7}{27}{section.74}%
-\contentsline {section}{\numberline {2.8}8}{28}{section.82}%
-\contentsline {section}{\numberline {2.9}9}{28}{section.85}%
-\contentsline {section}{\numberline {2.10}10}{30}{section.93}%
-\contentsline {section}{\numberline {2.11}11}{31}{section.98}%
-\contentsline {section}{\numberline {2.12}12}{32}{section.103}%
-\contentsline {section}{\numberline {2.13}13}{33}{section.108}%
-\contentsline {section}{\numberline {2.14}14}{34}{section.118}%
-\contentsline {section}{\numberline {2.15}15}{35}{section.124}%
-\contentsline {section}{\numberline {2.16}16}{37}{section.130}%
-\contentsline {section}{\numberline {2.17}17}{38}{section.134}%
-\contentsline {section}{\numberline {2.18}18}{39}{section.144}%
-\contentsline {section}{\numberline {2.19}19}{40}{section.146}%
-\contentsline {chapter}{\numberline {3}Другий закон термодинаміки та його основні наслідки}{42}{chapter.151}%
-\contentsline {section}{\numberline {3.1}1}{42}{section.152}%
-\contentsline {section}{\numberline {3.2}2}{43}{section.153}%
-\contentsline {section}{\numberline {3.3}3}{43}{section.154}%
-\contentsline {section}{\numberline {3.4}4}{44}{section.155}%
-\contentsline {section}{\numberline {3.5}5}{45}{section.160}%
-\contentsline {section}{\numberline {3.6}6}{45}{section.162}%
-\contentsline {section}{\numberline {3.7}7}{47}{section.171}%
-\contentsline {section}{\numberline {3.8}8}{48}{section.176}%
-\contentsline {section}{\numberline {3.9}9}{49}{section.181}%
-\contentsline {section}{\numberline {3.10}10}{50}{section.194}%
-\contentsline {section}{\numberline {3.11}11}{51}{section.200}%
-\contentsline {section}{\numberline {3.12}12}{51}{section.202}%
-\contentsline {section}{\numberline {3.13}13}{52}{section.203}%
-\contentsline {section}{\numberline {3.14}14}{52}{section.204}%
-\contentsline {section}{\numberline {3.15}15}{53}{section.206}%
-\contentsline {section}{\numberline {3.16}16}{54}{section.218}%
-\contentsline {section}{\numberline {3.17}17}{55}{section.219}%
-\contentsline {section}{\numberline {3.18}18}{55}{section.220}%
-\contentsline {section}{\numberline {3.19}19}{56}{section.221}%
-\contentsline {chapter}{\numberline {4}Співвідношення калібрування і співвідношення взаємності}{58}{chapter.229}%
-\contentsline {section}{\numberline {4.1}1}{58}{section.230}%
-\contentsline {section}{\numberline {4.2}2}{59}{section.235}%
-\contentsline {section}{\numberline {4.3}3}{60}{section.256}%
-\contentsline {section}{\numberline {4.4}4}{61}{section.260}%
-\contentsline {section}{\numberline {4.5}5}{62}{section.267}%
-\contentsline {section}{\numberline {4.6}6}{63}{section.278}%
-\contentsline {section}{\numberline {4.7}7}{64}{section.282}%
-\contentsline {chapter}{\numberline {5}Метод термодинамічних потенціалів}{65}{chapter.284}%
-\contentsline {section}{\numberline {5.1}1}{65}{section.285}%
-\contentsline {section}{\numberline {5.2}2}{66}{section.292}%
-\contentsline {section}{\numberline {5.3}3}{67}{section.301}%
-\contentsline {section}{\numberline {5.4}4}{68}{section.308}%
-\contentsline {section}{\numberline {5.5}5}{68}{section.315}%
-\contentsline {section}{\numberline {5.6}6}{69}{section.316}%
-\contentsline {section}{\numberline {5.7}7}{69}{section.320}%
-\contentsline {section}{\numberline {5.8}8}{70}{section.323}%
-\contentsline {section}{\numberline {5.9}9}{71}{section.334}%
-\contentsline {section}{\numberline {5.10}10}{72}{section.338}%
-\contentsline {section}{\numberline {5.11}11}{72}{section.343}%
-\contentsline {section}{\numberline {5.12}12}{73}{section.353}%
-\contentsline {section}{\numberline {5.13}13}{74}{section.354}%
-\contentsline {chapter}{\numberline {6}\enquote {Теорема Нернста} та третій закон термодинаміки}{75}{chapter.361}%
-\contentsline {section}{\numberline {6.1}1}{75}{section.362}%
-\contentsline {section}{\numberline {6.2}2}{76}{section.366}%
-\contentsline {section}{\numberline {6.3}3}{77}{section.369}%
-\contentsline {section}{\numberline {6.4}4}{77}{section.373}%
-\contentsline {chapter}{\numberline {7}Принципи екстремумів і термодинамічної рівноваги}{80}{chapter.379}%
-\contentsline {section}{\numberline {7.1}1}{80}{section.380}%
-\contentsline {section}{\numberline {7.2}2}{80}{section.382}%
-\contentsline {section}{\numberline {7.3}3}{81}{section.386}%
-\contentsline {section}{\numberline {7.4}4}{82}{section.395}%
+\contentsline {chapter}{\numberline {1}Основні поняття. \mbox {Нульовий закон термодинаміки}}{4}{chapter.2}%
+\contentsline {section}{\numberline {1.1}Вступ}{4}{section.3}%
+\contentsline {section}{\numberline {1.2}Термодинамічна рівновага. Нульовий закон}{6}{section.7}%
+\contentsline {section}{\numberline {1.3}Температура}{8}{section.9}%
+\contentsline {section}{\numberline {1.4}Ідеально-газовий термометр}{10}{section.18}%
+\contentsline {section}{\numberline {1.5}Рівняння стану}{13}{section.29}%
+\contentsline {section}{\numberline {1.6}Термодинамічний контакт і процеси}{14}{section.35}%
+\contentsline {section}{\numberline {1.7}Робота термодинамічної системи}{15}{section.38}%
+\contentsline {section}{\numberline {1.8}Математичний апарат термодинаміки}{18}{section.45}%
 \contentsfinish 
