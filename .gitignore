@@ -1,6 +1,8 @@
 _minted*/
 tmp/
 .orig/
+.archive/
+*_v*.*
 *.aux
 *.synctex.gz
 *.log
