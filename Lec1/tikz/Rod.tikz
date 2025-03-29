@@ -22,13 +22,13 @@ color=metalcol!80!black,shading angle=10]
 % ROD - tensed
 \begin{tikzpicture}
   \def\x{-0.14*\L}
-  \draw[<->] (0,-1.5*\Ry) --++ (\L,0) node[midway,below,fill=white,inner sep=1] {$L$};
-  \draw[width] (0, 1.3*\Ry) --++ (\x,0) node[midway,above] {$\Delta L$};
-  \draw[force] (\L,0) --++ (\F,0) node[above,right] {$\sigma$};;
+  \draw[<->] (0,-1.5*\Ry) --++ (\L,0) node[midway,below,fill=white,inner sep=1] {$x$};
+  \draw[width] (0, 1.3*\Ry) --++ (\x,0) node[midway,above] {$\Delta x$};
+  \draw[force] (\L,0) --++ (\F,0) node[above,right] {$\sigma'$};;
   \draw[metal]
     (\x,-\Ry) |- (\L,\Ry) arc(90:-90:{\Rx} and {\Ry}) -- cycle;
   \draw[metal] (\x,0) ellipse ({\Rx} and {\Ry});
-  \draw[force] (\x,0) --++ (-\F,0) node[above,left] {$\sigma$};
+  \draw[force] (\x,0) --++ (-\F,0) node[above,left] {$\sigma'$};
   \draw[dashed] (0,\Ry) arc(90:-90:{\Rx} and {\Ry});
 
     \path  (0,0) -- ++(0, -5);

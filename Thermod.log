@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.3.19)  28 MAR 2025 21:22
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.3.19)  29 MAR 2025 12:24
  system commands enabled.
 **Thermod.tex
 (./Thermod.tex
@@ -488,10 +488,25 @@ Package caption Info: New subtype `subfigure' on input line 238.
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count292
 )
+Package caption Info: Option `declare type' requires the `newfloat' package on 
+input line 154.
+
+(d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
+Package newfloat Info: Document class `book' detected (original).
+)
+Package newfloat Info: New float `scicaption' with options `' on input line 154
+.
+\c@scicaption=\count293
+\newfloat@ftype=\count294
+Package newfloat Info: float type `scicaption'=8 on input line 154.
+Package caption Info: New subtype `subscicaption' on input line 154.
+\c@subscicaption=\count295
+
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen165
 \WF@size=\dimen166
-\c@WF@wrappedlines=\count293
+\c@WF@wrappedlines=\count296
 \WF@box=\box56
 \WF@everypar=\toks23
 Package: wrapfig 2003/01/31  v 3.6
@@ -511,22 +526,22 @@ Package: wrapstuff 2022/08/05 v0.3 Wrapping text around stuff
 \g__wstf_column_room_dim=\dimen177
 \g__wstf_parshape_indent_dim=\dimen178
 \g__wstf_parshape_length_dim=\dimen179
-\g__wstf_top_int=\count294
-\g__wstf_column_int=\count295
-\g__wstf_window_int=\count296
+\g__wstf_top_int=\count297
+\g__wstf_column_int=\count298
+\g__wstf_window_int=\count299
 \g__wstf_stauts_box=\box57
-\g__wstf_status_int=\count297
-\c__wstf_none_node=\count298
+\g__wstf_status_int=\count300
+\c__wstf_none_node=\count301
 \g__wstf_stuff_box=\box58
 \l__wstf_shift_dim=\dimen180
 \l__wstf_width_dim=\dimen181
 \l__wstf_height_dim=\dimen182
-\c@wrapstuff=\count299
+\c@wrapstuff=\count302
 \l__wstf_body_box=\box59
 \l__wstf_window_box=\box60
-\l__wstf_window_int=\count300
-\g__wstf_line_int=\count301
-\l__wstf_window_line_int=\count302
+\l__wstf_window_int=\count303
+\g__wstf_line_int=\count304
+\l__wstf_window_line_int=\count305
 \l__wstf_l_dim=\dimen183
 \l__wstf_r_dim=\dimen184
 \l__wstf_min_dim=\dimen185
@@ -537,8 +552,8 @@ Package: wrapstuff 2022/08/05 v0.3 Wrapping text around stuff
 \l__wstf_leftsep_dim=\dimen190
 \l__wstf_rightsep_dim=\dimen191
 \l__wstf_main_width_dim=\dimen192
-\g__wstf_parshape_int=\count303
-\g__wstf_hangafter_int=\count304
+\g__wstf_parshape_int=\count306
+\g__wstf_hangafter_int=\count307
 \g__wstf_hangindent_dim=\dimen193
 \g__wstf_left_skip=\skip56
 \g__wstf_right_skip=\skip57
@@ -549,10 +564,10 @@ Package: wrapstuff 2022/08/05 v0.3 Wrapping text around stuff
 \g__wstf_eqbody_box=\box62
 \g__wstf_eqnum_box=\box63
 \g__wstf_equation_box=\box64
-\g__wstf_pos_int=\count305
+\g__wstf_pos_int=\count308
 \g__wstf_pos_skip=\skip61
 \l__wstf_save_body_box=\box65
-\c__wstf_break_int=\count306
+\c__wstf_break_int=\count309
 \g__wstf_ht_dim=\dimen194
 \l__wstf_l_box=\box66
 \l__wstf_r_box=\box67
@@ -570,11 +585,11 @@ Package: wrapstuff 2022/08/05 v0.3 Wrapping text around stuff
 \g__wstf_pos_box=\box74
 \l__wstf_last_skip=\skip64
 \g__wstf_last_skip=\skip65
-\l__wstf_last_int=\count307
+\l__wstf_last_int=\count310
 \l__wstf_last_box=\box75
-\g__wstf_display_pre_int=\count308
+\g__wstf_display_pre_int=\count311
 \g__wstf_display_pre_skip=\skip66
-\l__wstf_top_int=\count309
+\l__wstf_top_int=\count312
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/gensymb/gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
@@ -599,14 +614,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count310
+\inf@bad=\count313
 LaTeX Info: Redefining \frac on input line 235.
-\uproot@=\count311
-\leftroot@=\count312
+\uproot@=\count314
+\leftroot@=\count315
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count313
-\DOTSCASE@=\count314
+\classnum@=\count316
+\DOTSCASE@=\count317
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -619,20 +634,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen256
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count315
+\macc@depth=\count318
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count316
+\c@MaxMatrixCols=\count319
 \dotsspace@=\muskip17
-\c@parentequation=\count317
-\dspbrk@lvl=\count318
+\c@parentequation=\count320
+\dspbrk@lvl=\count321
 \tag@help=\toks25
-\row@=\count319
-\column@=\count320
-\maxfields@=\count321
+\row@=\count322
+\column@=\count323
+\maxfields@=\count324
 \andhelp@=\toks26
 \eqnshift@=\dimen257
 \alignsep@=\dimen258
@@ -683,9 +698,9 @@ Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
-\g__um_fam_int=\count322
-\g__um_fonts_used_int=\count323
-\l__um_primecount_int=\count324
+\g__um_fam_int=\count325
+\g__um_fonts_used_int=\count326
+\l__um_primecount_int=\count327
 \g__um_primekern_muskip=\muskip18
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/unicode-math/unicode-math-
@@ -740,16 +755,16 @@ imen=xetex;+ssty=0;"<-9>"name:Stix
 imen=xetex;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 172.
+(Font)              `operators' in the math version `normal' on input line 197.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/StixTwoMath(1)/m/n on input line 172
+(Font)                  OT1/cmr/m/n --> TU/StixTwoMath(1)/m/n on input line 197
 .
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 172.
+(Font)              `operators' in the math version `bold' on input line 197.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/StixTwoMath(1)/b/n on input line 17
-2.
+(Font)                  OT1/cmr/bx/n --> TU/StixTwoMath(1)/b/n on input line 19
+7.
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "Stix Two Math/B" (it probably
@@ -781,15 +796,15 @@ imen=xetex;mathfontdimen=tex2;+ssty=0;"<-9>"name:Stix
 imen=xetex;mathfontdimen=tex2;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 172.
+(Font)              `symbols' in the math version `normal' on input line 197.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/StixTwoMath(2)/m/n on input line 17
-2.
+(Font)                  OMS/cmsy/m/n --> TU/StixTwoMath(2)/m/n on input line 19
+7.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 172.
+(Font)              `symbols' in the math version `bold' on input line 197.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/StixTwoMath(2)/b/n on input line 17
-2.
+(Font)                  OMS/cmsy/b/n --> TU/StixTwoMath(2)/b/n on input line 19
+7.
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "Stix Two Math/B" (it probably
@@ -822,23 +837,23 @@ imen=xetex;mathfontdimen=tex3;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
-72.
+97.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/StixTwoMath(3)/m/n on input line 17
-2.
+(Font)                  OMX/cmex/m/n --> TU/StixTwoMath(3)/m/n on input line 19
+7.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 172
+(Font)              `largesymbols' in the math version `bold' on input line 197
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/StixTwoMath(3)/b/n on input line 17
-2.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 172
+(Font)                  OMX/cmex/m/n --> TU/StixTwoMath(3)/b/n on input line 19
+7.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 197
 .
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 172
+LaTeX Font Info:    Trying to load font information for U+msb on input line 197
 .
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -862,22 +877,22 @@ Package: mhchem 2024/01/29 v4.10 for typesetting chemical formulae
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count325
-\calc@Bcount=\count326
+\calc@Acount=\count328
+\calc@Bcount=\count329
 \calc@Adimen=\dimen263
 \calc@Bdimen=\dimen264
 \calc@Askip=\skip73
 \calc@Bskip=\skip74
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count327
+\calc@Ccount=\count330
 \calc@Cskip=\skip75
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
  in chemistry (CN)
-\l__chemgreek_tmpa_int=\count328
-\g__chemgreek_tmpa_int=\count329
+\l__chemgreek_tmpa_int=\count331
+\g__chemgreek_tmpa_int=\count332
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
@@ -890,7 +905,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: luatex.def on input line 106.
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count330
+\l__mhchem_ce_distanceFromLastComma_int=\count333
 \__mhchem_arrow_extPgfLength_skip=\skip76
 \mhchem@minispace@tmp=\skip77
 \mhchem@minibackspace@tmp=\skip78
@@ -901,7 +916,7 @@ Package graphics Info: Driver file: luatex.def on input line 106.
 \mhchem@smallbondwidth=\skip83
 \mhchem@bondtmp@minussidebearingleft=\skip84
 \mhchem@bondtmp@minussidebearingright=\skip85
-\l__mhchem_option_version_int=\count331
+\l__mhchem_option_version_int=\count334
 \mhchem@option@minusmathsidebearingleft=\dimen265
 \mhchem@option@minusmathsidebearingright=\dimen266
 \mhchem@option@minustextsidebearingleft=\dimen267
@@ -924,9 +939,9 @@ Package: tabularray 2025-03-11 v2025A Typeset tabulars and arrays with LaTeX3
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/ninecolors/ninecolors.sty
 Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 )
-\l__tblr_a_int=\count332
-\l__tblr_c_int=\count333
-\l__tblr_r_int=\count334
+\l__tblr_a_int=\count335
+\l__tblr_c_int=\count336
+\l__tblr_r_int=\count337
 \l__tblr_d_dim=\dimen269
 \l__tblr_h_dim=\dimen270
 \l__tblr_o_dim=\dimen271
@@ -941,35 +956,35 @@ Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 \l__tblr_b_box=\box79
 \l__tblr_c_box=\box80
 \l__tblr_d_box=\box81
-\c@tblrcount=\count335
-\c@colnum=\count336
-\c@rowcount=\count337
-\c@colcount=\count338
+\c@tblrcount=\count338
+\c@colnum=\count339
+\c@rowcount=\count340
+\c@colcount=\count341
 \abovesep=\dimen279
 \belowsep=\dimen280
 \leftsep=\dimen281
 \rightsep=\dimen282
-\gTblrLevelInt=\count339
-\g__tblr_data_row_key_count_int=\count340
-\g__tblr_data_column_key_count_int=\count341
-\g__tblr_data_cell_key_count_int=\count342
-\g__tblr_array_int=\count343
-\l__tblr_key_count_int=\count344
-\l__tblr_key_quotient_int=\count345
-\l__tblr_key_quotient_two_int=\count346
-\l__tblr_key_remainder_int=\count347
-\g__tblr_data_str_value_count_int=\count348
-\lTblrChildTotalInt=\count349
-\lTblrChildHtotalInt=\count350
-\lTblrChildVtotalInt=\count351
-\l__child_diff_h_int=\count352
-\l__child_diff_v_int=\count353
-\l__child_sign_h_int=\count354
-\l__child_sign_v_int=\count355
-\l__child_step_int=\count356
+\gTblrLevelInt=\count342
+\g__tblr_data_row_key_count_int=\count343
+\g__tblr_data_column_key_count_int=\count344
+\g__tblr_data_cell_key_count_int=\count345
+\g__tblr_array_int=\count346
+\l__tblr_key_count_int=\count347
+\l__tblr_key_quotient_int=\count348
+\l__tblr_key_quotient_two_int=\count349
+\l__tblr_key_remainder_int=\count350
+\g__tblr_data_str_value_count_int=\count351
+\lTblrChildTotalInt=\count352
+\lTblrChildHtotalInt=\count353
+\lTblrChildVtotalInt=\count354
+\l__child_diff_h_int=\count355
+\l__child_diff_v_int=\count356
+\l__child_sign_h_int=\count357
+\l__child_sign_v_int=\count358
+\l__child_step_int=\count359
 \lTblrDefaultHruleWidthDim=\dimen283
 \lTblrDefaultVruleWidthDim=\dimen284
-\l__tblr_split_balance_int=\count357
+\l__tblr_split_balance_int=\count360
 \l__tblr_strut_dp_dim=\dimen285
 \l__tblr_strut_ht_dim=\dimen286
 \g__tblr_cell_wd_dim=\dimen287
@@ -983,8 +998,8 @@ Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 \l__tblr_hfuzz_dim=\dimen292
 \l__tblr_caption_box=\box85
 \l__tblr_caption_left_box=\box86
-\lTblrRowHeadInt=\count358
-\lTblrRowFootInt=\count359
+\lTblrRowHeadInt=\count361
+\lTblrRowFootInt=\count362
 \l__tblr_row_head_box=\box87
 \l__tblr_row_foot_box=\box88
 \l__tblr_row_head_foot_dim=\dimen293
@@ -996,18 +1011,18 @@ Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 \l__tblr_table_middlefoot_box=\box93
 \l__tblr_table_lastfoot_box=\box94
 \l__tblr_remain_height_dim=\dimen295
-\l__tblr_long_from_int=\count360
-\l__tblr_long_to_int=\count361
-\l__tblr_curr_i_int=\count362
-\l__tblr_prev_i_int=\count363
-\lTblrTablePageInt=\count364
+\l__tblr_long_from_int=\count363
+\l__tblr_long_to_int=\count364
+\l__tblr_curr_i_int=\count365
+\l__tblr_prev_i_int=\count366
+\lTblrTablePageInt=\count367
 \l__tblr_table_head_box=\box95
 \l__tblr_table_foot_box=\box96
 \l__tblr_table_head_foot_dim=\dimen296
 \l__tblr_table_head_body_foot_dim=\dimen297
 \l__tblr_table_box=\box97
-\lTblrRowFirstInt=\count365
-\lTblrRowLastInt=\count366
+\lTblrRowFirstInt=\count368
+\lTblrRowLastInt=\count369
 \l__tblr_table_hlines_box=\box98
 \l__tblr_hline_box=\box99
 \l__tblr_row_box=\box100
@@ -1027,8 +1042,8 @@ Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 \l__tblr_row_vpace_dim=\dimen308
 \l__tblr_vline_aboveskip_dim=\dimen309
 \l__tblr_vline_belowskip_dim=\dimen310
-\lTblrCellRowSpanInt=\count367
-\lTblrCellColSpanInt=\count368
+\lTblrCellRowSpanInt=\count370
+\lTblrCellColSpanInt=\count371
 \l__tblr_cell_wd_dim=\dimen311
 \l__tblr_cell_ht_dim=\dimen312
 \lTblrCellAboveBorderWidthDim=\dimen313
@@ -1055,12 +1070,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen330
 \cmidrulekern=\dimen331
 \defaultaddspace=\dimen332
-\@cmidla=\count369
-\@cmidlb=\count370
+\@cmidla=\count372
+\@cmidlb=\count373
 \@aboverulesep=\dimen333
 \@belowrulesep=\dimen334
-\@thisruleclass=\count371
-\@lastruleclass=\count372
+\@thisruleclass=\count374
+\@lastruleclass=\count375
 \@thisrulewidth=\dimen335
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/currfile/currfile.sty
@@ -1082,7 +1097,7 @@ Package: filehook 2022/10/25 v0.8b Hooks for input files
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/filehook/filehook-2020.sty
 Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
 ))
-\c@currfiledepth=\count373
+\c@currfiledepth=\count376
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
@@ -1140,14 +1155,14 @@ raryfiltered.code.tex
 \pgf@yd=\dimen349
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count374
-\c@pgf@countb=\count375
-\c@pgf@countc=\count376
-\c@pgf@countd=\count377
+\c@pgf@counta=\count377
+\c@pgf@countb=\count378
+\c@pgf@countc=\count379
+\c@pgf@countd=\count380
 \t@pgf@toka=\toks33
 \t@pgf@tokb=\toks34
 \t@pgf@tokc=\toks35
-\pgf@sys@id@count=\count378
+\pgf@sys@id@count=\count381
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
@@ -1165,8 +1180,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysso
 ftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count379
-\pgfsyssoftpath@bigbuffer@items=\count380
+\pgfsyssoftpath@smallbuffer@items=\count382
+\pgfsyssoftpath@bigbuffer@items=\count383
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyspr
 otocol.code.tex
@@ -1183,7 +1198,7 @@ e.tex)
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.c
 ode.tex
 \pgfmath@dimen=\dimen350
-\pgfmath@count=\count381
+\pgfmath@count=\count384
 \pgfmath@box=\box107
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
@@ -1211,7 +1226,7 @@ s.integerarithmetics.code.tex)
 e.tex)
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.co
 de.tex
-\c@pgfmathroundto@lastzeros=\count382
+\c@pgfmathroundto@lastzeros=\count385
 ))
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex
 )
@@ -1251,7 +1266,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box108
 \pgf@hbox=\box109
 \pgf@layerbox@main=\box110
-\pgf@picture@serial@count=\count383
+\pgf@picture@serial@count=\count386
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregr
 aphicstate.code.tex
@@ -1286,8 +1301,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen374
-\pgf@sys@shading@range@num=\count384
-\pgf@shadingcount=\count385
+\pgf@sys@shading@range@num=\count387
+\pgf@shadingcount=\count388
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreim
 age.code.tex
@@ -1355,7 +1370,7 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibrary
 plothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count386
+\pgf@plot@mark@count=\count389
 \pgfplotmarksize=\dimen379
 )
 \tikz@lastx=\dimen380
@@ -1370,19 +1385,19 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box114
 \tikz@tempbox=\box115
 \tikz@tempbox@bg=\box116
-\tikztreelevel=\count387
-\tikznumberofchildren=\count388
-\tikznumberofcurrentchild=\count389
-\tikz@fig@count=\count390
+\tikztreelevel=\count390
+\tikznumberofchildren=\count391
+\tikznumberofcurrentchild=\count392
+\tikz@fig@count=\count393
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulemat
 rix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count391
-\pgfmatrixcurrentcolumn=\count392
-\pgf@matrix@numberofcolumns=\count393
+\pgfmatrixcurrentrow=\count394
+\pgfmatrixcurrentcolumn=\count395
+\pgf@matrix@numberofcolumns=\count396
 )
-\tikz@expandcount=\count394
+\tikz@expandcount=\count397
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
 ibraries/tikzlibrarytopaths.code.tex
@@ -1404,9 +1419,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box118
 \tcb@lowerbox=\box119
 \tcb@phantombox=\box120
-\c@tcbbreakpart=\count395
-\c@tcblayer=\count396
-\c@tcolorbox@number=\count397
+\c@tcbbreakpart=\count398
+\c@tcblayer=\count399
+\c@tcolorbox@number=\count400
 \l__tcobox_tmpa_box=\box121
 \l__tcobox_tmpa_dim=\dimen388
 \tcb@temp=\box122
@@ -1417,10 +1432,10 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/tcolorbox/tcbraster.code.t
 ex
 Library (tcolorbox): 'tcbraster.code.tex' version '6.4.1'
-\c@tcbrastercolumn=\count398
-\c@tcbrasterrow=\count399
-\c@tcbrasternum=\count400
-\c@tcbraster=\count401
+\c@tcbrastercolumn=\count401
+\c@tcbrasterrow=\count402
+\c@tcbrasternum=\count403
+\c@tcbraster=\count404
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/tcolorbox/tcbskins.code.te
 x
@@ -1475,7 +1490,7 @@ Library (tcolorbox): 'tcbfitting.code.tex' version '6.4.1'
 \tcbfitdim=\dimen389
 \tcb@lowerfitdim=\dimen390
 \tcb@upperfitdim=\dimen391
-\tcb@cur@hbadness=\count402
+\tcb@cur@hbadness=\count405
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.
 code.tex
@@ -1485,17 +1500,17 @@ Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.4.1'
 .tex
 Library (tcolorbox): 'tcblistings.code.tex' version '6.4.1'
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count403
+\lst@mode=\count406
 \lst@gtempboxa=\box130
 \lst@token=\toks43
-\lst@length=\count404
+\lst@length=\count407
 \lst@currlwidth=\dimen392
-\lst@column=\count405
-\lst@pos=\count406
+\lst@column=\count408
+\lst@pos=\count409
 \lst@lostspace=\dimen393
 \lst@width=\dimen394
-\lst@newlines=\count407
-\lst@lineno=\count408
+\lst@newlines=\count410
+\lst@lineno=\count411
 \lst@maxwidth=\dimen395
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
@@ -1503,8 +1518,8 @@ File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count409
-\lst@skipnumbers=\count410
+\c@lstnumber=\count412
+\lst@skipnumbers=\count413
 \lst@framebox=\box131
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/listings/listings.cfg
@@ -1520,7 +1535,7 @@ Library (tcolorbox): 'tcblistingscore.code.tex' version '6.4.1'
 de.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '6.4.1'
 )
-\c@tcblisting=\count411
+\c@tcblisting=\count414
 ))
 Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
 Library `listings` is loaded instead. on input line 29.
@@ -1583,8 +1598,8 @@ Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
 \t@pgfplots@tokb=\toks45
 \t@pgfplots@tokc=\toks46
 \pgfplots@tmpa=\dimen396
-\c@pgfplots@coordindex=\count412
-\c@pgfplots@scanlineindex=\count413
+\c@pgfplots@coordindex=\count415
+\c@pgfplots@scanlineindex=\count416
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgfplots/sys/pgfplotssys
 generic.code.tex))
@@ -1617,13 +1632,13 @@ gfplotsliststructure.code.tex)
 gfplotsliststructureext.code.tex)
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgfplots/liststructure/p
 gfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count414
+\c@pgfplotsarray@tmp=\count417
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgfplots/liststructure/p
 gfplotsmatrix.code.tex)
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgfplots/numtable/pgfplo
 tstableshared.code.tex
-\c@pgfplotstable@counta=\count415
+\c@pgfplotstable@counta=\count418
 \t@pgfplotstable@a=\toks50
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgfplots/liststructure/p
@@ -1636,7 +1651,7 @@ nary.data.code.tex))
 il.verb.code.tex)
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgfplots/libs/pgflibrary
 pgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count416
+\c@pgfplotslibrarysurf@no=\count419
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgfplots/sys/pgflibraryp
 gfplots.surfshading.pgfsys-luatex.def)))
@@ -1673,7 +1688,7 @@ orations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen399
 \pgfdecoratedinputsegmentremainingdistance=\dimen400
 \pgf@decorate@distancetomove=\dimen401
-\pgf@decorate@repeatstate=\count417
+\pgf@decorate@repeatstate=\count420
 \pgfdecorationsegmentamplitude=\dimen402
 \pgfdecorationsegmentlength=\dimen403
 )
@@ -1689,7 +1704,7 @@ ibraries/tikzlibrarydecorations.pathreplacing.code.tex
 s/pgflibrarydecorations.pathreplacing.code.tex))
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgfplots/libs/tikzlibrar
 ypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count418
+\pgfplots@numplots=\count421
 \pgfplots@xmin@reg=\dimen404
 \pgfplots@xmax@reg=\dimen405
 \pgfplots@ymin@reg=\dimen406
@@ -1759,7 +1774,7 @@ s/pgflibrarydecorations.markings.code.tex))
 ibraries/tikzlibraryintersections.code.tex
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibrary
 intersections.code.tex
-\pgf@intersect@solutions=\count419
+\pgf@intersect@solutions=\count422
 ))
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibrary
 arrows.meta.code.tex
@@ -1910,7 +1925,7 @@ MM)
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/lastpage/lastpagemodern.st
 y
 Package: lastpagemodern 2025-01-27 v2.1e Refers to last page's name (HMM; JPG)
-\c@lastpagecount=\count420
+\c@lastpagecount=\count423
 ) 
 )) (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
@@ -1927,14 +1942,14 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks51
 \XKV@tempa@toks=\toks52
 )
-\XKV@depth=\count421
+\XKV@depth=\count424
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
 ibraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\c@@todonotes@numberoftodonotes=\count422
+\c@@todonotes@numberoftodonotes=\count425
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.st
 y
@@ -1962,8 +1977,8 @@ Package: titletoc 2025/01/04 v2.17 TOC entries
 \ttl@leftsep=\dimen420
 )
 \chapnumb=\skip93
-\c@ttlp@side=\count423
-\ttlp@side=\count424
+\c@ttlp@side=\count426
+\ttlp@side=\count427
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
@@ -1971,8 +1986,8 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@outerparindent=\dimen421
 \enit@toks=\toks55
 \enit@inbox=\box164
-\enit@count@id=\count425
-\enitdp@description=\count426
+\enit@count@id=\count428
+\enitdp@description=\count429
 )
 \bibitemsep=\skip95
 \bibparskip=\skip96
@@ -1996,22 +2011,22 @@ Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 tring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count427
+\c@section@level=\count430
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen422
-\Hy@linkcounter=\count428
-\Hy@pagecounter=\count429
+\Hy@linkcounter=\count431
+\Hy@pagecounter=\count432
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count430
+\Hy@SavedSpaceFactor=\count433
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
@@ -2025,8 +2040,8 @@ Package hyperref Info: Option `unicode' set `true' on input line 4040.
 Package hyperref Info: Option `linktocpage' set `true' on input line 4040.
 Package hyperref Info: Option `hypertexnames' set `false' on input line 4040.
 Package hyperref Info: Option `pdftoolbar' set `false' on input line 4040.
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 404
-0.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `false' on input line 40
+40.
 Package hyperref Info: Option `unicode' set `true' on input line 4040.
 Package hyperref Info: Hyper figures OFF on input line 4157.
 Package hyperref Info: Link nesting OFF on input line 4162.
@@ -2035,7 +2050,7 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count431
+\c@Hy@tempcnt=\count434
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip19
@@ -2052,7 +2067,7 @@ y
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count432
+\Fld@menulength=\count435
 \Field@Width=\dimen424
 \Fld@charsize=\dimen425
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -2066,9 +2081,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count433
-\c@Item=\count434
-\c@Hfootnote=\count435
+\Hy@abspage=\count436
+\c@Item=\count437
+\c@Hfootnote=\count438
 )
 Package hyperref Info: Driver (autodetected): hluatex.
  (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/hyperref/hluatex.def
@@ -2079,8 +2094,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count436
-\c@bookmark@seq@number=\count437
+\Fld@listcount=\count439
+\c@bookmark@seq@number=\count440
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilech
 eck.sty
@@ -2101,61 +2116,61 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count438
+\BKM@id=\count441
 ))
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count439
+\lrq@indent=\count442
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count440
-\c@listtotal=\count441
-\c@listcount=\count442
-\c@liststart=\count443
-\c@liststop=\count444
-\c@citecount=\count445
-\c@citetotal=\count446
-\c@multicitecount=\count447
-\c@multicitetotal=\count448
-\c@instcount=\count449
-\c@maxnames=\count450
-\c@minnames=\count451
-\c@maxitems=\count452
-\c@minitems=\count453
-\c@citecounter=\count454
-\c@maxcitecounter=\count455
-\c@savedcitecounter=\count456
-\c@uniquelist=\count457
-\c@uniquename=\count458
-\c@refsection=\count459
-\c@refsegment=\count460
-\c@maxextratitle=\count461
-\c@maxextratitleyear=\count462
-\c@maxextraname=\count463
-\c@maxextradate=\count464
-\c@maxextraalpha=\count465
-\c@abbrvpenalty=\count466
-\c@highnamepenalty=\count467
-\c@lownamepenalty=\count468
-\c@maxparens=\count469
-\c@parenlevel=\count470
-\blx@tempcnta=\count471
-\blx@tempcntb=\count472
-\blx@tempcntc=\count473
-\c@blx@maxsection=\count474
-\blx@maxsegment@0=\count475
-\blx@notetype=\count476
-\blx@parenlevel@text=\count477
-\blx@parenlevel@foot=\count478
-\blx@sectionciteorder@0=\count479
-\blx@sectionciteorderinternal@0=\count480
-\blx@entrysetcounter=\count481
-\blx@biblioinstance=\count482
+\c@tabx@nest=\count443
+\c@listtotal=\count444
+\c@listcount=\count445
+\c@liststart=\count446
+\c@liststop=\count447
+\c@citecount=\count448
+\c@citetotal=\count449
+\c@multicitecount=\count450
+\c@multicitetotal=\count451
+\c@instcount=\count452
+\c@maxnames=\count453
+\c@minnames=\count454
+\c@maxitems=\count455
+\c@minitems=\count456
+\c@citecounter=\count457
+\c@maxcitecounter=\count458
+\c@savedcitecounter=\count459
+\c@uniquelist=\count460
+\c@uniquename=\count461
+\c@refsection=\count462
+\c@refsegment=\count463
+\c@maxextratitle=\count464
+\c@maxextratitleyear=\count465
+\c@maxextraname=\count466
+\c@maxextradate=\count467
+\c@maxextraalpha=\count468
+\c@abbrvpenalty=\count469
+\c@highnamepenalty=\count470
+\c@lownamepenalty=\count471
+\c@maxparens=\count472
+\c@parenlevel=\count473
+\blx@tempcnta=\count474
+\blx@tempcntb=\count475
+\blx@tempcntc=\count476
+\c@blx@maxsection=\count477
+\blx@maxsegment@0=\count478
+\blx@notetype=\count479
+\blx@parenlevel@text=\count480
+\blx@parenlevel@foot=\count481
+\blx@sectionciteorder@0=\count482
+\blx@sectionciteorderinternal@0=\count483
+\blx@entrysetcounter=\count484
+\blx@biblioinstance=\count485
 \labelnumberwidth=\skip98
 \labelalphawidth=\skip99
 \biblabelsep=\skip100
@@ -2166,9 +2181,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read5
 \blx@bcfout=\write4
 \blx@langwohyphens=\language75
-\c@mincomprange=\count483
-\c@maxcomprange=\count484
-\c@mincompwidth=\count485
+\c@mincomprange=\count486
+\c@maxcomprange=\count487
+\c@mincompwidth=\count488
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -2190,96 +2205,96 @@ File: biblatex-gost.dbx 2023/04/25 v1.24 biblatex-gost data model
 ))
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count486
-\c@savedafterword=\count487
-\c@annotator=\count488
-\c@savedannotator=\count489
-\c@author=\count490
-\c@savedauthor=\count491
-\c@bookauthor=\count492
-\c@savedbookauthor=\count493
-\c@commentator=\count494
-\c@savedcommentator=\count495
-\c@editor=\count496
-\c@savededitor=\count497
-\c@editora=\count498
-\c@savededitora=\count499
-\c@editorb=\count500
-\c@savededitorb=\count501
-\c@editorc=\count502
-\c@savededitorc=\count503
-\c@foreword=\count504
-\c@savedforeword=\count505
-\c@holder=\count506
-\c@savedholder=\count507
-\c@introduction=\count508
-\c@savedintroduction=\count509
-\c@namea=\count510
-\c@savednamea=\count511
-\c@nameb=\count512
-\c@savednameb=\count513
-\c@namec=\count514
-\c@savednamec=\count515
-\c@translator=\count516
-\c@savedtranslator=\count517
-\c@shortauthor=\count518
-\c@savedshortauthor=\count519
-\c@shorteditor=\count520
-\c@savedshorteditor=\count521
-\c@booktranslator=\count522
-\c@savedbooktranslator=\count523
-\c@bookcommentator=\count524
-\c@savedbookcommentator=\count525
-\c@bookannotator=\count526
-\c@savedbookannotator=\count527
-\c@bookintroduction=\count528
-\c@savedbookintroduction=\count529
-\c@bookforeword=\count530
-\c@savedbookforeword=\count531
-\c@bookafterword=\count532
-\c@savedbookafterword=\count533
-\c@labelname=\count534
-\c@savedlabelname=\count535
-\c@institution=\count536
-\c@savedinstitution=\count537
-\c@lista=\count538
-\c@savedlista=\count539
-\c@listb=\count540
-\c@savedlistb=\count541
-\c@listc=\count542
-\c@savedlistc=\count543
-\c@listd=\count544
-\c@savedlistd=\count545
-\c@liste=\count546
-\c@savedliste=\count547
-\c@listf=\count548
-\c@savedlistf=\count549
-\c@location=\count550
-\c@savedlocation=\count551
-\c@organization=\count552
-\c@savedorganization=\count553
-\c@origlocation=\count554
-\c@savedoriglocation=\count555
-\c@origpublisher=\count556
-\c@savedorigpublisher=\count557
-\c@publisher=\count558
-\c@savedpublisher=\count559
-\c@language=\count560
-\c@savedlanguage=\count561
-\c@origlanguage=\count562
-\c@savedoriglanguage=\count563
-\c@bookoriglanguage=\count564
-\c@savedbookoriglanguage=\count565
-\c@specdata=\count566
-\c@savedspecdata=\count567
-\c@credits=\count568
-\c@savedcredits=\count569
-\c@bookcredits=\count570
-\c@savedbookcredits=\count571
-\c@editioncredits=\count572
-\c@savededitioncredits=\count573
-\c@pageref=\count574
-\c@savedpageref=\count575
+\c@afterword=\count489
+\c@savedafterword=\count490
+\c@annotator=\count491
+\c@savedannotator=\count492
+\c@author=\count493
+\c@savedauthor=\count494
+\c@bookauthor=\count495
+\c@savedbookauthor=\count496
+\c@commentator=\count497
+\c@savedcommentator=\count498
+\c@editor=\count499
+\c@savededitor=\count500
+\c@editora=\count501
+\c@savededitora=\count502
+\c@editorb=\count503
+\c@savededitorb=\count504
+\c@editorc=\count505
+\c@savededitorc=\count506
+\c@foreword=\count507
+\c@savedforeword=\count508
+\c@holder=\count509
+\c@savedholder=\count510
+\c@introduction=\count511
+\c@savedintroduction=\count512
+\c@namea=\count513
+\c@savednamea=\count514
+\c@nameb=\count515
+\c@savednameb=\count516
+\c@namec=\count517
+\c@savednamec=\count518
+\c@translator=\count519
+\c@savedtranslator=\count520
+\c@shortauthor=\count521
+\c@savedshortauthor=\count522
+\c@shorteditor=\count523
+\c@savedshorteditor=\count524
+\c@booktranslator=\count525
+\c@savedbooktranslator=\count526
+\c@bookcommentator=\count527
+\c@savedbookcommentator=\count528
+\c@bookannotator=\count529
+\c@savedbookannotator=\count530
+\c@bookintroduction=\count531
+\c@savedbookintroduction=\count532
+\c@bookforeword=\count533
+\c@savedbookforeword=\count534
+\c@bookafterword=\count535
+\c@savedbookafterword=\count536
+\c@labelname=\count537
+\c@savedlabelname=\count538
+\c@institution=\count539
+\c@savedinstitution=\count540
+\c@lista=\count541
+\c@savedlista=\count542
+\c@listb=\count543
+\c@savedlistb=\count544
+\c@listc=\count545
+\c@savedlistc=\count546
+\c@listd=\count547
+\c@savedlistd=\count548
+\c@liste=\count549
+\c@savedliste=\count550
+\c@listf=\count551
+\c@savedlistf=\count552
+\c@location=\count553
+\c@savedlocation=\count554
+\c@organization=\count555
+\c@savedorganization=\count556
+\c@origlocation=\count557
+\c@savedoriglocation=\count558
+\c@origpublisher=\count559
+\c@savedorigpublisher=\count560
+\c@publisher=\count561
+\c@savedpublisher=\count562
+\c@language=\count563
+\c@savedlanguage=\count564
+\c@origlanguage=\count565
+\c@savedoriglanguage=\count566
+\c@bookoriglanguage=\count567
+\c@savedbookoriglanguage=\count568
+\c@specdata=\count569
+\c@savedspecdata=\count570
+\c@credits=\count571
+\c@savedcredits=\count572
+\c@bookcredits=\count573
+\c@savedbookcredits=\count574
+\c@editioncredits=\count575
+\c@savededitioncredits=\count576
+\c@pageref=\count577
+\c@savedpageref=\count578
 \shorthandwidth=\skip105
 \shortjournalwidth=\skip106
 \shortserieswidth=\skip107
@@ -2309,19 +2324,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count576
-\c@textcitetotal=\count577
-\c@textcitemaxnames=\count578
-\c@biburlbigbreakpenalty=\count579
-\c@biburlbreakpenalty=\count580
-\c@biburlnumpenalty=\count581
-\c@biburlucpenalty=\count582
-\c@biburllcpenalty=\count583
+\c@textcitecount=\count579
+\c@textcitetotal=\count580
+\c@textcitemaxnames=\count581
+\c@biburlbigbreakpenalty=\count582
+\c@biburlbreakpenalty=\count583
+\c@biburlnumpenalty=\count584
+\c@biburlucpenalty=\count585
+\c@biburllcpenalty=\count586
 \biburlbigskip=\muskip20
 \biburlnumskip=\muskip21
 \biburlucskip=\muskip22
 \biburllcskip=\muskip23
-\c@smartand=\count584
+\c@smartand=\count587
 )
 Package biblatex Info: Trying to load bibliography style 'gost-numeric'...
 Package biblatex Info: ... file 'gost-numeric.bbx' found.
@@ -2342,9 +2357,9 @@ Package biblatex Info: ... file 'biblatex-gost.def' found.
 t.def
 File: biblatex-gost.def 2023/04/25 v1.24 biblatex-gost styles
 )
-\c@blx@gost@pointer=\count585
-\c@bbx:relatedcount=\count586
-\c@bbx:relatedtotal=\count587
+\c@blx@gost@pointer=\count588
+\c@bbx:relatedcount=\count589
+\c@bbx:relatedtotal=\count590
 Package biblatex Info: Redefining autocite command 'footnote'.
 Package biblatex Info: Redefining autocite command 'superscript'.
 ))
@@ -2394,12 +2409,12 @@ Package biblatex-gost Warning: You set maxbibnames or maxcitenames
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count588
-\csq@gtype=\count589
-\csq@glevel=\count590
-\csq@qlevel=\count591
-\csq@maxlvl=\count592
-\csq@tshold=\count593
+\csq@reset=\count591
+\csq@gtype=\count592
+\csq@glevel=\count593
+\csq@qlevel=\count594
+\csq@maxlvl=\count595
+\csq@tshold=\count596
 \csq@ltx@everypar=\toks56
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/csquotes/csquotes.def
@@ -2411,12 +2426,12 @@ Package csquotes Info: ... configuration file loaded successfully.
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 ))
-\c@example=\count594
+\c@example=\count597
 \lsize=\skip119
 \msize=\skip120
-\c@tcb@cnt@example=\count595
-\c@savedeq=\count596
-\c@tcb@cnt@solutionexample=\count597
+\c@tcb@cnt@example=\count598
+\c@savedeq=\count599
+\c@tcb@cnt@solutionexample=\count600
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/ntheorem/ntheorem.sty
 Style `ntheorem', Version 1.33 <2011/08/15>
@@ -2461,32 +2476,32 @@ Package: xassoccnt 2021/11/21 - v2.0
 y
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-\g__xassoccnt_tmpa_int=\count598
-\l__xassoccnt_tmpa_int=\count599
-\l__xassoccnt_initialcountervalue_int=\count600
-\g__xassoccnt_lastcountervalue_int=\count601
-\g__xassoccnt_backupcalls_int=\count602
-\l__xassoccnt_backuptmpa_int=\count603
-\l_xassoccnt_resetlist_counter=\count604
+\g__xassoccnt_tmpa_int=\count601
+\l__xassoccnt_tmpa_int=\count602
+\l__xassoccnt_initialcountervalue_int=\count603
+\g__xassoccnt_lastcountervalue_int=\count604
+\g__xassoccnt_backupcalls_int=\count605
+\l__xassoccnt_backuptmpa_int=\count606
+\l_xassoccnt_resetlist_counter=\count607
 )
 Package xassoccnt Info: 2021/11/21-v2.0--steppingcounterssimultaneouslyandother
-features on input line 771.
+features on input line 796.
 
 
 Package xassoccnt Warning: Warning: Package "calc" is loaded -- this is not
 (xassoccnt)                recommended for xassoccnt
 (xassoccnt)                
 
-\c@totalproblems=\count605
-\c@xassoccnt@total@totalproblems=\count606
-\c@problem=\count607
-\c@Solution=\count608
+\c@totalproblems=\count608
+\c@xassoccnt@total@totalproblems=\count609
+\c@problem=\count610
+\c@Solution=\count611
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/generic/insbox/insbox.tex
 \@InsertBoxMargin=\dimen430
-\@numlines=\count609
-\@linesleft=\count610
+\@numlines=\count612
+\@linesleft=\count613
 \@boxcontent=\box165
-\@numnormal=\count611
+\@numnormal=\count614
 \@framewidth=\dimen431
 \@wherebottom=\dimen432
 ))
@@ -2524,16 +2539,16 @@ LaTeX Font Info:    ... okay on input line 42.
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count612
+\scratchcounter=\count615
 \scratchdimen=\dimen433
 \scratchbox=\box166
-\nofMPsegments=\count613
-\nofMParguments=\count614
+\nofMPsegments=\count616
+\nofMParguments=\count617
 \everyMPshowfont=\toks75
-\MPscratchCnt=\count615
+\MPscratchCnt=\count618
 \MPscratchDim=\dimen434
-\MPnumerator=\count616
-\makeMPintoPDFobject=\count617
+\MPnumerator=\count619
+\makeMPintoPDFobject=\count620
 \everyMPtoPDFconversion=\toks76
 )
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base
@@ -2611,6 +2626,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
+Package newfloat Info: `wrapfig' package detected.
 LaTeX Info: Redefining \celsius on input line 42.
 Package gensymb Info: Faking symbols for \degree and \celsius on input line 42.
 
@@ -2645,7 +2661,7 @@ ine 42.
 
 Package chemgreek Info: Activating mapping `fontspec' on line 42.
 
-\c@lstlisting=\count618
+\c@lstlisting=\count621
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
@@ -2707,11 +2723,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `CMUSansSerif' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<logo_IPT.pdf, id=43, 412.56334pt x 400.60466pt>
-File: logo_IPT.pdf Graphic file (type pdf)
-<use logo_IPT.pdf>
-Package luatex.def Info: logo_IPT.pdf  used on input line 45.
-(luatex.def)             Requested size: 113.81102pt x 110.51198pt.
+
+
+[1
+
+
+{d:/Programs/LaTeX/TeXLive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] 
+(./Thermod.toc
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `StixTwoMath' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -2723,36 +2741,20 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 4
-5.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 3
+.
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
-)
-
-[1
-
-
-{d:/Programs/LaTeX/TeXLive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./
-logo_IPT.pdf>]
-
-[1
-
-
-]
-
-[2
-
-
-] (./Thermod.toc)
+))
 \tf@toc=\write5
 
 \openout5 = Thermod.toc
 
 
 Package babel Info: 'ukrainian' activates 'ukrainian' shorthands.
-(babel)             Reported  on input line 58.
-[3
+(babel)             Reported  on input line 59.
+[2
 
 
 ]
@@ -2770,191 +2772,241 @@ Overfull \hbox (7.5687pt too wide) in paragraph at lines 8--8
  []
  []
 
-<Lec1/pictures/Landau.jpg, id=92, 144.54pt x 192.2382pt>
+<Lec1/pictures/Gas.png, id=81, 604.2575pt x 877.2775pt>
+File: Lec1/pictures/Gas.png Graphic file (type png)
+<use Lec1/pictures/Gas.png>
+Package luatex.def Info: Lec1/pictures/Gas.png  used on input line 58.
+(luatex.def)             Requested size: 72.55527pt x 105.33568pt.
+<Lec1/pictures/ThermodynOrNotB.png, id=82, 115.3911pt x 90.5784pt>
+File: Lec1/pictures/ThermodynOrNotB.png Graphic file (type png)
+<use Lec1/pictures/ThermodynOrNotB.png>
+Package luatex.def Info: Lec1/pictures/ThermodynOrNotB.png  used on input line 
+64.
+(luatex.def)             Requested size: 145.11053pt x 113.90685pt.
+<Lec1/pictures/DNA.png, id=83, 144.54pt x 251.0178pt>
+File: Lec1/pictures/DNA.png Graphic file (type png)
+<use Lec1/pictures/DNA.png>
+Package luatex.def Info: Lec1/pictures/DNA.png  used on input line 70.
+(luatex.def)             Requested size: 72.55527pt x 126.00269pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Lec1/pictures/Landau.jpg, id=90, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Landau.jpg Graphic file (type jpg)
 <use Lec1/pictures/Landau.jpg>
-Package luatex.def Info: Lec1/pictures/Landau.jpg  used on input line 56.
+Package luatex.def Info: Lec1/pictures/Landau.jpg  used on input line 87.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
 
 
-[4
+[3
 
 
 
 
 ]
 
-[5<./Lec1/pictures/Landau.jpg>]
-<Lec1/pictures/Pic2.png, id=114, 275.3487pt x 125.7498pt>
+[4<./Lec1/pictures/Gas.png><./Lec1/pictures/ThermodynOrNotB.png><./Lec1/pictures
+/DNA.png><./Lec1/pictures/Landau.jpg>]
+<Lec1/pictures/Pic2.png, id=115, 297.9933pt x 125.7498pt>
 File: Lec1/pictures/Pic2.png Graphic file (type png)
 <use Lec1/pictures/Pic2.png>
-Package luatex.def Info: Lec1/pictures/Pic2.png  used on input line 121.
-(luatex.def)             Requested size: 362.77264pt x 165.67746pt.
-<Lec1/pictures/Pic4a.png, id=117, 248.93pt x 300.12125pt>
+Package luatex.def Info: Lec1/pictures/Pic2.png  used on input line 148.
+(luatex.def)             Requested size: 411.14528pt x 173.51187pt.
+<Lec1/pictures/Pic1.3InternalExternalParameters.png, id=117, 168.3891pt x 103.3
+461pt>
+File: Lec1/pictures/Pic1.3InternalExternalParameters.png Graphic file (type png
+)
+<use Lec1/pictures/Pic1.3InternalExternalParameters.png>
+Package luatex.def Info: Lec1/pictures/Pic1.3InternalExternalParameters.png  us
+ed on input line 163.
+(luatex.def)             Requested size: 241.84843pt x 148.44136pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[5<./Lec1/pictures/Pic2.png>]
+<Lec1/pictures/Pic4a.png, id=128, 248.93pt x 300.12125pt>
 File: Lec1/pictures/Pic4a.png Graphic file (type png)
 <use Lec1/pictures/Pic4a.png>
-Package luatex.def Info: Lec1/pictures/Pic4a.png  used on input line 164.
-(luatex.def)             Requested size: 163.24658pt x 196.82127pt.
-<Lec1/pictures/Pic4b.png, id=118, 225.84375pt x 279.0425pt>
+Package luatex.def Info: Lec1/pictures/Pic4a.png  used on input line 212.
+(luatex.def)             Requested size: 108.83105pt x 131.21112pt.
+<Lec1/pictures/Pic4b.png, id=129, 225.84375pt x 279.0425pt>
 File: Lec1/pictures/Pic4b.png Graphic file (type png)
 <use Lec1/pictures/Pic4b.png>
-Package luatex.def Info: Lec1/pictures/Pic4b.png  used on input line 170.
-(luatex.def)             Requested size: 163.24658pt x 201.7109pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Lec1/pictures/Fowler.jpg, id=119, 36.135pt x 47.09595pt>
+Package luatex.def Info: Lec1/pictures/Pic4b.png  used on input line 218.
+(luatex.def)             Requested size: 108.83105pt x 134.4711pt.
+<Lec1/pictures/Fowler.jpg, id=130, 36.135pt x 47.09595pt>
 File: Lec1/pictures/Fowler.jpg Graphic file (type jpg)
 <use Lec1/pictures/Fowler.jpg>
-Package luatex.def Info: Lec1/pictures/Fowler.jpg  used on input line 187.
+Package luatex.def Info: Lec1/pictures/Fowler.jpg  used on input line 235.
 (luatex.def)             Requested size: 96.73788pt x 126.08855pt.
-<Lec1/pictures/Maxwell.jpg, id=122, 144.54pt x 192.2382pt>
+<Lec1/pictures/Maxwell.jpg, id=133, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Maxwell.jpg Graphic file (type jpg)
 <use Lec1/pictures/Maxwell.jpg>
-Package luatex.def Info: Lec1/pictures/Maxwell.jpg  used on input line 201.
+Package luatex.def Info: Lec1/pictures/Maxwell.jpg  used on input line 250.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
 
 
-[6<./Lec1/pictures/Pic2.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Lec1/pictures/Galileo.jpg, id=132, 144.54pt x 192.2382pt>
+[6<./Lec1/pictures/Pic1.3InternalExternalParameters.png><./Lec1/pictures/Pic4a.p
+ng><./Lec1/pictures/Pic4b.png>]
+<Lec1/pictures/Galileo.jpg, id=146, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Galileo.jpg Graphic file (type jpg)
 <use Lec1/pictures/Galileo.jpg>
-Package luatex.def Info: Lec1/pictures/Galileo.jpg  used on input line 241.
+Package luatex.def Info: Lec1/pictures/Galileo.jpg  used on input line 291.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3514) has occurred while \output is active []
 
 
 
-[7<./Lec1/pictures/Pic4a.png><./Lec1/pictures/Pic4b.png><./Lec1/pictures/Fowler.
-jpg><./Lec1/pictures/Maxwell.jpg>]
-<Lec1/pictures/Celsius.jpg, id=144, 602.25pt x 800.9925pt>
-File: Lec1/pictures/Celsius.jpg Graphic file (type jpg)
-<use Lec1/pictures/Celsius.jpg>
-Package luatex.def Info: Lec1/pictures/Celsius.jpg  used on input line 288.
-(luatex.def)             Requested size: 96.73788pt x 128.66252pt.
-<Lec1/pictures/Newton.jpg, id=149, 144.54pt x 192.2382pt>
-File: Lec1/pictures/Newton.jpg Graphic file (type jpg)
-<use Lec1/pictures/Newton.jpg>
-Package luatex.def Info: Lec1/pictures/Newton.jpg  used on input line 309.
-(luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-
+[7<./Lec1/pictures/Fowler.jpg><./Lec1/pictures/Maxwell.jpg>]
 
 [8<./Lec1/pictures/Galileo.jpg>]
-<Lec1/pictures/Reaumur_1683-1757.jpg, id=161, 144.54pt x 192.2382pt>
+<Lec1/pictures/Celsius.jpg, id=172, 602.25pt x 800.9925pt>
+File: Lec1/pictures/Celsius.jpg Graphic file (type jpg)
+<use Lec1/pictures/Celsius.jpg>
+Package luatex.def Info: Lec1/pictures/Celsius.jpg  used on input line 398.
+(luatex.def)             Requested size: 96.73788pt x 128.66252pt.
+<Lec1/pictures/Farenheit.jpg, id=175, 144.54pt x 192.2382pt>
+File: Lec1/pictures/Farenheit.jpg Graphic file (type jpg)
+<use Lec1/pictures/Farenheit.jpg>
+Package luatex.def Info: Lec1/pictures/Farenheit.jpg  used on input line 404.
+(luatex.def)             Requested size: 96.73788pt x 128.66104pt.
+<Lec1/pictures/Reaumur_1683-1757.jpg, id=178, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Reaumur_1683-1757.jpg Graphic file (type jpg)
 <use Lec1/pictures/Reaumur_1683-1757.jpg>
 Package luatex.def Info: Lec1/pictures/Reaumur_1683-1757.jpg  used on input lin
-e 323.
+e 410.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
+<Lec1/pictures/Newton.jpg, id=181, 144.54pt x 192.2382pt>
+File: Lec1/pictures/Newton.jpg Graphic file (type jpg)
+<use Lec1/pictures/Newton.jpg>
+Package luatex.def Info: Lec1/pictures/Newton.jpg  used on input line 418.
+(luatex.def)             Requested size: 96.73788pt x 128.66104pt.
+<Lec1/pictures/Pic1.6EmpiricalTermometers.png, id=184, 1256.5344pt x 832.0686pt
+>
+File: Lec1/pictures/Pic1.6EmpiricalTermometers.png Graphic file (type png)
+<use Lec1/pictures/Pic1.6EmpiricalTermometers.png>
+Package luatex.def Info: Lec1/pictures/Pic1.6EmpiricalTermometers.png  used on 
+input line 429.
+(luatex.def)             Requested size: 483.69687pt x 320.29027pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[9<./Lec1/pictures/Celsius.jpg><./Lec1/pictures/Newton.jpg><./Lec1/pictures/Reau
-mur_1683-1757.jpg>]
+[9<./Lec1/pictures/Celsius.jpg><./Lec1/pictures/Farenheit.jpg><./Lec1/pictures/R
+eaumur_1683-1757.jpg><./Lec1/pictures/Newton.jpg>]
 
-[10]
-<Lec1/pictures/Boyl.jpg, id=184, 144.54pt x 192.2382pt>
+[10<./Lec1/pictures/Pic1.6EmpiricalTermometers.png>]
+<Lec1/pictures/Boyl.jpg, id=202, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Boyl.jpg Graphic file (type jpg)
 <use Lec1/pictures/Boyl.jpg>
-Package luatex.def Info: Lec1/pictures/Boyl.jpg  used on input line 477.
+Package luatex.def Info: Lec1/pictures/Boyl.jpg  used on input line 488.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/Mariott.jpg, id=187, 144.54pt x 192.2382pt>
+<Lec1/pictures/Mariott.jpg, id=205, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Mariott.jpg Graphic file (type jpg)
 <use Lec1/pictures/Mariott.jpg>
-Package luatex.def Info: Lec1/pictures/Mariott.jpg  used on input line 482.
+Package luatex.def Info: Lec1/pictures/Mariott.jpg  used on input line 494.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/Sharl.jpg, id=190, 144.54pt x 192.2382pt>
+<Lec1/pictures/Sharl.jpg, id=208, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Sharl.jpg Graphic file (type jpg)
 <use Lec1/pictures/Sharl.jpg>
-Package luatex.def Info: Lec1/pictures/Sharl.jpg  used on input line 487.
+Package luatex.def Info: Lec1/pictures/Sharl.jpg  used on input line 500.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/GeyLusak.jpg, id=193, 144.54pt x 192.2382pt>
+<Lec1/pictures/GeyLusak.jpg, id=211, 144.54pt x 192.2382pt>
 File: Lec1/pictures/GeyLusak.jpg Graphic file (type jpg)
 <use Lec1/pictures/GeyLusak.jpg>
-Package luatex.def Info: Lec1/pictures/GeyLusak.jpg  used on input line 492.
+Package luatex.def Info: Lec1/pictures/GeyLusak.jpg  used on input line 506.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/Pic7a.png, id=199, 185.274pt x 211.554pt>
+<Lec1/pictures/Pic7a.png, id=217, 182.3175pt x 213.525pt>
 File: Lec1/pictures/Pic7a.png Graphic file (type png)
 <use Lec1/pictures/Pic7a.png>
-Package luatex.def Info: Lec1/pictures/Pic7a.png  used on input line 521.
-(luatex.def)             Requested size: 217.66211pt x 248.5437pt.
-<Lec1/pictures/Pic7b.png, id=200, 185.274pt x 211.554pt>
+Package luatex.def Info: Lec1/pictures/Pic7a.png  used on input line 536.
+(luatex.def)             Requested size: 217.66211pt x 254.92545pt.
+<Lec1/pictures/Pic7b.png, id=218, 188.8875pt x 212.868pt>
 File: Lec1/pictures/Pic7b.png Graphic file (type png)
 <use Lec1/pictures/Pic7b.png>
-Package luatex.def Info: Lec1/pictures/Pic7b.png  used on input line 527.
-(luatex.def)             Requested size: 217.66211pt x 248.5437pt.
+Package luatex.def Info: Lec1/pictures/Pic7b.png  used on input line 542.
+(luatex.def)             Requested size: 217.66211pt x 245.30948pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Lec1/pictures/Avogadro.jpg, id=204, 144.54pt x 192.2382pt>
+<Lec1/pictures/Avogadro.jpg, id=222, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Avogadro.jpg Graphic file (type jpg)
 <use Lec1/pictures/Avogadro.jpg>
-Package luatex.def Info: Lec1/pictures/Avogadro.jpg  used on input line 596.
+Package luatex.def Info: Lec1/pictures/Avogadro.jpg  used on input line 611.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
 
 
 [11<./Lec1/pictures/Boyl.jpg><./Lec1/pictures/Mariott.jpg><./Lec1/pictures/Sharl
 .jpg><./Lec1/pictures/GeyLusak.jpg>]
-
-[12<./Lec1/pictures/Pic7a.png><./Lec1/pictures/Pic7b.png><./Lec1/pictures/Avogad
-ro.jpg>]
-<Lec1/pictures/Debye.jpg, id=222, 144.54pt x 192.2382pt>
+<Lec1/pictures/Debye.jpg, id=238, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Debye.jpg Graphic file (type jpg)
 <use Lec1/pictures/Debye.jpg>
-Package luatex.def Info: Lec1/pictures/Debye.jpg  used on input line 647.
+Package luatex.def Info: Lec1/pictures/Debye.jpg  used on input line 641.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
 
 
+[12<./Lec1/pictures/Pic7a.png><./Lec1/pictures/Pic7b.png><./Lec1/pictures/Avogad
+ro.jpg>]
+
 [13<./Lec1/pictures/Debye.jpg>] (./Lec1/tikz/Piston.tikz)
-
-[14]
-
-[15] (./Lec1/isothermic.tikz) (./Lec1/isobaric.tikz) (./Lec1/tikz/Rod.tikz)
-(./Lec1/tikz/TensionCube.tikz)
-Overfull \hbox (24.55077pt too wide) in paragraph at lines 39--899
- [][] 
- []
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[16]
-<Lec1/pictures/pull_in_solenoid.png, id=269, 1089.31969pt x 409.53pt>
+[14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[15] (./Lec1/isothermic.tikz) (./Lec1/isobaric.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[16] (./Lec1/tikz/Rod.tikz) (./Lec1/tikz/TensionCube.tikz)
+Overfull \hbox (24.55077pt too wide) in paragraph at lines 36--914
+ [][] 
+ []
+
+<Lec1/pictures/pull_in_solenoid.png, id=296, 1089.31969pt x 409.53pt>
 File: Lec1/pictures/pull_in_solenoid.png Graphic file (type png)
 <use Lec1/pictures/pull_in_solenoid.png>
 Package luatex.def Info: Lec1/pictures/pull_in_solenoid.png  used on input line
- 915.
+ 930.
 (luatex.def)             Requested size: 241.84843pt x 90.92172pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 
 [17
 Missing character: There is no ; (U+003B) in font nullfont!
-<./Lec1/pictures/pull_in_solenoid.png>]
+]
 
-[18])
+[18<./Lec1/pictures/pull_in_solenoid.png>]
 
-LaTeX Warning: Empty bibliography on input line 121.
+[19])
+
+LaTeX Warning: Empty bibliography on input line 122.
 
 
 
-[19]
+[20]
 \tf@thm=\write7
 
 \openout7 = Thermod.thm
 
 
-[20
+[21
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -2978,32 +3030,32 @@ Package logreq Info: Writing requests to 'Thermod.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 73045 strings out of 475506
+ 73195 strings out of 475506
  125165,3417909 words of node,token memory allocated
- 2564 words of node memory still in use:
-   45 hlist, 3 vlist, 15 rule, 1 local_par, 2 math, 9 glue, 10 kern, 3 penalty, 
-15 glyph, 371 attribute, 95 glue_spec, 145 attribute_list, 2 write, 48 pdf_liter
-al, 1 pdf_dest, 3 pdf_action nodes
-   avail lists: 1:8,2:9651,3:2463,4:52,5:324,6:102,7:8062,8:59,9:1143,10:24,11:1
-102
- 94077 multiletter control sequences out of 65536+600000
- 173 fonts using 71843431 bytes
- 114i,17n,325p,1251b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 2722 words of node memory still in use:
+   49 hlist, 3 vlist, 15 rule, 1 local_par, 2 math, 14 glue, 14 kern, 3 penalty,
+ 25 glyph, 371 attribute, 95 glue_spec, 145 attribute_list, 3 write, 48 pdf_lite
+ral, 1 pdf_dest, 2 pdf_action nodes
+   avail lists: 1:3,2:5975,3:1793,4:49,5:262,6:103,7:7375,8:59,9:1097,10:28,11:1
+075
+ 94201 multiletter control sequences out of 65536+600000
+ 151 fonts using 61217831 bytes
+ 114i,17n,357p,1251b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/stix2-otf/STIXT
 woMath-Regular.otf><d:/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/pub
 lic/stix2-otf/STIXTwoMath-Regular.otf><d:/Programs/LaTeX/TeXLive/2025/texmf-dist
-/fonts/opentype/public/cm-unicode/cmunss.otf><d:/Programs/LaTeX/TeXLive/2025/tex
-mf-dist/fonts/opentype/public/stix/STIX-Italic.otf><d:/Programs/LaTeX/TeXLive/20
-25/texmf-dist/fonts/opentype/public/stix/STIX-Regular.otf><d:/Programs/LaTeX/TeX
-Live/2025/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><d:
-/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/stix/STIX-Bold.otf
-><d:/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/cm-unicode/cmu
-nsx.otf><d:/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/type1/public/esint-type
+/fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><d:/Programs/LaTeX/TeXL
+ive/2025/texmf-dist/fonts/opentype/public/cm-unicode/cmunss.otf><d:/Programs/LaT
+eX/TeXLive/2025/texmf-dist/fonts/opentype/public/stix/STIX-Bold.otf><d:/Programs
+/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/cm-unicode/cmunsx.otf><d:/P
+rograms/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/stix/STIX-Italic.otf
+><d:/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/stix/STIX-Regu
+lar.otf><d:/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/type1/public/esint-type
 1/esint10.pfb>
-Output written on Thermod.pdf (21 pages, 2063092 bytes).
+Output written on Thermod.pdf (21 pages, 3357675 bytes).
 
-PDF statistics: 393 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 131072)
+PDF statistics: 425 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 131072)
  388 words of extra memory for PDF output out of 10000 (max. 100000000)
 

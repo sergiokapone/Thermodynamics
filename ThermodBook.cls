@@ -148,8 +148,33 @@
 %%% --------------------------------------------------------
 
 \RequirePackage{caption}
-\RequirePackage[justification=centering,labelsep=period]{caption}
 \RequirePackage{subcaption}
+%\RequirePackage[justification=centering,labelsep=period]{caption}
+
+\DeclareCaptionType{scicaption}
+
+% Настраиваем стиль
+%\captionsetup{
+%    font=small,
+%    labelfont=bf,       % жирный label
+%    textfont=it,        % курсивный текст
+%    justification=centering,
+%    labelsep=colon,     % "Рисунок 1: Текст"
+%    singlelinecheck=false
+%}
+
+
+
+\captionsetup[figure]{
+    format=hang,
+    font=small,          % шрифт
+%    labelfont=bf,        % жирный label (Рисунок 1:)
+    justification=raggedright, % выравнивание
+    labelsep=period,      % разделитель между label и текстом
+}
+
+
+
 \renewcommand\thesubfigure{\alph{subfigure}}
 \RequirePackage{wrapfig}
 \RequirePackage{wrapstuff}
@@ -463,8 +488,8 @@
 %%% --------------------------------------------------------
 
 
-\def\tabcaption{\def\@captype{table}\caption}
-\def\figcaption{\def\@captype{figure}\caption}
+%\def\tabcaption{\def\@captype{table}\caption}
+%\def\figcaption{\def\@captype{figure}\caption}
 \RequirePackage[inline]{enumitem}
 \setlist{nolistsep}
 
@@ -482,8 +507,8 @@
 
 % Підписи до рисунку (розмір тексту
 
-\captionsetup[figure]{font=small,labelfont=small}
-\captionsetup[table]{font=small,labelfont=small}
+%\captionsetup[figure]{font=small,labelfont=small}
+%\captionsetup[table]{font=small,labelfont=small}
 
 % Bibliography spacing
 \newlength{\bibitemsep}\setlength{\bibitemsep}{.1\baselineskip plus .05\baselineskip minus .05\baselineskip}
@@ -512,8 +537,8 @@
 	pdftoolbar=false,
 	pdfpagelayout=TwoPageLeft,
 	pdfauthor={Ponomarenko S.M.},
-	pdfdisplaydoctitle=true,
-	pdfkeywords={Geometrical Optics, dispersion, Difraction, Interferention, Polarisation, Light},
+	pdfdisplaydoctitle=false,
+	pdfkeywords={Gas Lows, Thermodynamics, Kinetic Theory},
 	pdfencoding=auto
 ]%
 {hyperref}
