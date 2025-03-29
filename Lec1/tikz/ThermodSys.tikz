@@ -1,0 +1,26 @@
+\begin{tikzpicture}[scale=0.75]
+%    	\clip (-3, -2.6) rectangle (3,2.6);
+
+   	\pgfmathsetseed{1}
+   	\draw[ball color=gray!50, name path=otoch, smooth, opacity=0.5] plot [smooth cycle,
+   			samples=8,domain={1:10}]
+   	(\x*360/10+5*rnd:4cm+1cm*rnd);
+
+   	\pgfmathsetseed{9}
+   	\draw[ball color=cyan, name path=system, smooth] plot [smooth cycle,
+   			samples=8,domain={1:10}]
+   	(\x*360/10+5*rnd:0.5cm+1cm*rnd) node[pos=0.5] (Sys){};
+
+
+
+    \node[text=black] at (0,3) {Оточення};
+    \node[text=black] at (0,0) {Система};
+    \node[text=black] (Bound) at (-3,1) {Межа};
+
+% Находим точку на границе системы в направлении от Bound к центру
+\path[name path=boundary_line] (Bound) -- (Sys.center);
+\path[name intersections={of=system and boundary_line, by=border_point}];
+
+\draw[-stealth, line width=3pt, blue] (Bound) to[bend left]
+(border_point);
+\end{tikzpicture}

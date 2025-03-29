@@ -7,7 +7,8 @@
 \ProvidesClass{ThermodBook}[2018/01/21]
 \LoadClass[onecolumn, twoside, 14pt]{extbook}
 
-
+\widowpenalty=10000
+\clubpenalty=10000
 
 
 
@@ -115,7 +116,7 @@
 
 \RequirePackage{microtype}
 %\RequirePackage[nosingleletter, hyphenation, lastparline]{impnattypo}
-%\usepackage[defaultlines=4,all]{nowidow}
+%\RequirePackage[defaultlines=4,all]{nowidow}
 %\clubpenalty =1000
 %\widowpenalty=1000
 %\setlength{\parskip}{0.5ex}%
@@ -244,7 +245,29 @@
 \RequirePackage[]{ThermodImages}
 
 
-
+\tcbset{
+  base/.style={
+    empty,
+    frame engine=path,
+    colframe=themecolorlight!10,
+    sharp corners,
+    attach boxed title to top left={yshift*=-\tcboxedtitleheight},
+    boxed title style={size=minimal, top=4pt, left=4pt},
+    coltitle=themecolordark,fonttitle=\bfseries\sffamily,
+  }
+}
+\newtcolorbox{thermolaw}[1]{%
+  base,
+  boxed title style={overlay={
+    \draw[themecolordark,line width=3pt,] (frame.north west)--(frame.north east);
+  }},
+  colback=themecolorlight,
+  overlay unbroken={
+    \draw[themecolordark] ([yshift=-1.5pt]title.north east)--([xshift=-0.5pt,
+    yshift=-1.5pt]title.north-|frame.east);
+  },
+  title=#1,
+}
 
 
 %%% --------------------------------------------------------

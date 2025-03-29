@@ -1,0 +1,15 @@
+\begin{tikzpicture}[scale=1.5]
+
+    \def\r{1}
+    \def\R{1.5}
+    \def\d{30}
+    \draw [fill=blue!30] (0,0) circle (\r);
+    \draw [blue, dashed] (0,0) circle (\R);
+    \foreach \a in {-30, 0, ..., 30} {
+    \draw[red, dash pattern={on 1 pt off 0.5pt}] (\a:\r) -- (\a:\R) arc(\a:{\a+\d}:\R) -- ({\a+\d}:\r)
+    arc({\a+\d}:\a:\r) --cycle;
+}
+\node at (0,0) {$P$};
+\node[anchor=east] at (-15:1) {$d\sigma_i$};
+\node[red, anchor=north] at (-30:{0.44*(\R+\r)}) {$dx_i$};
+\end{tikzpicture}

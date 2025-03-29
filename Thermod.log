@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.3.19)  29 MAR 2025 12:24
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.3.19)  29 MAR 2025 19:45
  system commands enabled.
 **Thermod.tex
 (./Thermod.tex
@@ -489,18 +489,18 @@ Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count292
 )
 Package caption Info: Option `declare type' requires the `newfloat' package on 
-input line 154.
+input line 155.
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
 Package newfloat Info: Document class `book' detected (original).
 )
-Package newfloat Info: New float `scicaption' with options `' on input line 154
+Package newfloat Info: New float `scicaption' with options `' on input line 155
 .
 \c@scicaption=\count293
 \newfloat@ftype=\count294
-Package newfloat Info: float type `scicaption'=8 on input line 154.
-Package caption Info: New subtype `subscicaption' on input line 154.
+Package newfloat Info: float type `scicaption'=8 on input line 155.
+Package caption Info: New subtype `subscicaption' on input line 155.
 \c@subscicaption=\count295
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/wrapfig/wrapfig.sty
@@ -755,16 +755,16 @@ imen=xetex;+ssty=0;"<-9>"name:Stix
 imen=xetex;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 197.
+(Font)              `operators' in the math version `normal' on input line 198.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/StixTwoMath(1)/m/n on input line 197
+(Font)                  OT1/cmr/m/n --> TU/StixTwoMath(1)/m/n on input line 198
 .
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 197.
+(Font)              `operators' in the math version `bold' on input line 198.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/StixTwoMath(1)/b/n on input line 19
-7.
+8.
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "Stix Two Math/B" (it probably
@@ -796,15 +796,15 @@ imen=xetex;mathfontdimen=tex2;+ssty=0;"<-9>"name:Stix
 imen=xetex;mathfontdimen=tex2;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 197.
+(Font)              `symbols' in the math version `normal' on input line 198.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/StixTwoMath(2)/m/n on input line 19
-7.
+8.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 197.
+(Font)              `symbols' in the math version `bold' on input line 198.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/StixTwoMath(2)/b/n on input line 19
-7.
+8.
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "Stix Two Math/B" (it probably
@@ -837,23 +837,23 @@ imen=xetex;mathfontdimen=tex3;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
-97.
+98.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/StixTwoMath(3)/m/n on input line 19
-7.
+8.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 197
+(Font)              `largesymbols' in the math version `bold' on input line 198
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/StixTwoMath(3)/b/n on input line 19
-7.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 197
+8.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 198
 .
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 197
+LaTeX Font Info:    Trying to load font information for U+msb on input line 198
 .
 
 (d:/Programs/LaTeX/TeXLive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -2485,7 +2485,7 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 \l_xassoccnt_resetlist_counter=\count607
 )
 Package xassoccnt Info: 2021/11/21-v2.0--steppingcounterssimultaneouslyandother
-features on input line 796.
+features on input line 819.
 
 
 Package xassoccnt Warning: Warning: Package "calc" is loaded -- this is not
@@ -2757,6 +2757,7 @@ Package babel Info: 'ukrainian' activates 'ukrainian' shorthands.
 [2
 
 
+
 ]
 \openout2 = intro.aux
 
@@ -2772,30 +2773,6 @@ Overfull \hbox (7.5687pt too wide) in paragraph at lines 8--8
  []
  []
 
-<Lec1/pictures/Gas.png, id=81, 604.2575pt x 877.2775pt>
-File: Lec1/pictures/Gas.png Graphic file (type png)
-<use Lec1/pictures/Gas.png>
-Package luatex.def Info: Lec1/pictures/Gas.png  used on input line 58.
-(luatex.def)             Requested size: 72.55527pt x 105.33568pt.
-<Lec1/pictures/ThermodynOrNotB.png, id=82, 115.3911pt x 90.5784pt>
-File: Lec1/pictures/ThermodynOrNotB.png Graphic file (type png)
-<use Lec1/pictures/ThermodynOrNotB.png>
-Package luatex.def Info: Lec1/pictures/ThermodynOrNotB.png  used on input line 
-64.
-(luatex.def)             Requested size: 145.11053pt x 113.90685pt.
-<Lec1/pictures/DNA.png, id=83, 144.54pt x 251.0178pt>
-File: Lec1/pictures/DNA.png Graphic file (type png)
-<use Lec1/pictures/DNA.png>
-Package luatex.def Info: Lec1/pictures/DNA.png  used on input line 70.
-(luatex.def)             Requested size: 72.55527pt x 126.00269pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Lec1/pictures/Landau.jpg, id=90, 144.54pt x 192.2382pt>
-File: Lec1/pictures/Landau.jpg Graphic file (type jpg)
-<use Lec1/pictures/Landau.jpg>
-Package luatex.def Info: Lec1/pictures/Landau.jpg  used on input line 87.
-(luatex.def)             Requested size: 96.73788pt x 128.66104pt.
 
 
 [3
@@ -2804,21 +2781,47 @@ Package luatex.def Info: Lec1/pictures/Landau.jpg  used on input line 87.
 
 
 ]
+<Lec1/pictures/Gas.png, id=82, 604.2575pt x 877.2775pt>
+File: Lec1/pictures/Gas.png Graphic file (type png)
+<use Lec1/pictures/Gas.png>
+Package luatex.def Info: Lec1/pictures/Gas.png  used on input line 68.
+(luatex.def)             Requested size: 79.81123pt x 115.87059pt.
+<Lec1/pictures/ThermodynOrNotB.png, id=83, 115.3911pt x 90.5784pt>
+File: Lec1/pictures/ThermodynOrNotB.png Graphic file (type png)
+<use Lec1/pictures/ThermodynOrNotB.png>
+Package luatex.def Info: Lec1/pictures/ThermodynOrNotB.png  used on input line 
+74.
+(luatex.def)             Requested size: 145.11053pt x 113.90685pt.
+<Lec1/pictures/DNA.png, id=84, 144.54pt x 251.0178pt>
+File: Lec1/pictures/DNA.png Graphic file (type png)
+<use Lec1/pictures/DNA.png>
+Package luatex.def Info: Lec1/pictures/DNA.png  used on input line 80.
+(luatex.def)             Requested size: 79.81123pt x 138.6041pt.
+<Lec1/pictures/Landau.jpg, id=91, 144.54pt x 192.2382pt>
+File: Lec1/pictures/Landau.jpg Graphic file (type jpg)
+<use Lec1/pictures/Landau.jpg>
+Package luatex.def Info: Lec1/pictures/Landau.jpg  used on input line 93.
+(luatex.def)             Requested size: 96.73788pt x 128.66104pt.
+ (./Lec1/tikz/ThermodSys.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 
 [4<./Lec1/pictures/Gas.png><./Lec1/pictures/ThermodynOrNotB.png><./Lec1/pictures
 /DNA.png><./Lec1/pictures/Landau.jpg>]
-<Lec1/pictures/Pic2.png, id=115, 297.9933pt x 125.7498pt>
+<Lec1/pictures/Pic2.png, id=110, 297.9933pt x 125.7498pt>
 File: Lec1/pictures/Pic2.png Graphic file (type png)
 <use Lec1/pictures/Pic2.png>
-Package luatex.def Info: Lec1/pictures/Pic2.png  used on input line 148.
+Package luatex.def Info: Lec1/pictures/Pic2.png  used on input line 126.
 (luatex.def)             Requested size: 411.14528pt x 173.51187pt.
-<Lec1/pictures/Pic1.3InternalExternalParameters.png, id=117, 168.3891pt x 103.3
+<Lec1/pictures/Pic1.3InternalExternalParameters.png, id=112, 168.3891pt x 103.3
 461pt>
 File: Lec1/pictures/Pic1.3InternalExternalParameters.png Graphic file (type png
 )
 <use Lec1/pictures/Pic1.3InternalExternalParameters.png>
 Package luatex.def Info: Lec1/pictures/Pic1.3InternalExternalParameters.png  us
-ed on input line 163.
+ed on input line 141.
 (luatex.def)             Requested size: 241.84843pt x 148.44136pt.
 
 
@@ -2827,70 +2830,68 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 [5<./Lec1/pictures/Pic2.png>]
-<Lec1/pictures/Pic4a.png, id=128, 248.93pt x 300.12125pt>
+<Lec1/pictures/Pic4a.png, id=123, 248.93pt x 300.12125pt>
 File: Lec1/pictures/Pic4a.png Graphic file (type png)
 <use Lec1/pictures/Pic4a.png>
-Package luatex.def Info: Lec1/pictures/Pic4a.png  used on input line 212.
+Package luatex.def Info: Lec1/pictures/Pic4a.png  used on input line 184.
 (luatex.def)             Requested size: 108.83105pt x 131.21112pt.
-<Lec1/pictures/Pic4b.png, id=129, 225.84375pt x 279.0425pt>
+<Lec1/pictures/Pic4b.png, id=124, 225.84375pt x 279.0425pt>
 File: Lec1/pictures/Pic4b.png Graphic file (type png)
 <use Lec1/pictures/Pic4b.png>
-Package luatex.def Info: Lec1/pictures/Pic4b.png  used on input line 218.
+Package luatex.def Info: Lec1/pictures/Pic4b.png  used on input line 190.
 (luatex.def)             Requested size: 108.83105pt x 134.4711pt.
-<Lec1/pictures/Fowler.jpg, id=130, 36.135pt x 47.09595pt>
+<Lec1/pictures/Fowler.jpg, id=125, 36.135pt x 47.09595pt>
 File: Lec1/pictures/Fowler.jpg Graphic file (type jpg)
 <use Lec1/pictures/Fowler.jpg>
-Package luatex.def Info: Lec1/pictures/Fowler.jpg  used on input line 235.
+Package luatex.def Info: Lec1/pictures/Fowler.jpg  used on input line 206.
 (luatex.def)             Requested size: 96.73788pt x 126.08855pt.
-<Lec1/pictures/Maxwell.jpg, id=133, 144.54pt x 192.2382pt>
-File: Lec1/pictures/Maxwell.jpg Graphic file (type jpg)
-<use Lec1/pictures/Maxwell.jpg>
-Package luatex.def Info: Lec1/pictures/Maxwell.jpg  used on input line 250.
-(luatex.def)             Requested size: 96.73788pt x 128.66104pt.
 
 
 [6<./Lec1/pictures/Pic1.3InternalExternalParameters.png><./Lec1/pictures/Pic4a.p
 ng><./Lec1/pictures/Pic4b.png>]
-<Lec1/pictures/Galileo.jpg, id=146, 144.54pt x 192.2382pt>
+<Lec1/pictures/Maxwell.jpg, id=137, 144.54pt x 192.2382pt>
+File: Lec1/pictures/Maxwell.jpg Graphic file (type jpg)
+<use Lec1/pictures/Maxwell.jpg>
+Package luatex.def Info: Lec1/pictures/Maxwell.jpg  used on input line 221.
+(luatex.def)             Requested size: 96.73788pt x 128.66104pt.
+ (./Lec1/tikz/TransitiveLow.tikz)
+<Lec1/pictures/Galileo.jpg, id=141, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Galileo.jpg Graphic file (type jpg)
 <use Lec1/pictures/Galileo.jpg>
-Package luatex.def Info: Lec1/pictures/Galileo.jpg  used on input line 291.
+Package luatex.def Info: Lec1/pictures/Galileo.jpg  used on input line 252.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-
-Underfull \vbox (badness 3514) has occurred while \output is active []
-
 
 
 [7<./Lec1/pictures/Fowler.jpg><./Lec1/pictures/Maxwell.jpg>]
 
 [8<./Lec1/pictures/Galileo.jpg>]
-<Lec1/pictures/Celsius.jpg, id=172, 602.25pt x 800.9925pt>
+<Lec1/pictures/Celsius.jpg, id=167, 602.25pt x 800.9925pt>
 File: Lec1/pictures/Celsius.jpg Graphic file (type jpg)
 <use Lec1/pictures/Celsius.jpg>
-Package luatex.def Info: Lec1/pictures/Celsius.jpg  used on input line 398.
+Package luatex.def Info: Lec1/pictures/Celsius.jpg  used on input line 356.
 (luatex.def)             Requested size: 96.73788pt x 128.66252pt.
-<Lec1/pictures/Farenheit.jpg, id=175, 144.54pt x 192.2382pt>
+<Lec1/pictures/Farenheit.jpg, id=170, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Farenheit.jpg Graphic file (type jpg)
 <use Lec1/pictures/Farenheit.jpg>
-Package luatex.def Info: Lec1/pictures/Farenheit.jpg  used on input line 404.
+Package luatex.def Info: Lec1/pictures/Farenheit.jpg  used on input line 362.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/Reaumur_1683-1757.jpg, id=178, 144.54pt x 192.2382pt>
+<Lec1/pictures/Reaumur_1683-1757.jpg, id=173, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Reaumur_1683-1757.jpg Graphic file (type jpg)
 <use Lec1/pictures/Reaumur_1683-1757.jpg>
 Package luatex.def Info: Lec1/pictures/Reaumur_1683-1757.jpg  used on input lin
-e 410.
+e 368.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/Newton.jpg, id=181, 144.54pt x 192.2382pt>
+<Lec1/pictures/Newton.jpg, id=176, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Newton.jpg Graphic file (type jpg)
 <use Lec1/pictures/Newton.jpg>
-Package luatex.def Info: Lec1/pictures/Newton.jpg  used on input line 418.
+Package luatex.def Info: Lec1/pictures/Newton.jpg  used on input line 376.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/Pic1.6EmpiricalTermometers.png, id=184, 1256.5344pt x 832.0686pt
+<Lec1/pictures/Pic1.6EmpiricalTermometers.png, id=179, 1256.5344pt x 832.0686pt
 >
 File: Lec1/pictures/Pic1.6EmpiricalTermometers.png Graphic file (type png)
 <use Lec1/pictures/Pic1.6EmpiricalTermometers.png>
 Package luatex.def Info: Lec1/pictures/Pic1.6EmpiricalTermometers.png  used on 
-input line 429.
+input line 387.
 (luatex.def)             Requested size: 483.69687pt x 320.29027pt.
 
 
@@ -2902,53 +2903,53 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 eaumur_1683-1757.jpg><./Lec1/pictures/Newton.jpg>]
 
 [10<./Lec1/pictures/Pic1.6EmpiricalTermometers.png>]
-<Lec1/pictures/Boyl.jpg, id=202, 144.54pt x 192.2382pt>
+<Lec1/pictures/Boyl.jpg, id=197, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Boyl.jpg Graphic file (type jpg)
 <use Lec1/pictures/Boyl.jpg>
-Package luatex.def Info: Lec1/pictures/Boyl.jpg  used on input line 488.
+Package luatex.def Info: Lec1/pictures/Boyl.jpg  used on input line 439.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/Mariott.jpg, id=205, 144.54pt x 192.2382pt>
+<Lec1/pictures/Mariott.jpg, id=200, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Mariott.jpg Graphic file (type jpg)
 <use Lec1/pictures/Mariott.jpg>
-Package luatex.def Info: Lec1/pictures/Mariott.jpg  used on input line 494.
+Package luatex.def Info: Lec1/pictures/Mariott.jpg  used on input line 445.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/Sharl.jpg, id=208, 144.54pt x 192.2382pt>
+<Lec1/pictures/Sharl.jpg, id=203, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Sharl.jpg Graphic file (type jpg)
 <use Lec1/pictures/Sharl.jpg>
-Package luatex.def Info: Lec1/pictures/Sharl.jpg  used on input line 500.
+Package luatex.def Info: Lec1/pictures/Sharl.jpg  used on input line 451.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/GeyLusak.jpg, id=211, 144.54pt x 192.2382pt>
+<Lec1/pictures/GeyLusak.jpg, id=206, 144.54pt x 192.2382pt>
 File: Lec1/pictures/GeyLusak.jpg Graphic file (type jpg)
 <use Lec1/pictures/GeyLusak.jpg>
-Package luatex.def Info: Lec1/pictures/GeyLusak.jpg  used on input line 506.
+Package luatex.def Info: Lec1/pictures/GeyLusak.jpg  used on input line 457.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
-<Lec1/pictures/Pic7a.png, id=217, 182.3175pt x 213.525pt>
+<Lec1/pictures/Pic7a.png, id=212, 182.3175pt x 213.525pt>
 File: Lec1/pictures/Pic7a.png Graphic file (type png)
 <use Lec1/pictures/Pic7a.png>
-Package luatex.def Info: Lec1/pictures/Pic7a.png  used on input line 536.
+Package luatex.def Info: Lec1/pictures/Pic7a.png  used on input line 486.
 (luatex.def)             Requested size: 217.66211pt x 254.92545pt.
-<Lec1/pictures/Pic7b.png, id=218, 188.8875pt x 212.868pt>
+<Lec1/pictures/Pic7b.png, id=213, 188.8875pt x 212.868pt>
 File: Lec1/pictures/Pic7b.png Graphic file (type png)
 <use Lec1/pictures/Pic7b.png>
-Package luatex.def Info: Lec1/pictures/Pic7b.png  used on input line 542.
+Package luatex.def Info: Lec1/pictures/Pic7b.png  used on input line 492.
 (luatex.def)             Requested size: 217.66211pt x 245.30948pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Lec1/pictures/Avogadro.jpg, id=222, 144.54pt x 192.2382pt>
+<Lec1/pictures/Avogadro.jpg, id=217, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Avogadro.jpg Graphic file (type jpg)
 <use Lec1/pictures/Avogadro.jpg>
-Package luatex.def Info: Lec1/pictures/Avogadro.jpg  used on input line 611.
+Package luatex.def Info: Lec1/pictures/Avogadro.jpg  used on input line 558.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
 
 
 [11<./Lec1/pictures/Boyl.jpg><./Lec1/pictures/Mariott.jpg><./Lec1/pictures/Sharl
 .jpg><./Lec1/pictures/GeyLusak.jpg>]
-<Lec1/pictures/Debye.jpg, id=238, 144.54pt x 192.2382pt>
+<Lec1/pictures/Debye.jpg, id=233, 144.54pt x 192.2382pt>
 File: Lec1/pictures/Debye.jpg Graphic file (type jpg)
 <use Lec1/pictures/Debye.jpg>
-Package luatex.def Info: Lec1/pictures/Debye.jpg  used on input line 641.
+Package luatex.def Info: Lec1/pictures/Debye.jpg  used on input line 582.
 (luatex.def)             Requested size: 96.73788pt x 128.66104pt.
 
 
@@ -2961,27 +2962,28 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[14]
+[14] (./Lec1/tikz/cyclic.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[15] (./Lec1/isothermic.tikz) (./Lec1/isobaric.tikz)
+[15] (./Lec1/tikz/elementarW.tikz) (./Lec1/tikz/isothermic.tikz)
+(./Lec1/tikz/isobaric.tikz)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
 [16] (./Lec1/tikz/Rod.tikz) (./Lec1/tikz/TensionCube.tikz)
-Overfull \hbox (24.55077pt too wide) in paragraph at lines 36--914
+Overfull \hbox (24.55077pt too wide) in paragraph at lines 36--794
  [][] 
  []
 
-<Lec1/pictures/pull_in_solenoid.png, id=296, 1089.31969pt x 409.53pt>
+<Lec1/pictures/pull_in_solenoid.png, id=291, 1089.31969pt x 409.53pt>
 File: Lec1/pictures/pull_in_solenoid.png Graphic file (type png)
 <use Lec1/pictures/pull_in_solenoid.png>
 Package luatex.def Info: Lec1/pictures/pull_in_solenoid.png  used on input line
- 930.
+ 810.
 (luatex.def)             Requested size: 241.84843pt x 90.92172pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2994,21 +2996,19 @@ Missing character: There is no ; (U+003B) in font nullfont!
 
 [18<./Lec1/pictures/pull_in_solenoid.png>]
 
-[19])
+[19]
+Package hyperref Info: bookmark level for unknown problem defaults to 0 on inpu
+t line 932.
+)
 
 LaTeX Warning: Empty bibliography on input line 122.
 
-
-
-[20]
 \tf@thm=\write7
 
 \openout7 = Thermod.thm
 
 
-[21
-
-] 
+[20] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./Thermod.aux (./intro.aux))
  ***********
@@ -3030,32 +3030,32 @@ Package logreq Info: Writing requests to 'Thermod.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 73195 strings out of 475506
+ 73290 strings out of 475506
  125165,3417909 words of node,token memory allocated
- 2722 words of node memory still in use:
-   49 hlist, 3 vlist, 15 rule, 1 local_par, 2 math, 14 glue, 14 kern, 3 penalty,
- 25 glyph, 371 attribute, 95 glue_spec, 145 attribute_list, 3 write, 48 pdf_lite
-ral, 1 pdf_dest, 2 pdf_action nodes
-   avail lists: 1:3,2:5975,3:1793,4:49,5:262,6:103,7:7375,8:59,9:1097,10:28,11:1
-075
- 94201 multiletter control sequences out of 65536+600000
- 151 fonts using 61217831 bytes
- 114i,17n,357p,1251b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 2719 words of node memory still in use:
+   49 hlist, 3 vlist, 15 rule, 1 local_par, 2 math, 13 glue, 14 kern, 3 penalty,
+ 1 margin_kern, 25 glyph, 371 attribute, 95 glue_spec, 145 attribute_list, 3 wri
+te, 48 pdf_literal, 1 pdf_dest, 2 pdf_action nodes
+   avail lists: 1:1,2:5975,3:1793,4:47,5:266,6:103,7:6615,8:59,9:1120,10:28,11:9
+93,12:1
+ 94253 multiletter control sequences out of 65536+600000
+ 153 fonts using 62536215 bytes
+ 114i,17n,328p,1251b,3209s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/stix2-otf/STIXT
 woMath-Regular.otf><d:/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/pub
 lic/stix2-otf/STIXTwoMath-Regular.otf><d:/Programs/LaTeX/TeXLive/2025/texmf-dist
 /fonts/opentype/public/stix2-otf/STIXTwoMath-Regular.otf><d:/Programs/LaTeX/TeXL
 ive/2025/texmf-dist/fonts/opentype/public/cm-unicode/cmunss.otf><d:/Programs/LaT
 eX/TeXLive/2025/texmf-dist/fonts/opentype/public/stix/STIX-Bold.otf><d:/Programs
-/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/cm-unicode/cmunsx.otf><d:/P
-rograms/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/stix/STIX-Italic.otf
+/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/stix/STIX-Italic.otf><d:/Pr
+ograms/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/cm-unicode/cmunsx.otf
 ><d:/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/opentype/public/stix/STIX-Regu
 lar.otf><d:/Programs/LaTeX/TeXLive/2025/texmf-dist/fonts/type1/public/esint-type
 1/esint10.pfb>
-Output written on Thermod.pdf (21 pages, 3357675 bytes).
+Output written on Thermod.pdf (20 pages, 3359449 bytes).
 
-PDF statistics: 425 PDF objects out of 1000 (max. 8388607)
- 292 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 131072)
+PDF statistics: 423 PDF objects out of 1000 (max. 8388607)
+ 291 compressed objects within 3 object streams
+ 80 named destinations out of 1000 (max. 131072)
  388 words of extra memory for PDF output out of 10000 (max. 100000000)
 

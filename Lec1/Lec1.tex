@@ -12,12 +12,9 @@
 \makeatother
 %=========================================================
 
-
-
 %% --------------------------------------------------------
 \section{Вступ}
 %% --------------------------------------------------------
-
 
 Термодинаміка вивчає закони теплового руху в рівноважних системах (класична термодинаміка) та
 узагальнює ці закони на нерівноважні системи (термодинаміка незворотних процесів).
@@ -27,69 +24,76 @@
 \emph{макроскопічних параметрів}, що характеризують систему та її відношення до довколишніх тіл
 (густина, об'єм, тиск, намагніченість тощо.).
 
-Термодинаміка є наукою феноменологічною. ЇЇ формальна основа це чотири $4$ принципи термодинаміки, які
-узагальнюють наші спостереження і експериментальні факти. На цій основі дозволяють побудувати потужну
-теорію і підходи для розвязання практичних задач. Це:
-\begin{itemize}
-\item[0-й] закон, що визначає поняття температури $T$.
-\item[1-й] закон визначає поняття внутрішньої енергії $U$.
-\item[2-й] закон визначає поняття ентропії $S$.
-\item[3-й] закон або теорема Нернста дозволяє визначити чисельне значення ентропії.
-\end{itemize}
+Термодинаміка є наукою феноменологічною. ЇЇ формальна основа це чотири чотири принципи термодинаміки,
+які узагальнюють наші спостереження і експериментальні факти. На цій основі дозволяють побудувати
+потужну теорію і підходи для розв'язання практичних задач. Це:
+\begin{thermolaw}{Нульовий закон}
+Визначає поняття температури $T$.
+\end{thermolaw}
+
+\begin{thermolaw}{Перший закон}{}
+Визначає поняття внутрішньої енергії $U$.
+\end{thermolaw}
+
+\begin{thermolaw}{Другий закон}
+Визначає поняття ентропії $S$.
+\end{thermolaw}
+
+\begin{thermolaw}{Третій закон (теорема Нернста)}
+Дозволяє визначити чисельне значення ентропії.
+\end{thermolaw}
+%\begin{itemize}
+%	\item[0-й] закон, що визначає поняття температури $T$.
+%	\item[1-й] закон визначає поняття внутрішньої енергії $U$.
+%	\item[2-й] закон визначає поняття ентропії $S$.
+%	\item[3-й] закон або теорема Нернста дозволяє визначити чисельне значення ентропії.
+%\end{itemize}
 В цьому неспростовна сила феноменологічного підходу термодинаміки. І саме це підкреслив А. Айнштайн
 описуючи термодинаміку як <<\emph{\ldots єдину фізичну теорію універсального змісту, яка, я
-переконаний,
-ніколи не буде спростована в рамках застосовності її основних концепцій}>>.
-
+	переконаний, ніколи не буде спростована в рамках застосовності її основних концепцій}>>.
 
 Питання про відношення даної системи до розгляду термодинаміки мають вирішуватися окремо в кожному
 конкретному випадку. Наприклад нагрівання газу, що займає об'єм $1$~літр або тепловий баланс Землі
-очевидно є предметом розгляду термодинаміки. Проте, чи мають
-термодинаміка або статистична фізика вивчати тепловий баланс молекули ДНК, яка
-складається з мільйонів частинок? Чи має сенс поняття температури для наночастинки розмірами декілька
-нанометрів? Для кожного із такого роду прикладів відповідь не є однозначною. В будь-якому разі
-термодинаміка займається динамічними системами з дуже великою кількістю степенів свободи.
-
+очевидно є предметом розгляду термодинаміки. Проте, чи мають термодинаміка або статистична фізика
+вивчати тепловий баланс молекули ДНК, яка складається з мільйонів частинок? Чи має сенс поняття
+температури для наночастинки розмірами декілька нанометрів? Для кожного із такого роду прикладів
+відповідь не є однозначною. В будь-якому разі термодинаміка займається динамічними системами з дуже
+великою кількістю степенів свободи.
 
 %=========================================================
 \begin{figure}[h!]\centering
-%---------------------------------------------------------
-\begin{subfigure}[t]{0.3\linewidth}\centering
-\includegraphics[width=0.5\linewidth]{Gas}
-\caption{}
-\label{pic:gas}
-\end{subfigure}
-%---------------------------------------------------------
-\begin{subfigure}[t]{0.3\linewidth}\centering
-\includegraphics[width=\linewidth]{ThermodynOrNotB}
-\caption{}
-\label{pic:EarthBalance}
-\end{subfigure}
-%---------------------------------------------------------
-\begin{subfigure}[t]{0.3\linewidth}\centering
-\includegraphics[width=0.5\linewidth]{DNA}
-\caption{}
-\label{pic:DNA}
-\end{subfigure}
-%---------------------------------------------------------
-\caption{На відміну від $1$ літру газу (\protect\subref{pic:gas}) або Землі, що нагрівається Сонцем
-(\protect\subref{pic:EarthBalance}), чи є предметом
-розгляду термодинаміки молекула ДНК (\protect\subref{pic:DNA})?}
-\label{pic:ThermodynOrNot}
+	%---------------------------------------------------------
+	\begin{subfigure}[t]{0.3\linewidth}\centering
+		\includegraphics[width=0.55\linewidth]{Gas}
+		\caption{}
+		\label{pic:gas}
+	\end{subfigure}
+	%---------------------------------------------------------
+	\begin{subfigure}[t]{0.3\linewidth}\centering
+		\includegraphics[width=\linewidth]{ThermodynOrNotB}
+		\caption{}
+		\label{pic:EarthBalance}
+	\end{subfigure}
+	%---------------------------------------------------------
+	\begin{subfigure}[t]{0.3\linewidth}\centering
+		\includegraphics[width=0.55\linewidth]{DNA}
+		\caption{}
+		\label{pic:DNA}
+	\end{subfigure}
+	%---------------------------------------------------------
+	\caption{На відміну від $1$ літру газу (\protect\subref{pic:gas}) або Землі, що нагрівається Сонцем
+		(\protect\subref{pic:EarthBalance}), чи є предметом
+		розгляду термодинаміки молекула ДНК (\protect\subref{pic:DNA})?}
+	\label{pic:ThermodynOrNot}
 \end{figure}
 %=========================================================
 
-
-%Насправді, чи мають термодинаміка або \emph{статистична фізика}  вивчати поведінку молекули ДНК, яка
-%складається з мільйонів частинок?
-
 \begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=2]
-\includegraphics[width=\linewidth]{Landau}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Lev_Landau}{Лев Ландау}\\(1908 -- 1968)}
+	\includegraphics[width=\linewidth]{Landau}
+	\captionsetup{justification=centering}
+	\caption*{\href{https://en.wikipedia.org/wiki/Lev_Landau}{Лев Ландау}\\(1908 -- 1968)}
 \end{wrapstuff}
 Користуючись механістичним підходом такі системи можуть бути розглянуті шляхом розв'язування дуже великою кількості рівнянь руху з підстановкою не меншої кількості початкових умов. Наприклад, моль газу, який містить число Авогадро ($ 6.022\cdot10^{23} $) частинок --- потребує в три рази більше рівнянь руху, \emph{що є зовсім нереальним хоча б за кількістю паперу та чорнил, які потрібно витратити} (Ландау). На щастя, стан системи можна описати невеликою кількістю макроскопічних параметрів, рівноважні значення яких можуть бути пораховані методами статистики на основі визначеної моделі молекулярної будови речовини, або визначені експериментально.
-
 
 Термодинаміка постулює деякі положення, перевірені віковою працею людства й підтверджувані знову та
 знову, та на їх основі вивчає властивості рівноважних систем та закони наближення до рівноваги.
@@ -99,33 +103,8 @@
 
 %---------------------------------------------------------
 \begin{figure}[h!]\centering
-    \begin{tikzpicture}[scale=0.85]
-%    	\clip (-3, -2.6) rectangle (3,2.6);
-
-    	\pgfmathsetseed{1}
-    	\draw[ball color=gray!50, name path=otoch, smooth, opacity=0.5] plot [smooth cycle,
-    			samples=8,domain={1:10}]
-    	(\x*360/10+5*rnd:4cm+1cm*rnd);
-
-    	\pgfmathsetseed{9}
-    	\draw[ball color=cyan, name path=system, smooth] plot [smooth cycle,
-    			samples=8,domain={1:10}]
-    	(\x*360/10+5*rnd:0.5cm+1cm*rnd) node[pos=0.5] (Sys){};
-
-
-
-        \node[text=black] at (0,3) {Оточення};
-        \node[text=black] at (0,0) {Система};
-        \node[text=black] (Bound) at (-3,1) {Межа};
-
-    % Находим точку на границе системы в направлении от Bound к центру
-    \path[name path=boundary_line] (Bound) -- (Sys.center);
-    \path[name intersections={of=system and boundary_line, by=border_point}];
-
-    \draw[-stealth, line width=3pt, blue] (Bound) to[bend left]
-    (border_point);
-\end{tikzpicture}
-        \caption{Термодинамічна система і її оточення (термостат)}\label{pic:ThermodSysA}
+	\input{\currfilebase/tikz/ThermodSys.tikz}
+	\caption{Термодинамічна система і її оточення (термостат)}\label{pic:ThermodSysA}
 \end{figure}
 %---------------------------------------------------------
 
@@ -133,46 +112,39 @@
 розглядається, але обмежує систему по деякій реальній або віртуальній границі. Вважається, що
 термостат вносить деякі умови до системи, що вивчається.
 
-
 Системи бувають (рис.~\ref{pic:ThermodSysB}):
 \begin{itemize}
-    \item ізольованими, які не взаємодіють з навколишнім середовищем, чи взаємодіють із ним
-механічно, або через поле;
-    \item замкнутими, які не мають обміну речовини з термостатом;
-    \item відкритими, в яких можливий обмін як енергією так і речовиною.
+	\item ізольованими, які не взаємодіють з навколишнім середовищем, чи взаємодіють із ним
+	      механічно, або через поле;
+	\item замкнутими, які не мають обміну речовини з термостатом;
+	\item відкритими, в яких можливий обмін як енергією так і речовиною.
 \end{itemize}
-
 
 %=========================================================
 \begin{figure}[h!]\centering
-        \includegraphics[width=0.85\linewidth]{Pic2}
-        \caption{Приклад відкритої, закритої та ізольованої системи (зліва
-        направо)}\label{pic:ThermodSysB}
+	\includegraphics[width=0.85\linewidth]{Pic2}
+	\caption{Приклад відкритої, закритої та ізольованої системи (зліва
+		направо)}\label{pic:ThermodSysB}
 \end{figure}
 %=========================================================
 
 Макроскопічні параметри розподіляють на \emph{зовнішні} та \emph{внутрішні}. До перших відноситься
 об’єм, оскільки визначається положенням зовнішніх предметів, напруженість магнітного поля, тому що
 залежить від положення джерел поля (рис.~\ref{pic:IntExtParams}). Усі величини, що визначаються
-положенням та рухом частинок, які
-входять у систему, називаємо \emph{внутрішніми}. З останнього витікає, що різниця між внутрішніми та
-зовнішніми параметрами визначається границею між системою та навколишнім середовищем.
+положенням та рухом частинок, які входять у систему, називаємо \emph{внутрішніми}. З останнього
+витікає, що різниця між внутрішніми та зовнішніми параметрами визначається границею між системою та
+навколишнім середовищем.
 
 %---------------------------------------------------------
 \begin{figure}[h!]\centering
-        \includegraphics[width=0.5\linewidth]{Pic1.3InternalExternalParameters}
-\caption{Напруженість магнітного поля в середині області виділеною суцільною лінією --- це зовнішній
-параметр,
-оскільки визначається значенням намагніченості бруска і відстанню до виділеної області. Напруженість
-магнітного поля
-в області окресленою пунктирною лінією --- натомість є внутрішнім параметром, оскільки джерело поля
-входить в термодинамічну систему}
-\label{pic:IntExtParams}
+	\includegraphics[width=0.5\linewidth]{Pic1.3InternalExternalParameters}
+	\caption{Напруженість магнітного поля в середині області виділеною суцільною лінією --- це
+		зовнішній параметр, оскільки визначається значенням намагніченості бруска і відстанню до виділеної
+		області. Напруженість магнітного поля в області окресленою пунктирною лінією --- натомість є
+		внутрішнім параметром, оскільки джерело поля входить в термодинамічну систему}
+	\label{pic:IntExtParams}
 \end{figure}
 %---------------------------------------------------------
-
-
-
 
 З макроскопічних параметрів можна виділити \emph{термодинамічні змінні}. Вибрана належним чином,
 сукупність термодинамічних змінних повністю визначає систему в тому сенсі, що інші величини є їх
@@ -189,7 +161,7 @@
 величини, що не залежать від розмірів системи (тиск, температура). Величини, що змінюються
 пропорційно
 до маси, при її умовному розподіленні на частини, відносять до екстенсивних (енергія, об’єм, ентропія
-і т. д.). За Гегелем принципова відмінність між ними пояснюється способом вимірів. Екстенсивні
+тощо.). За Гегелем принципова відмінність між ними пояснюється способом вимірів. Екстенсивні
 величини можна порівняти зі схожими (однорідними). Наприклад, довжину з еталоном довжини, тобто
 лінійкою. Для інтенсивних це зробити не можливо та потрібна деяка функціональна залежність між
 інтенсивною величиною та набором екстенсивних. Наприклад, не має еталону температури, але останню
@@ -204,37 +176,35 @@
 займається
 класична термодинаміка.
 
-
 %=========================================================
 \begin{figure}[h!]\centering
-%---------------------------------------------------------
-\begin{subcaptionblock}[t]{0.45\linewidth}\centering
-    \includegraphics[width=0.5\linewidth]{Pic4a}
-\caption{Стаціонарна система}
-\label{pic:stats}
-\end{subcaptionblock}
-%---------------------------------------------------------
-\begin{subcaptionblock}[t]{0.45\linewidth}\centering
-    \includegraphics[width=0.5\linewidth]{Pic4b}
-\caption{Рівноважна система}
-\label{pic:rivnov}
-\end{subcaptionblock}
-%---------------------------------------------------------
-\caption{Приклад стаціонарного (вода капає стаціонарним макроскопічним потоком) та рівноважного
-станів системи (немає макроскопічного потоку)}
+	%---------------------------------------------------------
+	\begin{subcaptionblock}[t]{0.45\linewidth}\centering
+		\includegraphics[width=0.5\linewidth]{Pic4a}
+		\caption{Стаціонарна система}
+		\label{pic:stats}
+	\end{subcaptionblock}
+	%---------------------------------------------------------
+	\begin{subcaptionblock}[t]{0.45\linewidth}\centering
+		\includegraphics[width=0.5\linewidth]{Pic4b}
+		\caption{Рівноважна система}
+		\label{pic:rivnov}
+	\end{subcaptionblock}
+	%---------------------------------------------------------
+	\caption{Приклад стаціонарного (вода капає стаціонарним макроскопічним потоком) та рівноважного
+		станів системи (немає макроскопічного потоку)}
 \end{figure}
 %=========================================================
-
 
 %% --------------------------------------------------------
 \section{Термодинамічна рівновага. Нульовий закон}
 %% --------------------------------------------------------
 
 \begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=3]
-\centering
-\includegraphics[width=\linewidth]{Fowler}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Ralph_H._Fowler}{Ральф Фаулер}\\(1889 -- 1944)}
+	\centering
+	\includegraphics[width=\linewidth]{Fowler}
+	\captionsetup{justification=centering}
+	\caption*{\href{https://en.wikipedia.org/wiki/Ralph_H._Fowler}{Ральф Фаулер}\\(1889 -- 1944)}
 \end{wrapstuff}
 \emph{Термодинамічна рівновага} --- це стан до якого кінець кінцем приходить будь-яка ізольована
 система, якщо її залишити без зовнішніх впливів. Пояснюючи це поняття зауважимо, що в стані
@@ -247,10 +217,10 @@
 
 %\setlength\parfillskip{0pt}\par\setlength\parfillskip{0pt plus 1fil}
 \begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=2]
-\includegraphics[width=\linewidth]{Maxwell}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/James_Clerk_Maxwell}{Джеймс Клерк Максвелл}\\(1831 --
-1879)}
+	\includegraphics[width=\linewidth]{Maxwell}
+	\captionsetup{justification=centering}
+	\caption*{\href{https://en.wikipedia.org/wiki/James_Clerk_Maxwell}{Джеймс Клерк Максвелл}\\(1831 --
+		1879)}
 \end{wrapstuff}
 Дослід показує, що два тіла, які знаходяться у контакті один з одним кінець кінцем приходять до стану
 теплової рівноваги. Це твердження постулюється термодинамікою та, за виразом Фаулера, отримало назву
@@ -268,29 +238,19 @@ $\mathcal{AB}$, $\mathcal{AC}$ та $\mathcal{BC}$, бо в іншому вип�
 %знаходяться у рівновазі між собою.
 
 \begin{figure}[h!]
-\centering
-\begin{tikzpicture}
-    \draw[fill=cyan!50] (0,0) circle (2);
-    \draw[fill=white] (0,0) circle (1);
-    \draw[thick] (0,0) ++(270:1) -- ++(270:1);
-    \draw[thick] (0,0) ++(30:1) -- ++(30:1);
-    \draw[thick] (0,0) ++(150:1) -- ++(150:1);
-    \node at (90:1.5) {$\mathcal{A}$};
-    \node at (330:1.5) {$\mathcal{B}$};
-    \node at (210:1.5) {$\mathcal{C}$};
-\end{tikzpicture}
-\caption{Ілюстрація закону транзитивності теплової рівноваги}\label{pic:ring}
+	\centering
+	\input{\currfilebase/tikz/TransitiveLow.tikz}
+	\caption{Ілюстрація закону транзитивності теплової рівноваги}\label{pic:ring}
 \end{figure}
-
 
 %% --------------------------------------------------------
 \section{Температура}\label{sec:Temperature}
 %% --------------------------------------------------------
 
-\begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=3]
-\includegraphics[width=\linewidth]{Galileo}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Galileo_Galilei}{Галілео Галілей}\\(1564 -- 1642)}
+\begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=4]
+	\includegraphics[width=\linewidth]{Galileo}
+	\captionsetup{justification=centering}
+	\caption*{\href{https://en.wikipedia.org/wiki/Galileo_Galilei}{Галілео Галілей}\\(1564 -- 1642)}
 \end{wrapstuff}
 Саме закон транзитивності теплової рівноваги дає нам в руки інструмент, що дозволяє досліджувати стан
 теплової рівноваги. Дійсно, поняття  <<теплота>>, сенс якого і має визначити термодинаміка,
@@ -313,26 +273,25 @@ $\mathcal{C}$, навіть
 Не обмежуючи загальності, вважаємо, що
 $\alpha_{\mathcal{A}} = \{P_{\mathcal{A}}, V_{\mathcal{A}}\}$ і
 аналогічно $\mathcal{B}$, $\mathcal{C}$ характеризуються $\alpha_{\mathcal{B}} = \{P_{\mathcal{B}},
-V_{\mathcal{B}}\}$ та $\alpha_{\mathcal{C}} = \{P_{\mathcal{C}}, V_{\mathcal{C}}\}$. Якщо
+	V_{\mathcal{B}}\}$ та $\alpha_{\mathcal{C}} = \{P_{\mathcal{C}}, V_{\mathcal{C}}\}$. Якщо
 $\mathcal{A}$ та $\mathcal{B}$ у стані термодинамічної рівноваги, то між $\mathcal{A}$ та
 $\mathcal{B}$ існує співвідношення:
 \begin{equation}\label{eq:F3}
-    F_3 (P_{\mathcal{A}}, V_{\mathcal{A}}, P_{\mathcal{A}},V_{\mathcal{A}}) = 0.
+	F_3 (P_{\mathcal{A}}, V_{\mathcal{A}}, P_{\mathcal{A}},V_{\mathcal{A}}) = 0.
 \end{equation}
 
 Аналогічно, для пар $\mathcal{BC}$ та $\mathcal{AC}$ маємо:
 \begin{equation}\label{eq:F1}
-    F_1  (P_{\mathcal{C}}, V_{\mathcal{C}} ,P_{\mathcal{B}},V_{\mathcal{B}})=0
+	F_1  (P_{\mathcal{C}}, V_{\mathcal{C}} ,P_{\mathcal{B}},V_{\mathcal{B}})=0
 \end{equation}
 \begin{equation}\label{eq:F2}
-    F_2  (P_{\mathcal{A}},V_{\mathcal{A}}, P_{\mathcal{C}}, V_{\mathcal{C}} )=0
+	F_2  (P_{\mathcal{A}},V_{\mathcal{A}}, P_{\mathcal{C}}, V_{\mathcal{C}} )=0
 \end{equation}
-
 
 Розв'язуючи \eqref{eq:F3} та \eqref{eq:F1} відносно $P_B$ отримаємо:
 \begin{equation}\label{eq:PB}
-    P_{\mathcal{B}} = \phi_1 (P_{\mathcal{C}}, V_{\mathcal{C}}, V_{\mathcal{B}})=\phi_3
-(P_{\mathcal{A}}, V_{\mathcal{A}}, V_{\mathcal{B}})
+	P_{\mathcal{B}} = \phi_1 (P_{\mathcal{C}}, V_{\mathcal{C}}, V_{\mathcal{B}})=\phi_3
+	(P_{\mathcal{A}}, V_{\mathcal{A}}, V_{\mathcal{B}})
 \end{equation}
 
 %\begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=0]
@@ -345,27 +304,25 @@ $\mathcal{B}$ існує співвідношення:
 
 Звідси співвідношення \eqref{eq:PB} еквівалентно:
 \begin{equation}\label{eq:f1}
-    f_1 (P_{\mathcal{C}},V_{\mathcal{C}})=f_3 (P_{\mathcal{A}}, V_{\mathcal{A}}).
+	f_1 (P_{\mathcal{C}},V_{\mathcal{C}})=f_3 (P_{\mathcal{A}}, V_{\mathcal{A}}).
 \end{equation}
-
 
 Діючи у такий спосіб отримаємо:
 \begin{align}
-    f_2 (P_{\mathcal{B}}, V_{\mathcal{B}})=f_3 (P_{\mathcal{A}}, V_{\mathcal{A}}), \\
-    f_1 (P_{\mathcal{C}}, V_{\mathcal{C}})=f_2 (P_{\mathcal{B}}, V_{\mathcal{B}}).
+	f_2 (P_{\mathcal{B}}, V_{\mathcal{B}})=f_3 (P_{\mathcal{A}}, V_{\mathcal{A}}), \\
+	f_1 (P_{\mathcal{C}}, V_{\mathcal{C}})=f_2 (P_{\mathcal{B}}, V_{\mathcal{B}}).
 \end{align}
-
 
 %\begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=0]
 %\includegraphics[width=\linewidth]{Newton}
 %\caption*{\href{https://en.wikipedia.org/wiki/Isaac_Newton}{Ісаак Ньютон}\\(1643 -- 1727)}
 %\end{wrapstuff}
 Звідси витікає, що величина $\theta = f(P, V)$ може бути зручною мірою для визначення \textit{стану
-рівноваги} або температурою за деякою шкалою --- емпіричною температурою. Цю особливість відбиває
+	рівноваги} або температурою за деякою шкалою --- емпіричною температурою. Цю особливість відбиває
 походження назви температури від латинської \emph{temperatus} (спокійний, врівноважений). Очевидно, що
 кожна \emph{монотонна} функція від $\theta$ також може бути названа температурою. Побудований таким
 чином прилад дозволяє нам встановлювати рівність температур тіл, проте не більше. Для того щоб поняття
-«велика та мала» температура мало визначений фізичний сенс та, притому, тим який приписується цим
+<<велика та мала>> температура мало визначений фізичний сенс та, при тому, тим який приписується цим
 поняттям, будемо вважати, що тіло $\mathcal{A}$ має більшу температуру за тіло $\mathcal{B}$, якщо при
 зведені їх до теплового контакту, тіло $\mathcal{A}$ охолоджується, а тіло $\mathcal{B}$ натомість
 нагрівається. В цьому сенсі \emph{температура є мірою нагрітості тіла}.
@@ -393,46 +350,45 @@ $\mathcal{B}$ існує співвідношення:
 
 %=========================================================
 \begin{figure}[h!]\centering
-%---------------------------------------------------------
-\begin{subfigure}[t]{0.2\linewidth}\centering
-\includegraphics[width=\linewidth]{Celsius}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Anders_Celsius}{Андерс Цельсій}\\(1701 -- 1744)}
-\end{subfigure}
-\hfill%---------------------------------------------------------
-\begin{subfigure}[t]{0.2\linewidth}\centering
-\includegraphics[width=\linewidth]{Farenheit}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Daniel_Gabriel_Fahrenheit}{Фаренгейт}\\(1686 -- 1736)}
-\end{subfigure}
-\hfill%---------------------------------------------------------
-\begin{subfigure}[t]{0.2\linewidth}\centering
-\includegraphics[width=\linewidth]{Reaumur_1683-1757}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Ren\%C3\%A9_Antoine_Ferchault_de_R\%C3\%A9aumur}{Рене
-Антуан
-Реомюр}\\(1683 -- 1757)}
-\end{subfigure}
-\hfill%---------------------------------------------------------
-\begin{subfigure}[t]{0.2\linewidth}\centering
-\includegraphics[width=\linewidth]{Newton}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Isaac_Newton}{Ісаак Ньютон}\\(1643 -- 1727)}
-\end{subfigure}
-%---------------------------------------------------------
+	%---------------------------------------------------------
+	\begin{subfigure}[t]{0.2\linewidth}\centering
+		\includegraphics[width=\linewidth]{Celsius}
+		\captionsetup{justification=centering}
+		\caption*{\href{https://en.wikipedia.org/wiki/Anders_Celsius}{Андерс Цельсій}\\(1701 -- 1744)}
+	\end{subfigure}
+	\hfill%---------------------------------------------------------
+	\begin{subfigure}[t]{0.2\linewidth}\centering
+		\includegraphics[width=\linewidth]{Farenheit}
+		\captionsetup{justification=centering}
+		\caption*{\href{https://en.wikipedia.org/wiki/Daniel_Gabriel_Fahrenheit}{Фаренгейт}\\(1686 -- 1736)}
+	\end{subfigure}
+	\hfill%---------------------------------------------------------
+	\begin{subfigure}[t]{0.2\linewidth}\centering
+		\includegraphics[width=\linewidth]{Reaumur_1683-1757}
+		\captionsetup{justification=centering}
+		\caption*{\href{https://en.wikipedia.org/wiki/Ren\%C3\%A9_Antoine_Ferchault_de_R\%C3\%A9aumur}{Рене
+				Антуан
+				Реомюр}\\(1683 -- 1757)}
+	\end{subfigure}
+	\hfill%---------------------------------------------------------
+	\begin{subfigure}[t]{0.2\linewidth}\centering
+		\includegraphics[width=\linewidth]{Newton}
+		\captionsetup{justification=centering}
+		\caption*{\href{https://en.wikipedia.org/wiki/Isaac_Newton}{Ісаак Ньютон}\\(1643 -- 1727)}
+	\end{subfigure}
+	%---------------------------------------------------------
 \end{figure}
 %=========================================================
 
 %---------------------------------------------------------
 \begin{figure}[h!]\centering
-%\input{Lec1/tikz/ThermScales.tikz}
-\includegraphics[width=\linewidth]{Pic1.6EmpiricalTermometers}
-\caption{Порівняння шкал емпіричних термометрів із абсолютною шкалою температур, що співпадає із
-шкалою ідеально-газового термометру}
-\label{tikz:temp_scales}
+	%\input{\currfilebase/tikz/ThermScales.tikz}
+	\includegraphics[width=\linewidth]{Pic1.6EmpiricalTermometers}
+	\caption{Порівняння шкал емпіричних термометрів із абсолютною шкалою температур, що співпадає із
+		шкалою ідеально-газового термометру}
+	\label{tikz:temp_scales}
 \end{figure}
 %---------------------------------------------------------
-
 
 Згідно з методом побудови такого приладу зовсім не обов'язково вимірювати об'єм або тиск. Це може
 бути,
@@ -441,21 +397,16 @@ $\mathcal{B}$ існує співвідношення:
 існуванні функціонального зв'язку між деякою властивістю робочої речовини та температурою. Наприклад,
 $R=R(t)$  або $\mathcal{E}(\text{e.p.c.})=\mathcal{E}(t)$.
 
-
-
-
-
 %% --------------------------------------------------------
 \section{Ідеально-газовий термометр}
 %% --------------------------------------------------------
-
 
 Методом, розібраним вище, був побудований  один з перших термометрів --- газовий. Це стало можливим
 завдяки особливо простому взаємозв'язку між тиском створюваним газом, його об'ємом та ступенем його
 нагрітості. Робертом Бойлем, сучасником Ньютона, було встановлено, а в подальшому Едмом Маріоттом було
 підтверджено, що між тиском та об'ємом певної кількості газу існує співвідношення:
 \begin{equation}\label{eq:pv}
-    pv = \Theta = \mathrm{const},
+	pv = \Theta = \mathrm{const},
 \end{equation}
 де стала $\Theta$, крім як від природи газу залежить і від емпірично вимірюваної температури $t$.
 Ще більш разючим виявилось відкриття Жака Шарля, в подальшому наново відкрите Гей-Люссаком. Згідно з
@@ -463,18 +414,17 @@ $R=R(t)$  або $\mathcal{E}(\text{e.p.c.})=\mathcal{E}(t)$.
 нагріванні від $0$ до $1$ градуса емпіричного термометра розширюються на величину приблизно рівну
 $\alpha=1/273$ частини первинного об'єму, якщо вибравши $1$ градус згідно:
 \begin{equation}
-    1^\circ\text{C} = \frac{v_1 - v_0}{v_{100} - v_0} 100,
+	1^\circ\text{C} = \frac{v_1 - v_0}{v_{100} - v_0} 100,
 \end{equation}
 де $v_0$ об’єм, що займає газ при температурі танення льоду, а $v_{100}$ об’єм при температурі кипіння
 води. Тоді отримаємо:
 \begin{equation}
-    v-v_0=\alpha t v_0,
+	v-v_0=\alpha t v_0,
 \end{equation}
 або
 \begin{equation}\label{eq:v}
-    v=v_0 (1+\alpha t).
+	v=v_0 (1+\alpha t).
 \end{equation}
-
 
 %\begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=2]
 %\includegraphics[width=\linewidth]{Mariott}
@@ -483,72 +433,71 @@ $\alpha=1/273$ частини первинного об'єму, якщо виб�
 
 %=========================================================
 \begin{figure}[h!]\centering
-%---------------------------------------------------------
-\begin{subfigure}[t]{0.2\linewidth}\centering
-\includegraphics[width=\linewidth]{Boyl}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Robert_Boyle}{Роберт Бойль}\\(1627 -- 1691)}
-\end{subfigure}
-\hfill%---------------------------------------------------------
-\begin{subfigure}[t]{0.2\linewidth}\centering
-\includegraphics[width=\linewidth]{Mariott}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Edme_Mariotte}{Едм Маріот}\\(1620 -- 1684)}
-\end{subfigure}
-\hfill%---------------------------------------------------------
-\begin{subfigure}[t]{0.2\linewidth}\centering
-\includegraphics[width=\linewidth]{Sharl}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Jacques_Charles}{Жак Шарль}\\(1746 -- 1823)}
-\end{subfigure}
-\hfill%---------------------------------------------------------
-\begin{subfigure}[t]{0.2\linewidth}\centering
-\includegraphics[width=\linewidth]{GeyLusak}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Joseph_Louis_Gay-Lussac}{Жозеф Луї Гей-Люссак}\\(1778
---
-1850)}
-\end{subfigure}
-%---------------------------------------------------------
+	%---------------------------------------------------------
+	\begin{subfigure}[t]{0.2\linewidth}\centering
+		\includegraphics[width=\linewidth]{Boyl}
+		\captionsetup{justification=centering}
+		\caption*{\href{https://en.wikipedia.org/wiki/Robert_Boyle}{Роберт Бойль}\\(1627 -- 1691)}
+	\end{subfigure}
+	\hfill%---------------------------------------------------------
+	\begin{subfigure}[t]{0.2\linewidth}\centering
+		\includegraphics[width=\linewidth]{Mariott}
+		\captionsetup{justification=centering}
+		\caption*{\href{https://en.wikipedia.org/wiki/Edme_Mariotte}{Едм Маріот}\\(1620 -- 1684)}
+	\end{subfigure}
+	\hfill%---------------------------------------------------------
+	\begin{subfigure}[t]{0.2\linewidth}\centering
+		\includegraphics[width=\linewidth]{Sharl}
+		\captionsetup{justification=centering}
+		\caption*{\href{https://en.wikipedia.org/wiki/Jacques_Charles}{Жак Шарль}\\(1746 -- 1823)}
+	\end{subfigure}
+	\hfill%---------------------------------------------------------
+	\begin{subfigure}[t]{0.2\linewidth}\centering
+		\includegraphics[width=\linewidth]{GeyLusak}
+		\captionsetup{justification=centering}
+		\caption*{\href{https://en.wikipedia.org/wiki/Joseph_Louis_Gay-Lussac}{Жозеф Луї Гей-Люссак}\\(1778
+			--
+			1850)}
+	\end{subfigure}
+	%---------------------------------------------------------
 \end{figure}
 %=========================================================
 
 Приймемо для температури танення льоду $t = 0^\circ$C, що справедливо $pv_0=\Theta_0$. Помноживши $p$
 на \eqref{eq:v}, із урахуванням \eqref{eq:pv} отримаємо:
 \begin{equation}\label{eq:theta}
-    \Theta = pv = \Theta_0 (1+\alpha t).
+	\Theta = pv = \Theta_0 (1+\alpha t).
 \end{equation}
-
 
 Зручно змістити довільно вибрану температуру $t=0$ на $\alpha^{-1}$ й ввести нову температурну шкалу
 $T=1+\alpha t$. Тоді \eqref{eq:theta} набуває вигляду:
 \begin{equation}\label{eq:theta2}
-    pv = \Theta_0T.
+	pv = \Theta_0T.
 \end{equation}
 
 В новій температурній шкалі, плавлення льоду відбувається при температурі $t=273.15^\circ\text{С}
-\approx \alpha^{-1}$.
+	\approx \alpha^{-1}$.
 
 %=========================================================
 \begin{figure}[h!]\centering
-%---------------------------------------------------------
-\begin{subfigure}[t]{0.45\linewidth}\centering
-   \includegraphics[width=\linewidth]{Pic7a}
-\caption{Термометр сталого об'єму}
-\label{pic:ConstV}
-\end{subfigure}
-%---------------------------------------------------------
-\begin{subfigure}[t]{0.45\linewidth}\centering
-   \includegraphics[width=\linewidth]{Pic7b}
-\caption{Термометр сталого тиску}
-\label{pic:ConstT}
-\end{subfigure}
-%---------------------------------------------------------
-\caption{Термометри сталого об'єму та тиску конструктивно принципово не відрізняються. Різниця в
-способі вимірювання: в термометрі сталого об'єму фіксується об'єм газу в термометрі, а вимірюється
-різниця рівнів ртуті в лівій і правій трубці, в термометрі сталого тиску різниця рівнів стала, а
-вимірюється об'єм газу в термометрі}
-\label{pic:GasThermometers}
+	%---------------------------------------------------------
+	\begin{subfigure}[t]{0.45\linewidth}\centering
+		\includegraphics[width=\linewidth]{Pic7a}
+		\caption{Термометр сталого об'єму}
+		\label{pic:ConstV}
+	\end{subfigure}
+	%---------------------------------------------------------
+	\begin{subfigure}[t]{0.45\linewidth}\centering
+		\includegraphics[width=\linewidth]{Pic7b}
+		\caption{Термометр сталого тиску}
+		\label{pic:ConstT}
+	\end{subfigure}
+	%---------------------------------------------------------
+	\caption{Термометри сталого об'єму та тиску конструктивно принципово не відрізняються. Різниця в
+		способі вимірювання: в термометрі сталого об'єму фіксується об'єм газу в термометрі, а вимірюється
+		різниця рівнів ртуті в лівій і правій трубці, в термометрі сталого тиску різниця рівнів стала, а
+		вимірюється об'єм газу в термометрі}
+	\label{pic:GasThermometers}
 \end{figure}
 %=========================================================
 
@@ -558,27 +507,24 @@ $T=1+\alpha t$. Тоді \eqref{eq:theta} набуває вигляду:
 тиск, що створюється стовпцем ртуті в $1$~мм. Наведемо також інші одиниці виміру тиску:
 
 \begin{tcolorbox}[enhanced,
-fonttitle=\sffamily\bfseries,
-coltitle=themecolordark,
-title=Одиниці тиску,
-title code={
-\path[fill=themecolorlight!10] (title.south west) rectangle (title.north east);
-\path[draw=themecolordark,solid,line width=0.75mm]
-([xshift=5mm]title.south west) -- ([xshift=-5mm]title.south east);
-},
-boxrule=0pt,frame hidden,
-borderline west={4pt}{0pt}{themecolordark},
-colback=themecolorlight!10,
-colbacktitle=themecolordark]
-\begin{align*}
-    1&\ \text{Па}  = \frac{\text{Н}}{\text{м}^2},\\
-    1&\ \text{бар} = 10^5\ \text{Па}\ \text{(стовб води в $10$ м)},\\
-    1&\ \text{атм} = 760 \text{мм. рт. ст.} = 760\ \text{торр.} = 101.325\ \text{кПа}.
-\end{align*}
+		fonttitle=\sffamily\bfseries,
+		coltitle=themecolordark,
+		title=Одиниці тиску,
+		title code={
+				\path[fill=themecolorlight!10] (title.south west) rectangle (title.north east);
+				\path[draw=themecolordark,solid,line width=0.75mm]
+				([xshift=5mm]title.south west) -- ([xshift=-5mm]title.south east);
+			},
+		boxrule=0pt,frame hidden,
+		borderline west={4pt}{0pt}{themecolordark},
+		colback=themecolorlight!10,
+		colbacktitle=themecolordark]
+	\begin{align*}
+		1 & \ \text{Па}  = \frac{\text{Н}}{\text{м}^2},                                      \\
+		1 & \ \text{бар} = 10^5\ \text{Па}\ \text{(стовб води в $10$ м)},                    \\
+		1 & \ \text{атм} = 760 \text{мм. рт. ст.} = 760\ \text{торр.} = 101.325\ \text{кПа}.
+	\end{align*}
 \end{tcolorbox}
-
-
-
 
 %\begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=0]
 %\includegraphics[width=\linewidth]{Boyl}
@@ -592,25 +538,25 @@ colbacktitle=themecolordark]
 (Таблиця~\ref{tab:gase_thermometers}).
 
 \begin{table}[!htbp]\centering
-    \caption{Виправлення до показників газових термометрів}\label{tab:gase_thermometers}
-    \begin{tblr}{
-    colspec = {X[c, m]X[c, m]X[c, m]X[c, m]}
-    }
-    \toprule
-    $t^\circ$C   & \ce{He}     & \ce{H2}  & \ce{N2}  \\
-    \midrule
-    $200^\circ$  & $+0.002$    & $+0.020$ & $+0.132$ \\
-    $100^\circ$  & $0$         & $0$      & $0$      \\
-    $0^\circ$    & $0$         & $0$      & $0$      \\
-    $-100^\circ$ & $+0.006$    & $0.052$  & $0.399$  \\
-    \bottomrule
-    \end{tblr}
+	\caption{Виправлення до показників газових термометрів}\label{tab:gase_thermometers}
+	\begin{tblr}{
+		colspec = {X[c, m]X[c, m]X[c, m]X[c, m]}
+		}
+		\toprule
+		$t^\circ$C   & \ce{He}  & \ce{H2}  & \ce{N2}  \\
+		\midrule
+		$200^\circ$  & $+0.002$ & $+0.020$ & $+0.132$ \\
+		$100^\circ$  & $0$      & $0$      & $0$      \\
+		$0^\circ$    & $0$      & $0$      & $0$      \\
+		$-100^\circ$ & $+0.006$ & $0.052$  & $0.399$  \\
+		\bottomrule
+	\end{tblr}
 \end{table}
 
 \begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=2]
-\includegraphics[width=\linewidth]{Avogadro}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Amedeo_Avogadro}{Амадео Авогадро}\\(1776 -- 1856)}
+	\includegraphics[width=\linewidth]{Avogadro}
+	\captionsetup{justification=centering}
+	\caption*{\href{https://en.wikipedia.org/wiki/Amedeo_Avogadro}{Амадео Авогадро}\\(1776 -- 1856)}
 \end{wrapstuff}
 Для остаточного з'ясування  взаємозв'язку $P$, $V$ та $T$ необхідно  встановити значення $\Theta_0$.
 У
@@ -620,27 +566,21 @@ $1811$ році Амадео Авогадро висловив гіпотезу 
 Знаючи
 це, легко знайти невідому константу та отримати:
 \begin{equation}
-    PV = \nu RT = \frac{M}{\nu} RT,
+	PV = \nu RT = \frac{M}{\nu} RT,
 \end{equation}
 де $\nu$ --- кількість молів, а $ R= 8.311441$ $\frac{\text{Дж}}{\text{К}\cdot\text{моль}}$ ---
 універсальна газова стала. Цей вираз отримав назву рівняння Клапейрона-Менделєєва. В окремому випадку
 при $P=\mathrm{const}$ закон називають рівнянням Гей-Люссака, а при $V=\mathrm{const}$ --- рівнянням
 Амундсена.
 
-
-
-
-
 %% --------------------------------------------------------
 \section{Рівняння стану}
 %% --------------------------------------------------------
 
-
-
 \begin{wrapstuff}[type=figure, width=0.2\linewidth, o, top=2]
-\includegraphics[width=\linewidth]{Debye}
-\captionsetup{justification=centering}
-\caption*{\href{https://en.wikipedia.org/wiki/Peter_Debye}{Петер Дебай}\\(1884 -- 1966)}
+	\includegraphics[width=\linewidth]{Debye}
+	\captionsetup{justification=centering}
+	\caption*{\href{https://en.wikipedia.org/wiki/Peter_Debye}{Петер Дебай}\\(1884 -- 1966)}
 \end{wrapstuff}
 Отриманий вираз є ні чим іншим, як рівнянням стану для ідеальних або майже ідеальних газів і
 задовільно описує їх поведінку при невеликому тиску та помірних температурах. Реальні гази часто
@@ -650,16 +590,14 @@ $1811$ році Амадео Авогадро висловив гіпотезу 
 простим з них є \emph{рівняння Ван дер Ваальса}, що правдиво відтворює поведінку газів навіть при їх
 переході до стану рідини:
 \begin{equation}\label{eq:VanDerVaals}
-    \left(p + \frac{a}{v^2}\right)(v - b) = RT.
+	\left(p + \frac{a}{v^2}\right)(v - b) = RT.
 \end{equation}
-
 
 Ще більш точнішими є \emph{перше} та \emph{друге рівняння Дітерічі}, \emph{рівняння Бертло}, а також
 \emph{віріальне розвинення}:
 \begin{equation}\label{eq:virial}
-        pv = RT \left(1 + \frac{A}{v} + \frac{B}{v^2} + \frac{C}{v^3} + \ldots \right).
+	pv = RT \left(1 + \frac{A}{v} + \frac{B}{v^2} + \frac{C}{v^3} + \ldots \right).
 \end{equation}
-
 
 Не слід думати, що термодинаміка обмежується лише вивченням поведінки газів. Безумовно для інших
 речовин (рідин або твердих тіл) рівняння стану має записуватися по-іншому. В більшості випадків вони
@@ -667,44 +605,43 @@ $1811$ році Амадео Авогадро висловив гіпотезу 
 статистичної фізики. Так для тіла, яке знаходиться при достатньо низьких температурах в кристалічному
 стані за певних припущень Дебаєм був отриманий наступний вираз:
 \begin{equation}\label{eq:Debay}
-    pv + v \frac{d\Phi}{dv} = - \frac{d\ln\theta}{d\ln v}\ \frac35 \pi^4 R\Theta
-    \left(\frac{T}{\Theta}\right)^4,
+	pv + v \frac{d\Phi}{dv} = - \frac{d\ln\theta}{d\ln v}\ \frac35 \pi^4 R\Theta
+	\left(\frac{T}{\Theta}\right)^4,
 \end{equation}
 де $\Phi$ залежить від потенціалу взаємодії між молекулами, $\Theta$ параметр, що визначається
 кристалічною структурою та має розмірність температури (температура Дебая). Формула правдива при $T
-\ll \Theta$. Як ще один приклад термічного рівняння стану наведемо рівняння стану для газу фотонів
+	\ll \Theta$. Як ще один приклад термічного рівняння стану наведемо рівняння стану для газу фотонів
 (випромінювання, яке знаходиться в тепловій рівновазі зі стінками об'єму, в якому воно міститься).
 Рівняння може бути отримано теоретично:
 \begin{equation}\label{eq:Stef-Boltz}
-    P = \sigma \frac{T^4}{3},
+	P = \sigma \frac{T^4}{3},
 \end{equation}
 де $\sigma$ --- стала Стефана-Больцмана. Зазначимо, що в даному випадку залежність від $V$ відсутня.
 Термічне рівняння стану не обов'язково є функціональним зв'язком $P$, $V$ та $T$. Набір незалежних
 термодинамічних змінних може бути різноманітним та визначається характером явища, що досліджується.
-Так для парамагнетних речовин (мідь, алюміній) зв'язок встановлюється між намагніченістю $M$, полем
+Так для парамагнітних речовин (мідь, алюміній) зв'язок встановлюється між намагніченістю $M$, полем
 $H$ та температурою $T$. Згідно з законом Вейса:
 \begin{equation}
-    M = \chi \frac{H}{T},
+	M = \chi \frac{H}{T},
 \end{equation}
 де $\chi$ --- магнітна сприятливість речовини. Тим не менше, кожне термічне рівняння стану пов’язує
 температуру, який-небудь внутрішній параметр ($P$, $M$, \ldots) та якийсь із зовнішніх ($V$, $H$,
 \ldots).
 
-
 Окрім термічного рівняння стану існує ще \textit{калоричне рівняння стану}, що пов'язує енергію,
 температуру та будь-який зовнішній параметр. Особливо простим таке рівняння є для ідеального газу:
 \begin{equation*}
-    U = C_V T.
+	U = C_V T.
 \end{equation*}
 
 Для твердих тіл при $T \ll \Theta$ воно також виглядає просто:
 \begin{equation*}
-    U = \alpha V T^4,
+	U = \alpha V T^4,
 \end{equation*}
 
 де $\alpha$ --- деяка стала.  Зрештою для газу фотонів:
 \begin{equation*}
-    U = \sigma V T^4.
+	U = \sigma V T^4.
 \end{equation*}
 
 В загальному випадку сумарна кількість рівнянь стану дорівнює числу незалежних макроскопічних
@@ -712,38 +649,32 @@ $H$ та температурою $T$. Згідно з законом Вейса
 отримуються. Якщо вони відомі, то за допомогою термодинамічного методу можна встановити всі
 термодинамічні властивості системи.
 
-
-
 %% --------------------------------------------------------
 \section{Термодинамічний контакт і процеси}
 %% --------------------------------------------------------
-
-
-
 
 Розглянемо яким чином можна змінити стан термодинамічної системи. По-перше, між самою системою та її
 навколишнім середовищем слід встановити \emph{термодинамічний контакт}. Останній прийнято розподіляти
 на $3$ типи:
 
 \begin{itemize}
-    \item \emph{Механічна взаємодія} має місце якщо система або над системою здійснюється робота за
-допомогою механічних сил або полів (електромагнітного, гравітаційного). В цьому випадку термостат
-розглядають як джерело роботи.
+	\item \emph{Механічна взаємодія} має місце якщо система або над системою здійснюється робота за
+	      допомогою механічних сил або полів (електромагнітного, гравітаційного). В цьому випадку термостат
+	      розглядають як джерело роботи.
 
-    \item \emph{Теплова взаємодія} здійснюється у формі передачі тепла за допомогою теплопровідності
-або теплової радіації. Термостат виконує роль теплового резервуару або теплової бані.
+	\item \emph{Теплова взаємодія} здійснюється у формі передачі тепла за допомогою теплопровідності
+	      або теплової радіації. Термостат виконує роль теплового резервуару або теплової бані.
 
-    \item \emph{Матеріальна взаємодія} спричиняє обмін частинками між системою та термостатом і
-останній вважають джерелом або резервуаром частинок.
+	\item \emph{Матеріальна взаємодія} спричиняє обмін частинками між системою та термостатом і
+	      останній вважають джерелом або резервуаром частинок.
 \end{itemize}
-
 
 %---------------------------------------------------------
 \begin{figure}[h!]\centering
-\input{Lec1/tikz/Piston.tikz}
-\caption{Приведення в рух поршня вимагає незначного перебільшення зовнішнього тиску над тиском газу
-під поршнем}
-\label{tikz:piston}
+	\input{\currfilebase/tikz/Piston.tikz}
+	\caption{Приведення в рух поршня вимагає незначного перебільшення зовнішнього тиску над тиском газу
+		під поршнем}
+	\label{tikz:piston}
 \end{figure}
 %---------------------------------------------------------
 
@@ -762,7 +693,6 @@ $H$ та температурою $T$. Згідно з законом Вейса
 \emph{ізохоричний} ($V = \mathrm{const}$) та адіабатичний квазістатичний процеси. Останній вимагає
 існування лише механічного контакту між системами.
 
-
 Не слід думати, що при адіабатичному процесі система завжди термічно ізольована від термостату. На
 практиці достатньо, щоб процеси передачі тепла між системами (теплопровідність, радіація) протікали
 набагато повільніше ніж характерний час зміни параметрів системи. Наприклад, якщо процес
@@ -770,60 +700,24 @@ $H$ та температурою $T$. Згідно з законом Вейса
 повертається
 в вихідний стан повинен бути набагато менше ніж час дисипації енергії (рис.~\ref{tikz:cyclic}).
 
-
 %---------------------------------------------------------
 \begin{figure}[h!]\centering
-\begin{tikzpicture}[midarr/.style={decoration={markings,mark=at position #1 with
-{\arrow{stealth}}},postaction={decorate}},
-  midarr/.default=0.5]
-    \def\xmax{6}
-    \def\ymax{5}
-%  \def\isotherm{(A) to[out=-60,in=170] (B)}
-  \def\T{4}
-  \def\xa{.2*\xmax}
-  \def\xb{.8*\xmax}
-  \def\ya{{\T/(\xa)}}
-  \def\yb{{\T/(\xb)}}
-
-  % AREA
-  \coordinate (A) at (\xa,\ya);
-  \coordinate (B) at (\xb,\yb);
-%  \coordinate (C) at (.8*\xmax,.2*\ymax);
-%  \fill[blue!20] (A) rectangle (C|-0,0) node[midway, black] {$A$};
-
-  % LINE
-  \draw[very thick,midarr=.55,red!80!black] (A) to[bend left] (B);
-  \draw[very thick,midarr=.55,red!80!black] (B) to[bend left] (A);
-%  \fill (A) circle (2pt) node[above] {$P_1$, $V_1$};
-%  \fill (B) circle (2pt) node[above] {$P_2$, $V_2$};
-
-    \draw[dashed] (A) -- (\xa, 0) node[below] {$V_1$};
-    \draw[dashed] (B) -- (\xb, 0) node[below] {$V_2$};
-
-  % AXIS
-  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax) node[anchor=north east] {$P$};
-  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0) node[anchor=north east] {$V$};
-
-\end{tikzpicture}
-\caption{Циклічний процес}
-\label{tikz:cyclic}
+	\input{\currfilebase/tikz/cyclic.tikz}
+	\caption{Циклічний процес}
+	\label{tikz:cyclic}
 \end{figure}
 %---------------------------------------------------------
-
 
 %% --------------------------------------------------------
 \section{Робота термодинамічної системи}
 %% --------------------------------------------------------
-
-
-
 
 Найбільш очевидним способом зміни стану системи є здійснення над системою роботи. Прийнято вважати
 роботу додатною, якщо вона здійснюється системою над зовнішніми тілами (оточенням) та від'ємною в
 протилежному випадку. При нескінченно малій рівноважній (квазістатичній) зміні зовнішнього параметра
 системи $x_i$, робота визначається як:
 \begin{equation*}
-    \delta A = F_i dx_i,
+	\delta A = F_i dx_i,
 \end{equation*}
 де $F_i$ --- спряжена зовнішньому параметру узагальнена сила, яка завжди є внутрішнім параметром та в
 рівновазі є функцією зовнішніх параметрів та температури. У випадку здійснення роботи рідиною або
@@ -832,56 +726,41 @@ $H$ та температурою $T$. Згідно з законом Вейса
 елементарні площадки, на які умовно розіб'ємо поверхню $S$ об'єму, що займає газ або рідина. В
 результаті:
 \begin{equation}\label{eq:delta A}
-    \delta A = \sum\limits_i\delta A_i = p \sum\limits_i d\sigma_i dx_i = p dV.
+	\delta A = \sum\limits_i\delta A_i = p \sum\limits_i d\sigma_i dx_i = p dV.
 \end{equation}
 
 Повна робота, що здійснюється газом або рідиною при зміні об’єму від $V_1$ до $V_2$, розраховується
 інтегруванням виразу \eqref{eq:delta A} в цих границях. Наприклад, $1$~моль газу, який задовольняє
 рівнянню стану ідеального газу та розширюється ізотермічно від $V_1$ до $V_2$, здійснює роботу:
 \begin{equation*}\label{eq:2a}
-    A = \int\limits_{V_1}^{V_2} p dV = RT  \int\limits_{V_1}^{V_2} \frac{dV}{V} = RT
-\ln\left(\frac{V_2}{V_1}\right).
+	A = \int\limits_{V_1}^{V_2} p dV = RT  \int\limits_{V_1}^{V_2} \frac{dV}{V} = RT
+	\ln\left(\frac{V_2}{V_1}\right).
 \end{equation*}
 
 %---------------------------------------------------------
 \begin{figure}[h!]\centering
-\begin{tikzpicture}[scale=1.5]
-
-    \def\r{1}
-    \def\R{1.5}
-    \def\d{30}
-    \draw [fill=blue!30] (0,0) circle (\r);
-    \draw [blue, dashed] (0,0) circle (\R);
-    \foreach \a in {-30, 0, ..., 30} {
-    \draw[red, dash pattern={on 1 pt off 0.5pt}] (\a:\r) -- (\a:\R) arc(\a:{\a+\d}:\R) -- ({\a+\d}:\r)
-    arc({\a+\d}:\a:\r) --cycle;
-}
-\node at (0,0) {$P$};
-\node[anchor=east] at (-15:1) {$d\sigma_i$};
-\node[red, anchor=north] at (-30:{0.44*(\R+\r)}) {$dx_i$};
-\end{tikzpicture}
-\caption{Визначення елементарної роботи для гідро та газодинамічним систем}
-\label{tikz:ElemWork}
+	\input{\currfilebase/tikz/elementarW.tikz}
+	\caption{Визначення елементарної роботи для гідро та газодинамічним систем}
+	\label{tikz:ElemWork}
 \end{figure}
 %---------------------------------------------------------
 
 %=========================================================
 \begin{figure}[h!]\centering
-%---------------------------------------------------------
-\begin{subcaptionblock}{0.45\linewidth}\centering
-\input{isothermic.tikz}
-\caption{Робота газу при ізотермічному процесі}\label{pic:isothermic}
-\end{subcaptionblock}
-%---------------------------------------------------------
-\begin{subcaptionblock}{0.45\linewidth}\centering
-\input{isobaric.tikz}
-\caption{Робота газу при ізобарному процесі}\label{pic:isobaric}
-\end{subcaptionblock}
-%---------------------------------------------------------
-\caption{Робота в газових процесах є площею під кривими}
+	%---------------------------------------------------------
+	\begin{subcaptionblock}{0.45\linewidth}\centering
+		\input{\currfilebase/tikz/isothermic.tikz}
+		\caption{Робота газу при ізотермічному процесі}\label{pic:isothermic}
+	\end{subcaptionblock}
+	%---------------------------------------------------------
+	\begin{subcaptionblock}{0.45\linewidth}\centering
+		\input{\currfilebase/tikz/isobaric.tikz}
+		\caption{Робота газу при ізобарному процесі}\label{pic:isobaric}
+	\end{subcaptionblock}
+	%---------------------------------------------------------
+	\caption{Робота в газових процесах є площею під кривими}
 \end{figure}
 %=========================================================
-
 
 Геометричний сенс цього інтегралу --- площа під кривою, яка описує ізотермічний процес
 (рис~\ref{pic:isothermic}).
@@ -889,12 +768,12 @@ $H$ та температурою $T$. Згідно з законом Вейса
 Інший приклад --- розтяг гумового джгута, який підкоряється закону Гука. Робота, здійснювана джгутом
 при розтягуванні на $dx$, становить  (рис.~\ref{tikz:Resin}):
 \begin{equation*}
-    \delta A = -\sigma' dx,
+	\delta A = -\sigma' dx,
 \end{equation*}
 де $\sigma'$ --- натяг джгута, а знак <<$-$>> зумовлений дією закону Гука. В загальному випадку,
 робота здійснювана твердим кристалічним тілом, становить:
 \begin{equation*}
-    \delta A = -\sum\limits_{i = 0}^{3}\sum\limits_{j = 0}^{3}\sigma_{ij}d\varepsilon_{ij},
+	\delta A = -\sum\limits_{i = 0}^{3}\sum\limits_{j = 0}^{3}\sigma_{ij}d\varepsilon_{ij},
 \end{equation*}
 де $\sigma_{ij}$ --- нормальні та зсувні компоненти напруги (всього 6 незалежних компонент),
 $\epsilon_{ij}$ --- деформація зсуву, розтягування або стискання, а $i$, $j$ --- нумерують $x$, $y$,
@@ -902,34 +781,34 @@ $z$ (рис.~\ref{tikz:TensionCube}).
 
 %=========================================================
 \begin{figure}[h!]\centering
-%---------------------------------------------------------
-\begin{subfigure}[b]{0.45\linewidth}\centering
-\input{Lec1/tikz/Rod.tikz}
-\caption{}
-\label{tikz:Resin}
-\end{subfigure}
-%---------------------------------------------------------
-\begin{subfigure}[b]{0.45\linewidth}\centering
-\input{Lec1/tikz/TensionCube.tikz}
-\caption{}
-\label{tikz:TensionCube}
-\end{subfigure}
-%---------------------------------------------------------
-\caption{До визначення елементарної роботи, що виконується над (а) гумовим жгутом та (б) твердим тілом}
+	%---------------------------------------------------------
+	\begin{subfigure}[b]{0.45\linewidth}\centering
+		\input{\currfilebase/tikz/Rod.tikz}
+		\caption{}
+		\label{tikz:Resin}
+	\end{subfigure}
+	%---------------------------------------------------------
+	\begin{subfigure}[b]{0.45\linewidth}\centering
+		\input{\currfilebase/tikz/TensionCube.tikz}
+		\caption{}
+		\label{tikz:TensionCube}
+	\end{subfigure}
+	%---------------------------------------------------------
+	\caption{До визначення елементарної роботи, що виконується над (а) гумовим жгутом та (б) твердим тілом}
 \end{figure}
 %=========================================================
+
 Робота сил поверхневого натягу дорівнює (рис.~\ref{pic:isobaric}):
 \begin{equation*}
-   \delta A = -\sigma d\Sigma
+	\delta A = -\sigma d\Sigma
 \end{equation*}
 де $\sigma$ --- поверхневий натяг, $\Sigma$ --- площа плівки.
 
-
 %---------------------------------------------------------
 \begin{figure}[h!]\centering
-    \includegraphics[width=0.5\linewidth]{pull_in_solenoid}
-\caption{До визначення елементарної роботи, що магнітним полем при намагнічуванні речовини}
-\label{pic:pull_in_solenoid}
+	\includegraphics[width=0.5\linewidth]{pull_in_solenoid}
+	\caption{До визначення елементарної роботи, що магнітним полем при намагнічуванні речовини}
+	\label{pic:pull_in_solenoid}
 \end{figure}
 %---------------------------------------------------------
 
@@ -938,13 +817,13 @@ $z$ (рис.~\ref{tikz:TensionCube}).
 необхідно здійснити роботу (наприклад, пропустити струм через обмотку соленоїда
 (рис.~\ref{pic:pull_in_solenoid})):
 \begin{equation*}
-    A=-\vec{\mathcal{H}} d\vec{\mathcal{M}} = - (\mathcal{H}_x d\mathcal{M}_x+\mathcal{H}_y
-d\mathcal{M}_y + \mathcal{H}_z d\mathcal{M}_z).
+	A=-\vec{\mathcal{H}} d\vec{\mathcal{M}} = - (\mathcal{H}_x d\mathcal{M}_x+\mathcal{H}_y
+	d\mathcal{M}_y + \mathcal{H}_z d\mathcal{M}_z).
 \end{equation*}
 
 Аналогічно, робота необхідна для поляризації ізотропного діелектрика:
 \begin{equation*}
-    \delta A = - \vec{\mathcal{E}} d\vec{\mathcal{P}}
+	\delta A = - \vec{\mathcal{E}} d\vec{\mathcal{P}}
 \end{equation*}
 де $\vec{\mathcal{E}}$ --- напруженість електричного поля, $\vec{\mathcal{P}}$ --- вектор поляризації
 діелектрика.
@@ -954,9 +833,6 @@ d\mathcal{M}_y + \mathcal{H}_z d\mathcal{M}_z).
 розширенням газу. При нерівноважному розширенні зовнішній тиск завжди менший внутрішнього (граничний
 випадок розширення у вакуум). Як видно із рисунку $p' dV < p dV$.
 
-% Де рисунок
-
-
 У загальному випадку, теорема про максимальну роботу доводиться на основі ΙΙ закону термодинаміки.
 Також зауважимо застосування позначки $\delta$, що використовується для позначення нескінченно малого
 приросту роботи замість звичного для механіки $d$. Справа в тому, що приріст роботи не є
@@ -965,7 +841,7 @@ d\mathcal{M}_y + \mathcal{H}_z d\mathcal{M}_z).
 Необхідно знати за яким шляхом інтегрувати. Справді, якщо газ розширюється від $V_1$ до $V_2$, то
 робота, що їм здійснювана в ізобаричному процесі, дорівнює:
 \begin{equation}\label{eq:IcobaricWork}
-    A = \int\limits_{V_1}^{V_2} p dV = p(V_2 - V_1),
+	A = \int\limits_{V_1}^{V_2} p dV = p(V_2 - V_1),
 \end{equation}
 що, очевидно не збігається із \eqref{eq:2a}. Цілком зрозуміло, що отримана невідповідність
 пояснюється залежністю тиску від 2-х параметрів $P=P(V,T)$, тому для проведення інтегрування слід
@@ -973,13 +849,9 @@ d\mathcal{M}_y + \mathcal{H}_z d\mathcal{M}_z).
 стану, на відміну від температури. Ситуація цілком відмінна від типової для механіки, коли робота
 здійснюється  потенціальним полем, наприклад гравітаційним.
 
-
 %% --------------------------------------------------------
 \section{Математичний апарат термодинаміки}
 %% --------------------------------------------------------
-
-
-
 
 Розглянемо коротко математичний апарат термодинаміки. Насамперед нагадаємо, що термодинаміка є наукою
 аксіоматичною подібно до геометрії. На основі невеликої кількості аксіом шляхом логічних міркувань
@@ -989,64 +861,102 @@ d\mathcal{M}_y + \mathcal{H}_z d\mathcal{M}_z).
 \ref{sec:Temperature}), що вдало поєднує два основних підходи в термодинаміці: \emph{метод циклів} та
 \emph{метод термодинамічних потенціалів}. З математичної точки зору обидва методи еквівалентні.
 
-
 Покажемо це, одночасно отримуючи деякі корисні математичні співвідношення. В основному у
 термодинаміці ми будемо мати справу з функціями 2-х змінних, наприклад рівняннями стану:
 \begin{equation*}
-    P = P(V, T)
+	P = P(V, T)
 \end{equation*}
 
 Тоді безкінечно малий приріст $P$ становить:
 \begin{equation}\label{eq:dP}
-    dP = \left(\frac{\partial P}{\partial V}\right)_T dV +  \left(\frac{\partial P}{\partial
-T}\right)_V dT = X dV + YdT.
+	dP = \left(\frac{\partial P}{\partial V}\right)_T dV +  \left(\frac{\partial P}{\partial
+		T}\right)_V dT = X dV + YdT.
 \end{equation}
 
 З математичного аналізу відомо, що:
 \begin{equation*}
-    \left(\frac{\partial P}{\partial V}\right)_T = \left(\frac{\partial V}{\partial P}\right)_T^{-1},
+	\left(\frac{\partial P}{\partial V}\right)_T = \left(\frac{\partial V}{\partial P}\right)_T^{-1},
 \end{equation*}
 а також, що порядок отримання змішаних похідних не важливий:
 
 \begin{equation}\label{eq:ddP}
-    \frac{\partial^2 P}{\partial V \partial T} = \frac{\partial^2 P}{\partial T \partial V }\ , \quad
-\text{або}\quad \frac{\partial Y}{\partial V} = \frac{\partial X}{\partial T}.
+	\frac{\partial^2 P}{\partial V \partial T} = \frac{\partial^2 P}{\partial T \partial V }\ , \quad
+	\text{або}\quad \frac{\partial Y}{\partial V} = \frac{\partial X}{\partial T}.
 \end{equation}
 
 Вважаючи $P = \mathrm{const}$ із \eqref{eq:dP} отримаємо:
 \begin{equation}\label{eq:-1}
-     \left(\frac{\partial P}{\partial V}\right)_T  \left(\frac{\partial V}{\partial T}\right)_P
-\left(\frac{\partial T}{\partial P}\right)_V = -1.
+	\left(\frac{\partial P}{\partial V}\right)_T  \left(\frac{\partial V}{\partial T}\right)_P
+	\left(\frac{\partial T}{\partial P}\right)_V = -1.
 \end{equation}
 
 Це співвідношення, або правило трьох похідних вірне для будь якої функції двох змінних, і є дуже
 корисним для задач термодинаміки. Наприклад, важливими властивостями речовин є \emph{термічні
-коефіцієнти}:
+	коефіцієнти}:
 \begin{align*}
-    \alpha &= \frac{1}{V} \left(\frac{\partial V}{\partial T} \right)_P\ \text{--- об'ємного
-розширення},\\
-    \beta &= -\frac{1}{V} \left(\frac{\partial V}{\partial P} \right)_T\ \text{--- стиснення або
-пружності},\\
-    \gamma &= \frac{1}{P} \left(\frac{\partial P}{\partial T} \right)_V\ \text{--- тиску}.
+	\alpha & = \frac{1}{V} \left(\frac{\partial V}{\partial T} \right)_P\ \text{--- об'ємного
+	розширення},                                                                                   \\
+	\beta  & = -\frac{1}{V} \left(\frac{\partial V}{\partial P} \right)_T\ \text{--- стиснення або
+	пружності},                                                                                    \\
+	\gamma & = \frac{1}{P} \left(\frac{\partial P}{\partial T} \right)_V\ \text{--- тиску}.
 \end{align*}
 
 З урахуванням \eqref{eq:-1} маємо співвідношення $\alpha = P_0\beta\gamma$. Для ртуті $\alpha  =
-1.8\cdot 10^{-1}$, $\beta = 3.9\cdot 10^{-6}$, а отже можемо знайти $\left(\frac{\partial P}{\partial
-T} \right)_V = 4.6$.
+	1.8\cdot 10^{-1}$, $\beta = 3.9\cdot 10^{-6}$, а отже можемо знайти $\left(\frac{\partial P}{\partial
+		T} \right)_V = 4.6$.
 
 Якщо виконується \eqref{eq:ddP}, то \eqref{eq:dP} є повним диференціалом, а сама функція $P$ є
 функцією стану. Це в свою чергу означає, що інтеграл по замкненому контуру від повного диференціалу в
 циклічному процесі дорівнює нулю. Наприклад, для температури отримаємо $\oint dT = 0$. З точки зору
 фізики це співвідношення очевидне, а математично може бути доведено за допомогою співвідношення Гріна:
 \begin{equation*}
-    \oint dT = \int\left\{\left(\frac{\partial T}{\partial V}\right)_P dV +  \left(\frac{\partial
-T}{\partial P}\right)_V dP\right\} = \int\limits_S \left(\frac{\partial^2 T}{\partial V \partial P} -
-\frac{\partial^2 T}{\partial P \partial V}\right) dPdV = 0
+	\oint dT = \int\left\{\left(\frac{\partial T}{\partial V}\right)_P dV +  \left(\frac{\partial
+		T}{\partial P}\right)_V dP\right\} = \int\limits_S \left(\frac{\partial^2 T}{\partial V \partial P} -
+	\frac{\partial^2 T}{\partial P \partial V}\right) dPdV = 0
 \end{equation*}
 в силу співвідношення \eqref{eq:-1}.
 
 Правдивим є й зворотне. Якщо інтеграл від приросту функції по замкненому контуру дорівнює нулю, то
 приріст є повний диференціал, а сама функція є функцією стану і навпаки. Дійсно, для циклу, що
 показано на рис.~\ref{tikz:cyclic}, робота в циклі не дорівнює нулю, оскільки не дорівнює нулю площа
-фігури, що
-утворена циклом. Відповідно робота не є функцією стану.
+фігури, що утворена циклом. Відповідно робота не є функцією стану.
+
+
+%% --------------------------------------------------------
+\section*{Задачі}
+%% --------------------------------------------------------
+
+%=========================================================
+\begin{problem}%
+    У тонкостінний сферичний балон масою $M = 1$~кг нагнітається нітроген за температури $T = 300$ К.
+    Знайти максимальну кількість нітрогену, яку можна помістити у посудину, якщо допустима напруга у
+    стінках балону $\sigma = 50$~Н/мм\textsuperscript{2}. Густина сталі $\rho =
+    7.8$~г/см\textsuperscript{3}.
+\end{problem}
+
+
+%=========================================================
+\begin{problem}%
+Коефіцієнт об’ємного розширення ртуті $\alpha$ при $0^\circ C$ та атмосферному тиску дорівнює
+$0,00018^\circ$C\textsuperscript{-1}. Стисливість $\gamma = 0.0000039$~атм\textsuperscript{-1}. Знайти
+температурний коефіцієнт тиску $\lambda$ для ртуті.
+\end{problem}
+
+%=========================================================
+\begin{problem}%
+Моль ідеального газу ізотермічно розширюється (або стискається) від об’єму $V_1$ до об’єму $V_2$.
+Визначити виконувану ним роботу $A$ і кількість теплоти $Q$, що він отримав.
+\end{problem}
+
+%=========================================================
+\begin{problem}%
+Визначити кількість тепла $Q'$, яке виділяється при ізотермічному стисненні $m = 7$~г нітрогену, якщо
+при цьому тиск газу підвищується в $n = 50$ разів. Визначити також роботу $A'$, яку потрібно витратити
+на це стиснення. Температура газу $t = 27^\circ$C.
+\end{problem}
+
+
+
+
+\Closesolutionfile{answer}
+

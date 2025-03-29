@@ -1,0 +1,105 @@
+# ============================================= 
+# Ultimate LaTeXindent Config for Professional Formatting
+# =============================================
+
+# Core
+indentRules:
+  defaultIndent: "  "  # 2 пробела (стандарт для кода)
+  indentAfterBegin: true
+  indentBeforeEnd: true
+  removeTrailingWhitespace: true
+  removeExtraBlankLines: true  # Удаление лишних пустых строк
+
+# Environments
+environments:
+  BeginStartsOnOwnLine: 1
+  BodyStartsOnOwnLine: 1
+  EndStartsOnOwnLine: 1
+  EndFinishesWithLineBreak: 1
+  special:
+    - name: "equation*"
+      alignContent: 1
+    - name: "align"
+      alignContent: 1
+    - name: "itemize"
+      noAdditionalIndentGlobal: true
+    - name: "enumerate"
+      noAdditionalIndentGlobal: true
+
+# Commands
+commands:
+  beginOptionalArgumentsOnSameLine: 1
+  argumentsMayFollowOnSameLine: 1
+  special:
+    - name: "\item"
+      noAdditionalIndent: true
+    - name: "\section"
+      afterName: 1
+    - name: "\textbf"
+      wrapArguments: 1
+
+# Math Mode
+displayMath:
+  BeginStartsOnOwnLine: 1
+  EndStartsOnOwnLine: 1
+  AlignAtAmpersand: 1
+
+inlineMath:
+  preserveDelimiters: 1
+
+# Delimiters
+delimiters:
+  parenthesisLeadingSpace: 0
+  parenthesisTrailingSpace: 0
+  squareBracketLeadingSpace: 0
+  squareBracketTrailingSpace: 0
+  curlyBraceLeadingSpace: 0
+  curlyBraceTrailingSpace: 0
+
+# Line Breaks & Wrapping
+lineBreaks:
+  preserveBlankLines: false  # Важно! Убирает пустые строки
+  removeExtraBlankLines: true  # Обязательное удаление лишних пустых строк
+  maxLineLength: 80
+  wrapComments: 1
+  columns:
+    - type: "displayMath"
+      align: "left"
+
+# Comments
+comments:
+  indentComments: true
+  ignoreComments: false
+  commentMarker: "% "
+  ensureFinalLineEnding: true
+
+# Advanced
+replacements:
+  - search: " "  # Неразрывный пробел
+    replace: " "
+  - search: "\\$"
+    replace: "$"
+
+# Пакетные настройки
+ifElseFi:
+  controlFlowStartsOnOwnLine: 1
+  blocksStartsOnOwnLine: 1
+
+tables:
+  tabular:
+    BeginStartsOnOwnLine: 1
+    EndStartsOnOwnLine: 1
+    columnSeparator: " & "
+    rowEnding: " \\\\"
+
+# Paragraph settings (важно для удаления пустых строк)
+paragraphs:
+  blankLinesBetweenParagraphs: 0  # Убираем лишние пустые строки между абзацами
+  indentFirstLine: 0
+  preserveBlankLines: false  # Обязательно выключаем
+  preserveManualBreaks: false
+
+
+modifyLineBreaks:
+  preserveBlankLines: 0                 # 0 - удаляет пустые строки
+  condenseMultipleBlankLinesInto: 1     # Превращает несколько пустых строк в одну

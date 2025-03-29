@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+    \draw[fill=cyan!50] (0,0) circle (2);
+    \draw[fill=white] (0,0) circle (1);
+    \draw[thick] (0,0) ++(270:1) -- ++(270:1);
+    \draw[thick] (0,0) ++(30:1) -- ++(30:1);
+    \draw[thick] (0,0) ++(150:1) -- ++(150:1);
+    \node at (90:1.5) {$\mathcal{A}$};
+    \node at (330:1.5) {$\mathcal{B}$};
+    \node at (210:1.5) {$\mathcal{C}$};
+\end{tikzpicture}
