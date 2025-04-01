@@ -1,0 +1,54 @@
+% PV diagram - Diesel cycle
+\begin{tikzpicture}[scale=0.95,  midarr/.style={decoration={markings,mark=at position #1 with
+  {\arrow{stealth}}},postaction={decorate}},
+  midarr/.default=0.5]
+\colorlet{mylightblue}{blue!20}
+\colorlet{myblue}{blue!80!black}
+\colorlet{mydarkblue}{blue!30!black}
+\colorlet{mylightred}{red!10}
+\colorlet{myred}{red!80!black}
+\colorlet{mydarkred}{red!60!black}
+\colorlet{mydarkgreen}{green!30!black}
+
+  \def\xmax{7}
+  \def\ymax{7}
+  % AXIS
+%  \draw[gray!50] (0,0) grid (\xmax, \ymax);
+  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax)
+    node[anchor=north east,inner sep=4,scale=1] {$P$};
+  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0)
+    node[anchor=north east,inner sep=4,scale=1] {$V$};
+
+\coordinate (2) at (2, 5);
+\coordinate (3) at (4, 5);
+\coordinate (4) at (6, 2);
+\coordinate (1) at (6, 1);
+\coordinate (0) at (2, 1);
+
+\fill[mylightblue] (2) -- (3) to[bend right] (4) -- (1) to[bend left]  (2) --cycle;
+
+\draw[myblue, midarr=0.5, thick] (2) --  (3);
+\draw[myred,  midarr=0.5, thick] (3) to[bend right] (4);
+\draw[myblue,  midarr=0.5, thick] (4) -- (1);
+\draw[myred, midarr=0.5, thick] (1) to[bend left]  (2);
+
+\node[] at (3, 4) {$A$};
+
+
+  % HEAT
+  \draw[>={LaTeX[width=10,length=15, open]},->,line width=5,mydarkred]
+    ($(2)!0.5!(3) + (0, 1)$)  -- node[left] {$Q_\text{h}$} ($(2)!0.5!(3)$) ;
+  \draw[>={LaTeX[width=10,length=15]},->,line width=5,blue!80]
+    ($(4)!0.5!(1) + (0.1, 0)$) -- ++(1,0)  node[right] {$Q_\text{c}$} ;
+
+\draw[myblue, midarr=0.75, thick] ($(1)+(0,0.03)$)  --  ($(0)+(0,0.03)$);
+\draw[myblue, midarr=0.75, thick] ($(0)+(0,-0.03)$)  --  ($(1)+(0,-0.03)$);
+
+  \path[]
+     (2) node[circle, fill, inner sep=1.5pt] {} node[above] {$2$}
+     (3) node[circle, fill, inner sep=1.5pt] {} node[above] {$3$}
+     (4) node[circle, fill, inner sep=1.5pt] {} node[right] {$4$}
+     (1) node[circle, fill, inner sep=1.5pt] {} node[right]  {$1$}
+     (0) node[circle, fill, inner sep=1.5pt] {} node[below] {$0$};
+
+\end{tikzpicture}

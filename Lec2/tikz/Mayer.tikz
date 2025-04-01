@@ -1,0 +1,37 @@
+\begin{tikzpicture}[midarr/.style={decoration={markings,mark=at position #1 with
+{\arrow{stealth}}},postaction={decorate}},
+  midarr/.default=0.5]
+
+    % Визначення меж
+    \def\xmax{5}
+    \def\ymax{5}
+
+    % Осі
+    \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax) node[anchor=north east] {$P$};
+    \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0) node[anchor=north east] {$V$};
+
+    % Точки
+    \coordinate (A) at (1,4);
+    \coordinate (B) at (1,1);
+    \coordinate (C) at (4,1);
+
+    % Ізохорний процес (вертикальна лінія)
+    \draw[thick] (A) -- (B) node[midway,sloped, below] {Ізохорний};
+
+    % Ізобарний процес (горизонтальна лінія)
+    \draw[thick] (B) -- (C) node[midway,below] {Ізобарний};
+
+
+    % Адіабатичний процес
+    \draw[dashed, thick,red!80!black,midarr=.5,
+%    postaction={decorate,decoration={raise=1ex, text along path,text
+%    align=center,text={Адіабата?}}}
+    ] (A) to[bend right] (C);
+%    \node[blue] at (2.5,3) {Адіабата};
+%    \node[red] at (3,2.3) {?};
+
+    % Позначки точок
+    \fill (A) circle (2pt) node[left] {1};
+    \fill (B) circle (2pt) node[left] {2};
+    \fill (C) circle (2pt) node[below] {3};
+\end{tikzpicture}
