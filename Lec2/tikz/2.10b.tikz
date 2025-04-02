@@ -1,0 +1,38 @@
+\begin{tikzpicture}[intersect/.style={circle, fill, inner sep=1.5pt}]
+  \def\xmax{4}
+  \def\ymax{4}
+  % AXIS
+
+    \draw[plotblue, thick,
+        postaction={decorate},
+        decoration={text along path, raise=1pt,
+        text={|\scriptsize\color{plotblue}|Адіабата|\color{white}|XXX}, text
+        align=right},
+        name path=A,
+    ]  (0.5, 4) to[bend right] (4, 0.5) node[intersect, plotblue] {} node[above] {$2$};
+
+    \draw[plotblue,  thick,
+        postaction={decorate},
+        decoration={text along path,
+        raise=1pt,
+        text={|\scriptsize\color{plotblue}|Адіабата},
+        text align=center,
+        },
+        name path=B,
+    ] (0.5, 2) to[bend right]  (4, 0.5);
+
+    \path[name path=line] (1, 0) -- (1, \ymax);
+    \path[name intersections={of=A and line, name=i}]  (i-1) node[intersect, plotblue] (P1)
+    {};
+    \path[name intersections={of=B and line, name=i}]  (i-1) node[intersect, plotblue] (P2)
+    {};
+    \draw[plotblue] (P1) node[above] {$1$} -- (P2) node[below] {$1$};
+
+%  \draw[gray!50] (0,0) grid (\xmax,\ymax);
+  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax)
+    node[anchor=north east,inner sep=4] {$P$};
+  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0)
+    node[anchor=north east,inner sep=4] {$V$};
+
+
+\end{tikzpicture}

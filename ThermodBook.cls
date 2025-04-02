@@ -452,10 +452,11 @@
 		\hfill{\LARGE#1}\\
 		\rule{\dimexpr\textwidth-\chapnumb\relax}{0.4pt}}}
 
+
 \titleformat{name=\section, numberless}
 {\normalsize\bfseries}{}{1em}{#1}
 
-\titleformat{\section}[hang]{\large\bfseries\sffamily}%
+\titleformat{\section}[block]{\large\bfseries\sffamily}%
 {\rlap{\color{themecolordark}\rule[-6pt]{\textwidth}{1.2pt}}\colorbox{themecolordark}{%
         \raisebox{0pt}[13pt][3pt]{ \makebox[60pt]{% height, width
                 \color{white}{\thesection}}
@@ -464,6 +465,9 @@
 { \color{themecolordark}#1
     %
 }
+
+
+
 
 %Underlining ruler for subsections
 \titleformat{\subsection}

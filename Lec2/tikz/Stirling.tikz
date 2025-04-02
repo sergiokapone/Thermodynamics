@@ -28,20 +28,16 @@
 \node[] at (4, 2) {$A$};
 
   % HEAT
-  \draw[>={LaTeX[width=20,length=15, open]},->,line width=5,plotdarkred]
-    ($(2)!0.5!(3) - (1.75, 0)$)  -- node[above] {$Q_\text{h}$} ($(2)!0.5!(3)$) ;
-  \draw[>={LaTeX[width=20,length=15, open]},->,line width=5,blue!80]
-    ($(4)!0.5!(1) + (0.1, 0)$) -- ++(1,0)  node[right] {$Q_\text{c}$} ;
+%  \draw[>={LaTeX[width=20,length=15, open]},->,line width=5,plotdarkred]
+%    ($(2)!0.5!(3) - (1.75, 0)$)  -- node[above] {$Q_\text{h}$} ($(2)!0.5!(3)$) ;
+%  \draw[>={LaTeX[width=20,length=15, open]},->,line width=5,blue!80]
+%    ($(4)!0.5!(1) + (0.1, 0)$) -- ++(1,0)  node[right] {$Q_\text{c}$} ;
 
-
-\draw[plotblue, midarr=0.75, thick] ($(1)+(0,0.03)$)  --  ($(0)+(0,0.03)$);
-\draw[plotblue, midarr=0.75, thick] ($(0)+(0,-0.03)$)  --  ($(1)+(0,-0.03)$);
 
   \path[]
-     (2) node[circle, fill, inner sep=1.5pt] {} node[left] {$2$}
-     (3) node[circle, fill, inner sep=1.5pt] {} node[left] {$3$}
-     (4) node[circle, fill, inner sep=1.5pt] {} node[right] {$4$}
-     (1) node[circle, fill, inner sep=1.5pt] {} node[right]  {$1$}
-     (0) node[circle, fill, inner sep=1.5pt] {} node[below] {$5$};
+     (2) node[circle, fill, inner sep=1.5pt] {} node[left] {$4$} %4
+     (3) node[circle, fill, inner sep=1.5pt] {} node[left] {$1$} %1
+     (4) node[circle, fill, inner sep=1.5pt] {} node[right] {$2$} %2
+     (1) node[circle, fill, inner sep=1.5pt] {} node[right]  {$3$}; %3
 
 \end{tikzpicture}

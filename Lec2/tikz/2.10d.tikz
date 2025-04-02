@@ -1,0 +1,36 @@
+\begin{tikzpicture}[intersect/.style={circle, fill, inner sep=1.5pt}]
+  \def\xmax{4}
+  \def\ymax{4}
+  % AXIS
+
+    \draw[dashed, plotred, thick,
+        postaction={decorate},
+        decoration={text along path, raise=1pt,
+        text={|\scriptsize\color{red}|Ізотерма|\color{white}|XXX}, text
+        align=right},
+        name path=A,
+    ]  (0.5, 4) to[bend right]  (4, 2);
+
+    \draw[plotblue,  thick,
+        postaction={decorate},
+        decoration={text along path,
+        raise=1pt,
+        text={|\scriptsize\color{plotblue}|Адіабата|\color{white}|XXX},
+        text align=right,
+        },
+        name path=B,
+    ] (0.75, 4) to[bend right]  (4, 0.5);
+%    \path[name intersections={of=A and B, name=i}, plotblue]  (i-1) node[intersect, plotred] {};
+
+    \node at (3,3)   {$ C > 0 $};
+    \node at (3.5,1.5) {$ C < 0 $};
+    \node at (1,1) {$ C > 0 $};
+
+%  \draw[gray!50] (0,0) grid (\xmax,\ymax);
+  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax)
+    node[anchor=north east,inner sep=4] {$P$};
+  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0)
+    node[anchor=north east,inner sep=4] {$V$};
+
+
+\end{tikzpicture}
