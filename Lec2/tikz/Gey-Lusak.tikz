@@ -1,0 +1,20 @@
+\begin{tikzpicture}[scale=0.75]
+    \fill[plotlightblue] (0, 3.75) -- ++(0, -3.75) -- ++(10, 0) -- ++(0,3.75) -- cycle;
+    \draw[plotblue, line width=2mm] (0, 4) -- ++(0, -4) -- ++(10, 0) -- ++(0,4);
+
+    \draw[pattern=gas] (4,2) arc(10:350:1.25) -- ++(1,0) -- ++(0,{2*1.25*sin(10)}) --
+    cycle;
+    \fill[red!40, opacity=0.5] (4,2) arc(10:350:1.25) -- ++(1,0) -- ++(0,{2*1.25*sin(10)}) --
+    cycle;
+
+
+
+    \draw[fill=white] (6,2) arc(170:-170:1.25) -- ++(-1,0) -- ++(0,{2*1.25*sin(10)}) --
+    cycle;
+
+    \draw[fill=gray] (4.9, 1.25) -- ++(0, 1) -- ++(-0.25,0) -- ++(0, 0.1) -- ++(0.6, 0) -- ++(0,
+    -0.1) --
+    ++(-0.25, 0) -- ++(0, -1) -- cycle;
+
+    \node[anchor=south] at (1, 2.5) {\includegraphics[width=0.5cm]{Lec2/pictures/Thermometer}};
+\end{tikzpicture}

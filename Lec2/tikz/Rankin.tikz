@@ -36,7 +36,7 @@
 
 
     \draw[dashed, plotred, ultra thick,midarr=.5] (4')
-    to[bend left]  (1, 4);
+    to[bend left]  (2);
     \draw[plotblue,ultra thick,midarr=.5] (4) -- (1);
     \draw[plotblue,ultra thick,midarr=.5] (1) -- (2);
     \draw[dashed,ultra thick, blue] (1') -- (2');

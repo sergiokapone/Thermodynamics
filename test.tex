@@ -19,42 +19,49 @@ biblatex,
 
 \begin{document}
 
-\begin{tikzpicture}[intersect/.style={circle, fill, inner sep=1.5pt}]
-  \def\xmax{4}
-  \def\ymax{4}
-  % AXIS
+\input{Lec2/tikz/adiabat_compr.tikz}
 
-    \draw[dashed, plotred, thick,
-        postaction={decorate},
-        decoration={text along path, raise=1pt,
-        text={|\scriptsize\color{red}|Ізотерма|\color{white}|XXX}, text
-        align=right},
-        name path=A,
-    ]  (0.5, 4) to[bend right]  (4, 2);
+%\begin{tikzpicture}[]
+%    \fill[plotlightblue] (0, 3.75) -- ++(0, -3.75) -- ++(10, 0) -- ++(0,3.75) -- cycle;
+%    \draw[plotblue, line width=2mm] (0, 4) -- ++(0, -4) -- ++(10, 0) -- ++(0,4);
+%
+%    \draw[pattern=Rnd] (4,2) arc(10:350:1.25) -- ++(1,0) -- ++(0,{2*1.25*sin(10)}) --
+%    cycle;
+%    \fill[red!40, opacity=0.5] (4,2) arc(10:350:1.25) -- ++(1,0) -- ++(0,{2*1.25*sin(10)}) --
+%    cycle;
+%
+%    \draw[fill=white] (6,2) arc(170:-170:1.25) -- ++(-1,0) -- ++(0,{2*1.25*sin(10)}) --
+%    cycle;
+%
+%    \draw[fill=gray] (4.9, 1.25) -- ++(0, 1) -- ++(-0.25,0) -- ++(0, 0.1) -- ++(0.6, 0) -- ++(0,
+%    -0.1) --
+%    ++(-0.25, 0) -- ++(0, -1) -- cycle;
+%
+%    \node[anchor=south] at (1, 2.5) {\includegraphics[width=0.5cm]{Lec2/pictures/Thermometer}};
+%\end{tikzpicture}
 
-    \draw[plotblue,  thick,
-        postaction={decorate},
-        decoration={text along path,
-        raise=1pt,
-        text={|\scriptsize\color{plotblue}|Адіабата|\color{white}|XXX},
-        text align=right,
-        },
-        name path=B,
-    ] (0.75, 4) to[bend right]  (4, 0.5);
-%    \path[name intersections={of=A and B, name=i}, plotblue]  (i-1) node[intersect, plotred] {};
+%\begin{tikzpicture}[]
+%%    \draw (-2.5, -1) grid  ++(5,2);
+%    \draw[thick, plotblue, pattern=north west lines, pattern color=plotblue] (-2.5, 1) rectangle ++(5,
+%    0.2);
+%
+%    \draw[thick, plotblue, pattern=Rnd, pattern color=plotblue]  (-0.5, -1) rectangle (0.5, 1);
+%
+%    \draw[thick, plotblue, pattern=north east lines, pattern color=plotblue] (-2.5, -1) rectangle
+%    ++(5, -0.2);
+%
+%    \draw[black, >={LaTeX[width=20,length=15,open]}, ->, line width=5pt] (-4, 0) -- ++ (2, 0);
+%    \draw[black, >={LaTeX[width=20,length=15,open]}, ->, line width=5pt] (2, 0) -- ++ (2, 0);
+%
+%    \draw[plotblue, thick]  (-2.5, -1) to[out=45, in=275] ++(0, 2);
+%    \draw[plotblue, thick]  (+2.5, -1) to[out=135, in=275] ++(0, 2);
+%
+%    \node[align=left, text width=1cm] at (-1, 0) {$P_1$ \\ $V_1$ \\ $T_1$};
+%    \node[align=left, text width=1cm] at (1, 0) {$P_2$ \\ $V_2$ \\ $T_2$};
+%
+%\end{tikzpicture}
 
-    \node at (3,3)   {$ C > 0 $};
-    \node at (3.5,1.5) {$ C < 0 $};
-    \node at (1,1) {$ C > 0 $};
 
-%  \draw[gray!50] (0,0) grid (\xmax,\ymax);
-  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax)
-    node[anchor=north east,inner sep=4] {$P$};
-  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0)
-    node[anchor=north east,inner sep=4] {$V$};
-
-
-\end{tikzpicture}
 
 % PV diagram - Otto cycle
 %\begin{tikzpicture}[  midarr/.style={decoration={markings,mark=at position #1 with

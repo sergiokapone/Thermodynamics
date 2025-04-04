@@ -1,0 +1,80 @@
+\tikzstyle{piston}=[gray!40!black,top color=gray!40!black!30,bottom color=gray!40!black!30,
+                    middle color=gray!50!black!15,shading angle=0]
+
+\newcommand\allumette[2]{
+    \fill [yellow] (#1,#2) rectangle (#1+4,#2+0.2);
+    \fill [yellow!60!black] (#1,#2) -- ++(4,0)-- ++(0.1,-0.05) -- ++(-4,0) -- ++(-0.1,0.05);
+    \draw (#1,#2) -- ++(0,0.2) -- ++(4,0) -- ++(0,-0.2) -- ++(0.1,-0.05) -- ++(-4,0) -- ++(-0.1,0.05);
+    \shade[ball color=red] (#1+4,#2+0.1) ellipse (0.25cm and 0.22cm);
+    \draw (#1+4,#2+0.1) ellipse (0.25cm and 0.22cm);
+}
+
+%=========================================================
+\begin{figure}[h!]\centering
+%---------------------------------------------------------
+\begin{subfigure}[t]{0.45\linewidth}\centering
+\begin{tikzpicture}[]
+%    \draw[gray] (0, 0) grid  (5,5);
+
+    \draw[plotblue, pattern=north east lines, pattern color=plotblue] (0, 5) -- ++(0, -5) -- ++(3, 0)
+    -- ++(0, 5) -- ++(-0.25,
+    0) -- ++(0, -4.75) --
+    ++(-2.5, 0) -- ++(0, 4.75) -- cycle;
+
+    \draw[piston] (0.25, 2) rectangle ++(2.5, 0.25);
+
+    \draw[piston,shading angle=90] (1.325, 2.25) rectangle ++(0.25, 3);
+
+    \fill[pattern=gasdense] (0.25, 0.25) rectangle ++(2.5, 1.75);
+
+    \draw[gray, >={LaTeX[width=20,length=15,open]}, <-, line width=5pt] (2, 2.25) -- ++ (0, 2);
+
+\begin{scope}[yshift=-1cm]
+\allumette{-2.5}{-1.5}
+%\filldraw[orange,scale=0.5, shift={(3, -2)}]  (0,0) .. controls (-1.5,1.25) and (.5,2) .. (-.2,4) ..
+%controls (1,2.5) and (1,.5) .. (0,0);
+\end{scope}
+
+\end{tikzpicture}
+\caption{}
+\label{pic:Pic2.2a}
+\end{subfigure}
+%---------------------------------------------------------
+\begin{subfigure}[t]{0.45\linewidth}\centering
+\begin{tikzpicture}[]
+%    \draw[gray] (0, 0) grid  (5,5);
+
+    \draw[piston] (0.25, 3) rectangle ++(2.5, 0.25);
+
+    \draw[plotblue, ultra thick] (0.25, 5) -- ++(0, -5) -- ++(2.5,
+    0)
+    -- ++(0, 5) ;%-- ++(-0.25,
+    0) -- ++(0, -4.75) --
+    ++(-2.5, 0) -- ++(0, 4.75) -- cycle;
+
+
+    \draw[piston,shading angle=90] (1.325, 3.25) rectangle ++(0.25, 3);
+
+    \fill[pattern=gas] (0.25, 0) rectangle ++(2.5, 3);
+
+%    \draw[gray, >={LaTeX[width=20,length=15,open]}, ->, line width=5pt] (2, 3.25) -- ++ (0, 2);
+
+
+\begin{scope}[yshift=-1cm]
+\allumette{-2.5}{-1.5}
+\filldraw[orange,scale=0.5, shift={(3, -2)}]  (0,0) .. controls (-1.5,1.25) and (.5,2) .. (-.2,4) ..
+controls (1,2.5) and (1,.5) .. (0,0);
+\end{scope}
+
+\end{tikzpicture}
+\caption{}
+\label{pic:Pic2.2b}
+\end{subfigure}
+%---------------------------------------------------------
+\caption{Адіабатичний \protect\subref{pic:Pic2.2a} та ізотермічний \protect\subref{pic:Pic2.2b} спосіб
+змінити температуру газу}
+\end{figure}
+%=========================================================
+
+
+%

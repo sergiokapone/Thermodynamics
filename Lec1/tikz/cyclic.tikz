@@ -17,8 +17,8 @@
 %  \fill[blue!20] (A) rectangle (C|-0,0) node[midway, black] {$A$};
 
   % LINE
-  \draw[very thick,midarr=.55,red!80!black] (A) to[bend left] (B);
-  \draw[very thick,midarr=.55,red!80!black] (B) to[bend left] (A);
+  \draw[very thick,midarr=.55,plotred] (A) to[bend left] (B);
+  \draw[very thick,midarr=.55,plotred] (B) to[bend left] (A);
 %  \fill (A) circle (2pt) node[above] {$P_1$, $V_1$};
 %  \fill (B) circle (2pt) node[above] {$P_2$, $V_2$};
 

@@ -146,14 +146,44 @@ ang/.store in=\wang, ang={60},
 }
 
 \tikzstyle{ray} = [postaction=decorate,decoration={markings,mark=at position .52 with \arrow{>}}, red]
-\tikzstyle{gray} = [line width = 1, dashed, black!50]
+%\tikzstyle{gray} = [line width = 1, dashed, black!50]
 
 \newcommand{\point}[4]{
 	\draw[fill=#4] (#1) circle (1pt) node[#3] {#2};
 }
 
+\pgfdeclarepatternformonly{gas}
+{\pgfpointorigin}{\pgfpoint{2cm}{2cm}}
+{\pgfpoint{2cm}{2cm}}
+{\foreach \i in {1,...,150} {%
+    \pgfpathcircle{%
+        %\pgfpoint{.25cm}{.25cm}}{.4pt}
+        \pgfpoint{rnd*2cm}{rnd*2cm}}{.5pt}}
+    \pgfusepath{fill}
+}
 
 
+\pgfdeclarepatternformonly{gasdense}
+{\pgfpointorigin}{\pgfpoint{2cm}{2cm}}
+{\pgfpoint{2cm}{2cm}}
+{\foreach \i in {1,...,350} {%
+    \pgfpathcircle{%
+        %\pgfpoint{.25cm}{.25cm}}{.4pt}
+        \pgfpoint{rnd*2cm}{rnd*2cm}}{.5pt}}
+    \pgfusepath{fill}
+}
+
+
+
+\pgfdeclarepatternformonly{porous}
+{\pgfpointorigin}{\pgfpoint{1cm}{1cm}}
+{\pgfpoint{.25cm}{.25cm}}
+{\foreach \i in {1,...,100} {%
+    \pgfpathcircle{%
+        %\pgfpoint{.25cm}{.25cm}}{.4pt}
+        \pgfpoint{rnd*.25cm}{rnd*.25cm}}{.25pt}}
+    \pgfusepath{fill}
+}
 
 
 %%% --------------------------------------------------------

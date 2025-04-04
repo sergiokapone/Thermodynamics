@@ -83,6 +83,7 @@
 \RequirePackage{fontspec}
 \setsansfont{CMU Sans Serif}%{Arial}
 \setmainfont{stix}%{CMU Serif}%{Times New Roman}
+%\setmainfont{Bookman Old Style}%{CMU Serif}%{Times New Roman}
 \setmonofont{CMU Typewriter Text}%{Consolas}
 \defaultfontfeatures{Ligatures={TeX}}
 \newfontfamily\Annabelle{Annabelle}
@@ -853,7 +854,7 @@ parbox = false,
 	answersolutionstyle/.style={%
 			enhanced jigsaw,
 			colframe=themecolordark,
-            colback=cyan!1,
+            colback=cyan!5,
 %            interior hidden,
 %			boxrule=0pt,
 			frame hidden,
@@ -861,22 +862,26 @@ parbox = false,
             %            before skip=10pt,
 			%                after skip=10pt,
 %			parbox=false,
-        overlay unbroken = {\draw[line width=1pt, themecolordark, rounded corners] (frame.south west) rectangle (frame.north east);},
-        extras first={
-            overlay={%
-                \draw[line width=1pt, themecolordark, rounded corners] (frame.south west) -- (frame.north west) -- (frame.north east) --(frame.south east);
-            },
-        },
-        extras middle={
-            overlay={%
-                \draw[line width=1pt, themecolordark, rounded corners] (frame.north west) -- (frame.south west)  (frame.south east) --(frame.north east);
-            },
-        },
-        extras last={
-            overlay={%
-                \draw[line width=1pt, themecolordark, rounded corners] (frame.north west) -- (frame.south west) -- (frame.south east) --(frame.north east);
-            },
-        },
+%        overlay unbroken = {\draw[line width=1pt, themecolordark, rounded corners] (frame.south west)
+%rectangle (frame.north east);},
+%        extras first={
+%            overlay={%
+%                \draw[line width=1pt, themecolordark, rounded corners] (frame.south west) --
+%(frame.north west) -- (frame.north east) --(frame.south east);
+%            },
+%        },
+%        extras middle={
+%            overlay={%
+%                \draw[line width=1pt, themecolordark, rounded corners] (frame.north west) --
+%(frame.south west)  (frame.south east) --(frame.north east);
+%            },
+%        },
+%        extras last={
+%            overlay={%
+%                \draw[line width=1pt, themecolordark, rounded corners] (frame.north west) --
+%(frame.south west) -- (frame.south east) --(frame.north east);
+%            },
+%        },
 		},
 }
 
