@@ -1230,18 +1230,105 @@ $\mathcal{D}$ і $\mathcal{A}$ відбувається зачинення ко�
 рис.~\ref{pic:diesel_engine}), де
 під тиском подається рідке паливо, що самозаймається (положення (с) на рис.~\ref{pic:diesel_engine}).
 В точці 3 подача палива
-припиняється, газ адіабатично розширяється до точки 4 (положення (d)на рис.~\ref{pic:diesel_engine}),
+припиняється, газ адіабатично розширяється до точки 4 (положення (d) на рис.~\ref{pic:diesel_engine}),
 де відкривається вихлопний
 клапан і тиск спадає до атмосферного (точка 1). Під час прямого холостого такту через відкритий
 вихлопний клапан видаляються залишки продуктів згорання, а під час зворотного через впускний
 клапан всмоктується атмосферне повітря.
 
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=\linewidth]{combustion_engine.png}
-	\caption{\href{http://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node25.html}{Поршень і
-клапани в чотиритактному двигуні внутрішнього згоряння}}
-	\label{pic:combustion_engine}
+
+
+\begin{figure}[!h]\centering
+%-------------------------------------------------
+\begin{subfigure}[t]{0.19\linewidth}\centering
+% INTAKE STROKE
+\begin{tikzpicture}[scale=0.5, transform shape]
+  \def\d{-60}
+  \engine{10};
+  \draw[vector] (\d:.6*\R) arc (\d:\d-80:.55*\R);
+  \fill[\gas]
+    (VLo) to[out=110,in=0] ++ (-1.5,0.6) -- ($(VLo)+(-1.5,1.3)$) to[out=0,in=110] (VLm)
+    to[out=\vl-90,in=\vl-90] cycle;
+  \wall
+  \valveL{.3}
+  \valveR{.1}
+
+%  \draw[arrow] (VL) ++ (-.3,.2) --++ (-1,-.5)
+%    node[below left,align=right,scale=1.4] {intake\\[-2pt]valve};
+%  \draw[arrow] (VR) ++ (.3,.1) --++ (1,-.5)
+%    node[below right,align=left,scale=1.4] {exhaust\\[-2pt]valve};
+%  \draw[arrow] (O) ++ (-.5,.4) --++ (-1.8,.9)
+%    node[left,above left=2,scale=1.4] {crankshaft};
+%  \draw[arrow] (P) ++ (1.1,-.2) --++ (1.2,-.5)
+%    node[below right=-2,scale=1.4] {piston};
+%  \draw[arrow] (S) ++ (150:.2) --++ (-.5,.7)
+%    node[above,align=center,scale=1.4] {spark\\[-2pt]plug};
+
+\end{tikzpicture}
+\caption*{$1'$}
+\end{subfigure}
+%-------------------------------------------------
+\begin{subfigure}[t]{0.19\linewidth}\centering
+% COMPRESSION STROKE
+\begin{tikzpicture}[scale=0.5, transform shape]
+  \def\d{-10}
+  \engine{-140};
+  \draw[vector] (\d:.6*\R) arc (\d:\d-80:.55*\R);
+  \valveL{.1}
+  \valveR{.1}
+\end{tikzpicture}
+\caption*{$2$}
+\end{subfigure}
+%-------------------------------------------------
+\begin{subfigure}[t]{0.19\linewidth}\centering
+% IGNITION
+\begin{tikzpicture}[scale=0.5, transform shape]
+  \def\d{40}
+  \engine{90};
+  \draw[vector] (\d:.6*\R) arc (\d:\d-80:.55*\R);
+  \valveL{.1}
+  \valveR{.1}
+  \draw[very thin,yellow!70!black,fill=yellow,shift={(X)}]
+    ( -15:.20) -- ( -30:.40) -- ( -40:.25) -- ( -50:.40) --
+    ( -60:.22) -- ( -70:.40) -- ( -80:.20) -- ( -90:.45) --
+    (-100:.24) -- (-110:.40) -- (-120:.25) -- (-130:.40) --
+    (-140:.20) -- (-150:.45) -- (-165:.20) to[out=40,in=140] cycle;
+\end{tikzpicture}
+\caption*{$3$}
+\end{subfigure}
+%-------------------------------------------------
+\begin{subfigure}[t]{0.19\linewidth}\centering
+% POWER STROKE
+\def\gas{red!10}
+\begin{tikzpicture}[scale=0.5, transform shape]
+  \def\d{-60}
+  \engine{10};
+  \draw[vector] (\d:.6*\R) arc (\d:\d-80:.55*\R);
+  %\draw[vector] (P) ++ (-.7,-.9) --++ (0,-1.1);
+  \valveL{.1}
+  \valveR{.1}
+\end{tikzpicture}
+\caption*{$4$}
+\end{subfigure}
+%-------------------------------------------------
+\begin{subfigure}[t]{0.19\linewidth}\centering
+% EXHAUST STROKE
+\begin{tikzpicture}[scale=0.5, transform shape]
+  \def\d{-40}
+  \engine{-190};
+  \draw[vector] (\d:.6*\R) arc (\d:\d-80:.55*\R);
+  \fill[\gas]
+    (VRo) to[out=60,in=-180] ++ (1.5,0.6) -- ($(VRo)+(1.5,1.3)$) to[out=180,in=60] (VRm)
+    to[out=-270+\vr,in=-270+\vr] cycle;
+  \wall
+  \valveL{.1}
+  \valveR{.3}
+\end{tikzpicture}
+\caption*{$1'$}
+\end{subfigure}
+%-------------------------------------------------
+\caption{Поршень і клапани в чотиритактному двигуні внутрішнього згоряння}
+\label{pic:combustion_engine}
 \end{figure}
 
 Недоліком дизельного двигуна є необхідність ретельної обробки поверхні поршня і циліндра, оскільки
@@ -1332,7 +1419,7 @@ $\mathcal{D}$ і $\mathcal{A}$ відбувається зачинення ко�
 	\end{subfigure}
     \hfill%
 	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\linewidth]{stirling_engine.png}
+		\includegraphics[width=\linewidth]{\currfilebase/tikz/Stirling.pdf}
 		\caption{}
 		\label{pic:stirling_engine}
 	\end{subfigure}

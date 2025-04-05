@@ -1,0 +1,156 @@
+    \def\h{3}
+    \def\w{2}
+    \def\dw{0.25}
+    \pgfmathsetmacro\barwidth{\w-\dw/2}
+    \pgfmathsetmacro\lw{\dw/2}
+
+\begin{tikzpicture}[]
+
+    % Циліндр
+
+    \draw[gray!50] (0,0) grid (\w,{\h+2});
+
+    \draw[plotblue, line join=round, line width=\lw cm, Round Cap-Butt Cap] (0, \h) -- ++(0, -\h)
+    -- ++({(\w-\dw)/2}, 0);
+    \draw[plotblue, line join=round, line width=\lw cm, Round Cap-Butt Cap] (\w, \h) -- ++(0, -\h)
+    -- ++({-(\w-\dw)/2}, 0);
+    % Top bar
+    \draw[plotblue, line width=\lw cm] (0.5, {\h+0.5}) -- ++ ({\w-1},0);
+
+    % Клапана
+    \draw[line cap=round, line width=0.1cm,{Bar[color=black, width=0.7cm]}-, black]
+    (0.5, 3)  -- ++(135:1);
+    \draw[line cap=round, line width=0.1cm,{Bar[color=black, width=0.7cm]}-, black]
+    (1.75, 3.25)  -- ++(45:1);
+
+    % Поршень
+    \draw[line width=\dw cm,-{Bar[color=gray, width=\barwidth cm]}, gray] ({\w/2}, -2) coordinate (T)
+    -- ++(0, \h);
+    % Напрям руху
+
+    \draw[line width=0.1cm, -{Stealth[width=0.5cm]}] ($(T) - (0, 0.5)$) -- ++(0, -1);
+    \node[circle, fill=plotlightblue, draw=plotblue, minimum size=1cm] at ({\w/2}, -4.5) {$1'$};
+
+\end{tikzpicture}
+%
+\begin{tikzpicture}[]
+
+    % Циліндр
+
+
+    \draw[gray!50] (0,0) grid (\w,{\h+2});
+
+    \draw[plotblue, line join=round, line width=\lw cm, Round Cap-Butt Cap] (0, \h) -- ++(0, -\h)
+    -- ++({(\w-\dw)/2}, 0);
+    \draw[plotblue, line join=round, line width=\lw cm, Round Cap-Butt Cap] (\w, \h) -- ++(0, -\h)
+    -- ++({-(\w-\dw)/2}, 0);
+    % Top bar
+    \draw[plotblue, line width=\lw cm] (0.5, {\h+0.5}) -- ++ ({\w-1},0);
+
+    % Клапана
+    \draw[line cap=round, line width=0.1cm,{Bar[color=black, width=0.7cm]}-, black]
+    (0.25, 3.25)  -- ++(135:1);
+    \draw[line cap=round, line width=0.1cm,{Bar[color=black, width=0.7cm]}-, black]
+    (1.75, 3.25)  -- ++(45:1);
+
+    % Поршень
+    \draw[line width=\dw cm,-{Bar[color=gray, width=\barwidth cm]}, gray] ({\w/2}, -1) coordinate (T)
+    -- ++(0, \h);
+    % Напрям руху
+
+    \draw[line width=0.1cm, {Stealth[width=0.5cm]}-] ($(T) - (0, 0.5)$) -- ++(0, -1);
+    \node[circle, fill=plotlightblue, draw=plotblue, minimum size=1cm] at ({\w/2}, -4.5) {$2$};
+
+\end{tikzpicture}
+%
+\begin{tikzpicture}[]
+
+    % Циліндр
+
+    \draw[gray!50] (0,0) grid (\w,{\h+2});
+
+    \draw[plotblue, line join=round, line width=\lw cm, Round Cap-Butt Cap] (0, \h) -- ++(0, -\h)
+    -- ++({(\w-\dw)/2}, 0);
+    \draw[plotblue, line join=round, line width=\lw cm, Round Cap-Butt Cap] (\w, \h) -- ++(0, -\h)
+    -- ++({-(\w-\dw)/2}, 0);
+    % Top bar
+    \draw[plotblue, line width=\lw cm] (0.5, {\h+0.5}) -- ++ ({\w-1},0);
+
+    % Клапана
+    \draw[line cap=round, line width=0.1cm,{Bar[color=black, width=0.7cm]}-, black]
+    (0.25, 3.25)  -- ++(135:1);
+    \draw[line cap=round, line width=0.1cm,{Bar[color=black, width=0.7cm]}-, black]
+    (1.75, 3.25)  -- ++(45:1);
+
+    % Поршень
+    \draw[line width=\dw cm,-{Bar[color=gray, width=\barwidth cm]}, gray] ({\w/2}, -0.25) coordinate
+    (T)
+    -- ++(0, \h);
+    % Напрям руху
+
+%    \draw[line width=0.1cm, {Stealth[width=0.5cm]}-] ($(T) - (0, 0.5)$) -- ++(0, -1);
+    \node[circle, fill=plotlightblue, draw=plotblue, minimum size=1cm] at ({\w/2}, -4.5) {$3$};
+
+% Spark
+
+
+
+\end{tikzpicture}
+%
+\begin{tikzpicture}[]
+
+    % Циліндр
+
+
+    \draw[gray!50] (0,0) grid (\w,{\h+2});
+
+    \draw[plotblue, line join=round, line width=\lw cm, Round Cap-Butt Cap] (0, \h) -- ++(0, -\h)
+    -- ++({(\w-\dw)/2}, 0);
+    \draw[plotblue, line join=round, line width=\lw cm, Round Cap-Butt Cap] (\w, \h) -- ++(0, -\h)
+    -- ++({-(\w-\dw)/2}, 0);
+    % Top bar
+    \draw[plotblue, line width=\lw cm] (0.5, {\h+0.5}) -- ++ ({\w-1},0);
+
+    % Клапана
+    \draw[line cap=round, line width=0.1cm,{Bar[color=black, width=0.7cm]}-, black]
+    (0.25, 3.25)  -- ++(135:1);
+    \draw[line cap=round, line width=0.1cm,{Bar[color=black, width=0.7cm]}-, black]
+    (1.75, 3.25)  -- ++(45:1);
+
+    % Поршень
+    \draw[line width=\dw cm,-{Bar[color=gray, width=\barwidth cm]}, gray] ({\w/2}, -1) coordinate (T)
+    -- ++(0, \h);
+    % Напрям руху
+
+    \draw[line width=0.1cm, -{Stealth[width=0.5cm]}] ($(T) - (0, 0.5)$) -- ++(0, -1);
+    \node[circle, fill=plotlightblue, draw=plotblue, minimum size=1cm] at ({\w/2}, -4.5) {$4$};
+
+\end{tikzpicture}
+\begin{tikzpicture}[]
+
+    % Циліндр
+
+    \draw[gray!50] (0,0) grid (\w,{\h+2});
+
+    \draw[plotblue, line join=round, line width=\lw cm, Round Cap-Butt Cap] (0, \h) -- ++(0, -\h)
+    -- ++({(\w-\dw)/2}, 0);
+    \draw[plotblue, line join=round, line width=\lw cm, Round Cap-Butt Cap] (\w, \h) -- ++(0, -\h)
+    -- ++({-(\w-\dw)/2}, 0);
+    % Top bar
+    \draw[plotblue, line width=\lw cm] (0.5, {\h+0.5}) -- ++ ({\w-1},0);
+
+    % Клапана
+    \draw[line cap=round, line width=0.1cm,{Bar[color=black, width=0.7cm]}-, black]
+    (0.25, 3.25)  -- ++(135:1);
+    \draw[line cap=round, line width=0.1cm,{Bar[color=black, width=0.7cm]}-, black]
+    (1.5, 3)  -- ++(45:1);
+
+    % Поршень
+    \draw[line width=\dw cm,-{Bar[color=gray, width=\barwidth cm]}, gray] ({\w/2}, -2) coordinate (T)
+    -- ++(0, \h);
+    % Напрям руху
+
+    \draw[line width=0.1cm, {Stealth[width=0.5cm]}-] ($(T) - (0, 0.5)$) -- ++(0, -1);
+    \node[circle, fill=plotlightblue, draw=plotblue, minimum size=1cm] at ({\w/2}, -4.5) {$1''$};
+
+\end{tikzpicture}
