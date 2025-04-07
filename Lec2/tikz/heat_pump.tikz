@@ -1,0 +1,65 @@
+\begin{tikzpicture}[]
+
+
+    \fill[top color=plotblue!5, bottom color=plotblue!90] (-0.5,1) rectangle ++(2, -7);
+    \fill[top color=plotred!90, bottom color=white] (8,-6) rectangle ++(2, 7);
+    \draw[line join=round, line width=0.5cm, line cap=round, blue!50,
+  postaction={draw, plotblue, path fading=north}
+] (5, 0) -- ++(-4, 0) coordinate (A) --
+    ++(25:-1.2) --
+    ++(-25:1.2) --
+    ++(25:-1.2) --
+    ++(-25:1.2) --
+    ++(25:-1.2) --
+    ++(-25:1.2) --
+    ++(25:-1.2) --
+    ++(-25:1.2) --
+    ++(25:-1.2) --
+    ++(-25:1.2) --
+    ++(3.5, 0) coordinate (B)
+;
+
+\draw[line join=round, line cap=round, line width=0.25cm, plotred!30,
+  postaction={draw, plotred, path fading=south}
+] (B) -- ++(4, 0) --
+++(25:1.2)  --
+++(-25:-1.2)  --
+++(25:1.2) --
+++(-25:-1.2) --
+++(25:1.2) --
+++(-25:-1.2) --
+++(25:1.2) --
+++(-25:-1.2) --
+++(25:1.2) --
+++(-25:-1.2) --
+++(-4, 0)
+ ;
+
+\fill[ultra thick, draw, left color=plotblue!10, right color=plotred!90] (5, 0) circle(0.75)
+node[above=0.76cm]
+{Компресор};
+\draw[ultra thick, fill=white] (5, 0) circle(0.15);
+\draw[ultra thick] (5, 0) ++(45:0.15) to[bend right] ++(45:0.60);
+\draw[ultra thick] (5, 0) ++(135:0.15) to[bend right] ++(135:0.60);
+\draw[ultra thick] (5, 0) ++(-135:0.15) to[bend right] ++(-135:0.60);
+\draw[ultra thick] (5, 0) ++(-45:0.15) to[bend right] ++(-45:0.60);
+
+\node[text=black, font=\small] (A) at (2.9, -2.5) {Випаровування};
+\node[text=black, font=\small] (B) at (5, -1.5) {Стиснення};
+\node[text=black, font=\small] (C) at (6.9, -2.5) {Конденсація};
+\node[text=black, font=\small] (D) at (5, -3.5) {Розширення};
+
+\draw[->] (A.north) to[out=90, in=180] (B.west);
+\draw[->] (B.east) to[out=0, in=90] (C.north);
+\draw[->] (C.south) to[out=-90, in=0] (D.east);
+\draw[->] (D.west) to[out=180, in=-90] (A.south);
+
+\node[] at (5, -5.75) {Розширювальний клапан};
+
+\draw[->, ultra thick] (0.5, 1.25) node[above] {Нагрівання} -- ++(0, -7);
+\node at (0.5, -6.5) {Випаровувач};
+
+\draw[<-, ultra thick] (9, 1.25) node[above] {Охолодження} -- ++(0, -7);
+\node at (9, -6.5) {Конденсор};
+
+\end{tikzpicture}

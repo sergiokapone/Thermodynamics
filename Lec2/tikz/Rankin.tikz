@@ -12,17 +12,17 @@
   \coordinate (2') at (1.5, 5);
   \coordinate (3) at (4, 5);
   \coordinate (4) at (6, 1);
-  \coordinate (4') at (4, 1);
+  \coordinate (4') at (3, 1);
   \coordinate (1) at (1, 1);
   \coordinate (1') at (1.5, 1);
 
 
   % WORK
 
-    \fill[plotlightblue] (1) -- (2) -- (3) to[bend right] (4) --cycle;
+    \fill[plotlightblue] (1) -- (2) -- (3) to[bend right=15] (4) --cycle;
 
     \draw[plotblue,ultra thick,midarr=.5] (2) --  (3);
-    \draw[plotred,ultra thick,midarr=.5] (3) to[bend right]  (4);
+    \draw[plotred,ultra thick,midarr=.5] (3) to[bend right=15]  (4);
 
 
     \path[midarr=.5,
@@ -32,11 +32,11 @@
                   text={|\scriptsize|Ізоентропійне розширення},
                   text align={center}
                 },
-                ] (3) to[bend right]  (4);
+                ] (3) to[bend right=15]  (4);
 
 
     \draw[dashed, plotred, ultra thick,midarr=.5] (4')
-    to[bend left]  (2);
+    to[bend left=15]  (2);
     \draw[plotblue,ultra thick,midarr=.5] (4) -- (1);
     \draw[plotblue,ultra thick,midarr=.5] (1) -- (2);
     \draw[dashed,ultra thick, blue] (1') -- (2');

@@ -1,0 +1,83 @@
+
+% !TeX root = ../../Thermod.tex
+
+
+\begin{tikzpicture}[midarr/.style={decoration={markings,mark=at position #1 with
+  {\arrow{stealth}}},postaction={decorate}},
+  midarr/.default=0.5]
+
+  \def\xmax{8}
+  \def\ymax{8}
+  % AXIS
+%  \draw[gray!50] (0,0) grid (\xmax, \ymax);
+  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax)
+    node[anchor=north east,inner sep=4,scale=1] {$T$};
+  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0)
+    node[anchor=north east,inner sep=4,scale=1] {$S$};
+
+\coordinate (A) at (1.5, 0);
+\coordinate (B) at (1.5, 2);
+\coordinate (C) at (1.5, 6);
+\coordinate (D) at (7, 6);
+\coordinate (E) at (7, 2);
+\coordinate (F) at (7, 0);
+
+
+\draw[plotblue, midarr=0.75, ultra thick] (B) -- coordinate[pos=0.25] (1) (C);
+\draw[plotblue, midarr=0.25, ultra thick] (C) -- coordinate[pos=0.75] (2) (D);
+\draw[plotblue, midarr=0.75, ultra thick] (D) -- coordinate[pos=0.25] (3) (E);
+\draw[plotblue, midarr=0.25, ultra thick] (E) -- coordinate[pos=0.75] (4) (B);
+
+\draw[plotred, midarr, ultra thick] (1) to[out=90, in=180] (2);
+\draw[plotred, midarr, ultra thick] (2) to[out=0, in=90] (3);
+\draw[plotred, midarr, ultra thick] (3) to[out=270, in=0] (4);
+\draw[plotred, midarr, ultra thick] (4) to[out=180, in=270] (1);
+
+  \path[]
+     (A) node[circle, fill, inner sep=1.5pt] {} node[below]  {$A$}
+     (B) node[circle, fill, inner sep=1.5pt] {} node[left]  {$B$}
+     (C) node[circle, fill, inner sep=1.5pt] {} node[left] {$C$}
+     (D) node[circle, fill, inner sep=1.5pt] {} node[right] {$D$}
+     (E) node[circle, fill, inner sep=1.5pt] {} node[right] {$E$}
+     (F) node[circle, fill, inner sep=1.5pt] {} node[below] {$F$}
+     (1) node[circle, fill, inner sep=1.5pt] {} node[left] {$1$}
+     (2) node[circle, fill, inner sep=1.5pt] {} node[above] {$2$}
+     (3) node[circle, fill, inner sep=1.5pt] {} node[right] {$3$}
+     (4) node[circle, fill, inner sep=1.5pt] {} node[below] {$4$};
+
+    \path[name path=A] (1) -- (C) -- (2) --(D) -- (3);
+    \path[name path=B] (1) to[out=90, in=180] (2) to[out=0, in=90] (3);
+    \tikzfillbetween[of=A and B]{red, opacity=0.2};
+
+    \path[name path=C] (3) -- (E) -- (4) --(B) -- (1);
+    \path[name path=D] (3)  to[out=270, in=0] (4) to[out=180, in=270] (1);
+    \tikzfillbetween[of=C and D]{blue, opacity=0.2};
+
+
+    \draw[dashed] (B) -- (A);
+    \draw[dashed] (E) -- (F);
+
+%    \draw[plotred, >={LaTeX[width=20,length=15,open]}, <-, line width=5pt] ($(C)!.5!(D)$) -- ++ (0,
+%    +2)
+%    node[above] {$q_1$};
+%
+%    \draw[plotblue, >={LaTeX[width=20,length=15,open]}, ->, line width=5pt] ($(B)!.5!(E)$) -- ++ (0,
+%    -1)
+%    node[below] {$q_2$};
+
+    \coordinate (DE) at ($(D)!.25!(E)$);
+
+    \node[below right, plotred] at (C) {$q_1$};
+    \node[above left, plotblue] at (E) {$q_2$};
+
+    \node[right=1cm of DE, text width= 2cm]  {
+\begin{align*}
+&\Sigma_{BCDE} = A_C \\
+&\Sigma_{ACDF} = Q_C \\
+&\Sigma_{A123F} =Q_{1234}  \\
+&\Sigma_{A123F} -  \Sigma_{A143F} = \Sigma_{A1234}
+\end{align*}
+};
+
+
+\end{tikzpicture}

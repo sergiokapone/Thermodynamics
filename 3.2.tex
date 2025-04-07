@@ -1,0 +1,77 @@
+\documentclass[%
+biblatex,
+%marginversioninfo
+]{ThermodBook}
+\usepackage{ThermodImages}
+
+
+\begin{document}
+
+
+\begin{tikzpicture}[
+  fat arrow/.style={
+    every to/.style={
+      to path={
+        let \p1 = ($(\tikztotarget)-(\tikztostart)$),
+            \n1 = {veclen(\x1,\y1)},
+            \n2 = {mod(scalar(atan2(\y1,\x1))+360, 360)}
+        in
+        -- (\tikztotarget)
+        node[
+          inner xsep=0pt, inner ysep=5pt,
+          minimum height=\n1-\pgflinewidth,
+          single arrow,
+          rotate=\n2,
+          anchor=tip,
+          shading=axis,
+          left color=orange,
+          right color=red,
+          draw=black,
+          #1
+        ] {}
+        \tikztonodes
+      }
+    }
+  },
+  fat arrow/.default=
+]
+    \node[rectangle, rounded corners, fill=plotred!50, draw=black, minimum width=10cm] (H) at (0,5)
+    {Нагрівач
+    при $T_h$};
+
+
+    \node[rectangle, rounded corners, fill=plotblue!50, draw=black, minimum width=10cm] (C) at (0,0)
+    {Охолоджувач
+    при $T_c$};
+
+    \node[ellipse, draw, fill=plotblue!20, minimum width=2cm] (EM) at ($(H)!.5!(C)-(2,0)$) {$\eta_M$};
+    \node[ellipse, draw, fill=plotblue!20, minimum width=2cm] (EL) at ($(H)!.5!(C)+(2,0)$) {$\eta_L$};
+
+    \path[fat arrow={top color=plotred!50, bottom color=yellow, draw=black}]  ($(H.south)-(2,0)$) to
+    node[left] {$Q$}
+    (EM.north);
+
+    \path[fat arrow={top color=yellow, bottom color=plotblue!50, draw=black}]  (EM.south) to
+    node[left] {$(1-\eta_M)Q$}
+    ($(C.north)-(2,0)$);
+
+    % ---------------------------
+
+    \path[fat arrow={top color=plotred!50, bottom color=yellow, draw=black}]      (EL.north) to
+    node[right=0.25cm] {$\frac{\eta_M}{\eta_L}Q$}      ($(H.south)+(2,0)$);
+
+    \path[fat arrow={top color=yellow, bottom color=plotblue!50, draw=black}]      ($(C.north)+(2,0)$)
+    to
+    node[right=0.25cm] {$\eta_MQ\left(\frac1{\eta_L} - 1 \right)$}
+(EL.south);
+
+
+ \path[fat arrow={left color=teal!10, right color=teal, draw=black}]      (EM.east) to
+    node[above=0.25cm] {$A$} node[below=0.25cm] {$\eta_M Q$}      (EL.west);
+
+    \node[above  left=1cm] at (EM) {$\eta_M \ge \eta_L$};
+
+\end{tikzpicture}
+
+
+\end{document}

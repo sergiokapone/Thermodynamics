@@ -212,6 +212,7 @@
 
 \RequirePackage{mhchem}
 \RequirePackage{icomma}
+\RequirePackage{cancel}
 
 
 

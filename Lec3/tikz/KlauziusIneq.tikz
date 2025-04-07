@@ -1,0 +1,30 @@
+\begin{tikzpicture}[midarr/.style={decoration={markings,mark=at position #1 with
+  {\arrow{stealth}}},postaction={decorate}},
+  midarr/.default=0.5]
+
+  \def\xmax{8}
+  \def\ymax{8}
+  % AXIS
+%  \draw[gray!50] (0,0) grid (\xmax, \ymax);
+  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax)
+    node[anchor=north east,inner sep=4,scale=1] {$P$};
+  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0)
+    node[anchor=north east,inner sep=4,scale=1] {$V$};
+
+
+\coordinate (2) at (1.5, 6);
+\coordinate (1) at (7, 2);
+
+
+\draw[plotblue, midarr=0.5, ultra thick,
+] (1) to[bend left=40] node[below, sloped] {оборотний ($R$)}  (2);
+\draw[dashed, plotred,  midarr=0.5, ultra thick,
+] (1) -- node[above, sloped] {необоротний ($IR$)} (2);
+
+
+  \path[]
+     (1) node[circle, fill, inner sep=1.5pt] {} node[right]  {$1$}
+     (2) node[circle, fill, inner sep=1.5pt] {} node[left]  {$2$};
+
+
+\end{tikzpicture}
