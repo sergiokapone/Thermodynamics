@@ -13,8 +13,14 @@
   \coordinate (d) at (5, 2);
   \coordinate (c) at (2, 2);
 
-\draw [plotblue, thick] (c) -- (b) -- (a) -- (d) -- cycle;
+\fill[plotlightblue] (0.5,0) to[bend left=10] (b) to[out=55, in=70, looseness=3] (d) to[out=255,
+in=95] (4.8, 0) --
+cycle;
 
+\draw [plotblue, thick, midarr=0.75] (a) -- (b);
+\draw [plotblue, thick, midarr] (b) -- (c);
+\draw [plotblue, thick, midarr] (c) -- (d);
+\draw [plotblue, thick, midarr] (d) -- (a);
 
   % WORK
 
@@ -26,7 +32,10 @@
     (d) node[circle, inner sep=1.5, fill] {} node[below] {$d$}
     ;
 
-\draw (0.5,0) to[bend left=10] (b) to[out=55, in=70, looseness=3] (d) to[out=255, in=95] (4.8, 0);
+\draw (0.5,0) to[bend left=10] (b) to[out=55, in=70, looseness=3] (d) to[out=255, in=95] (4.8, 0) --
+cycle;
+
+
 
    \draw[>={LaTeX[width=20,length=15, open]},<-,line width=5,plotblue]  ($(c)!0.5!(d)$) -- ++(0,-1)
    node[pos=1, below]  {$Q1$};

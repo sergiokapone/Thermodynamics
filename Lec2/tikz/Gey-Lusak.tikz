@@ -9,12 +9,17 @@
 
 
 
+
     \draw[fill=white] (6,2) arc(170:-170:1.25) -- ++(-1,0) -- ++(0,{2*1.25*sin(10)}) --
     cycle;
 
     \draw[fill=gray] (4.9, 1.25) -- ++(0, 1) -- ++(-0.25,0) -- ++(0, 0.1) -- ++(0.6, 0) -- ++(0,
     -0.1) --
     ++(-0.25, 0) -- ++(0, -1) -- cycle;
+
+    \node[text=plotred] at (2.75,1.75) {$2$};
+    \node[text=plotred] at (7.25,1.75) {$3$};
+    \node[text=plotred] at (5,2.7) {$1$};
 
     \node[anchor=south] at (1, 2.5) {\includegraphics[width=0.5cm]{Lec2/pictures/Thermometer}};
 \end{tikzpicture}

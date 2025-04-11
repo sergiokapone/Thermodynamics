@@ -1,0 +1,118 @@
+\begin{figure}[h!]\centering
+%---------------------------------------------------------
+\begin{subfigure}[t]{0.32\linewidth}\centering
+    \begin{tikzpicture}
+
+    \pgfmathsetseed{18}
+    % Область 1 (синие точки)
+    \foreach \x in {0, 1} {
+    \foreach \y in {0,...,4}
+        \fill[plotblue] ({\x+abs(0.75*rnd)+0.25},{\y+0.75*rnd+0.15}) circle (0.1);
+    }
+
+    \pgfmathsetseed{12416}
+    % Область 2 (красные точки)
+    \foreach \x in {3, 4} {
+    \foreach \y in {0,...,4}
+        \fill[plotred] ({\x+rnd},{\y+rnd}) circle (0.1);
+    }
+
+
+    % Обозначения "1" и "2"
+    \node at (0.25,4.5) {$1$};
+    \node at (4.75,4.5) {$2$};
+
+
+
+    \draw[gray!50, thick] (0,0) rectangle (5,5);
+    \draw[thick, gray!50] (2.5, 0) -- (2.5,5);
+
+
+    % Границы
+    \draw[ultra thick, dash pattern={on 2pt off 1pt}, plotblue] (0, 0) -- (0,5);
+    \draw[ultra thick, dash pattern={on 2pt off 1pt}, plotred] (5, 0) -- (5,5);
+    \end{tikzpicture}
+\caption{}
+\label{pic:3.11a}
+\end{subfigure}
+%---------------------------------------------------------
+\begin{subfigure}[t]{0.32\linewidth}\centering
+    \begin{tikzpicture}
+
+    \pgfmathsetseed{685}
+    % Область 1 (синие точки)
+    \foreach \x in {1.25, 3.5} {
+    \foreach \y in {0,...,4}
+    \fill[plotblue] ({\x+1.5*rand},{\y+1*rand}) circle (0.1);
+    }
+
+
+    \pgfmathsetseed{618}
+    % Область 2 (синие точки)
+    \foreach \x in {1.25,  3.5} {
+    \foreach \y in {0,...,4}
+    \fill[plotred] ({\x+1.1*rand},{\y+1.5*rnd}) circle (0.1);
+    }
+
+
+    % Обозначения "1" и "2"
+    \node at (0.25,4.5) {$A$};
+    \node at (4.75,4.5) {$B$};
+
+
+
+    \draw[gray!50, thick] (0,0) rectangle (5,5);
+    %\draw[thick, gray!50] ({3.5/2}, 0) -- ++(0,5);
+
+
+    % Границы
+    \draw[ultra thick, dash pattern={on 2pt off 1pt}, plotblue] (0, 0) -- ++(0,5);
+    \draw[ultra thick, dash pattern={on 2pt off 1pt}, plotred] (5, 0) -- (5,5);
+
+    \end{tikzpicture}
+\caption{}
+\label{pic:3.11b}
+\end{subfigure}
+%---------------------------------------------------------
+\begin{subfigure}[t]{0.32\linewidth}\centering
+    \begin{tikzpicture}
+
+    \pgfmathsetseed{20}
+    % Область 1 (синие точки)
+    \foreach \x in {0, 1} {
+    \foreach \y in {0,...,4}
+        \fill[plotblue] ({\x+abs(0.75*rnd)+0.25},{\y+0.75*rnd+0.15}) circle (0.1);
+    }
+
+    \pgfmathsetseed{22}
+    % Область 2 (красные точки)
+    \foreach \x in {3, 4} {
+    \foreach \y in {0,...,4}
+        \fill[plotred] ({\x+rnd},{\y+rnd}) circle (0.1);
+    }
+
+
+    % Обозначения "1" и "2"
+    \node[left] at (2.5,4.5) {$O$};
+    %\node at (2.75,4.5) {\LARGE 2};
+
+
+
+    \draw[gray!50, thick] (0,0) rectangle (5,5);
+    %\draw[thick, gray!50] (2.5, 0) -- (2.5,5);
+
+
+    % Границы
+    \draw[ultra thick, dash pattern={on 2pt off 1pt}, plotblue] (2.45, 0) -- ++(0,5);
+    \draw[ultra thick, dash pattern={on 2pt off 1pt}, plotred] (2.55, 0) -- ++(0,5);
+    \end{tikzpicture}
+\caption{}
+\label{pic:3.11c}
+\end{subfigure}
+%---------------------------------------------------------
+\caption{До ілюстрації парадоксу Гібса: (\protect\subref{pic:3.11a}) два гази розділені теплопровідною
+перегородкою,  (\protect\subref{pic:3.11b}) гази
+після змішування, (\protect\subref{pic:3.11c}) гази після розділення переміщенню до середини
+двохнапівпроникненних окремо для кожного з газів перегородок.}
+\end{figure}
+%=========================================================

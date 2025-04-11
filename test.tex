@@ -1,133 +1,61 @@
 \documentclass[%
-biblatex,
+%tikz,
+%border=1cm,
+%biblatex,
 %marginversioninfo
 ]{ThermodBook}
-\usepackage{ThermodImages}
+%\usepackage{ThermodImages}
 
 
 \begin{document}
 
-\begin{tikzpicture}[]
-\def\xmax{8}
-\def\ymax{8}
-\draw[gray!20] (0,0) grid (\xmax, \ymax);
-  % AXIS
-%  \draw[gray!50] (0,0) grid (\xmax, \ymax);
-  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax)
-    node[anchor=north east,inner sep=4,scale=1] {$P$};
-  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0)
-    node[anchor=north east,inner sep=4,scale=1] {$V$};
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.5\linewidth,
+    height=0.75\linewidth,
+%    title={График зависимости сопротивления от температуры},
+    xlabel={Температура, K},
+    ylabel={Опір, Ом},
+    xmin=4.0, xmax=4.4,
+    ymin=0, ymax=0.15,
+    xtick={4.0,4.1,4.2,4.3,4.4},
+    ytick={0.025,0.05,0.075,0.10,0.125,0.15},
+    ymajorgrids=true,
+    xmajorgrids=true,
+y tick label style={
+    /pgf/number format/.cd,
+    fixed,
+    fixed zerofill,
+    precision=3
+  },
+x tick label style={
+    /pgf/number format/.cd,
+    fixed,
+    fixed zerofill,
+    precision=2
+  },
+]
+
+\addplot [
+    only marks,
+    color=blue,
+    mark=o,
+    ]
+table {
+4.372778827977316	0.12970922882427308
+4.333459357277883	0.12629582806573958
+4.232892249527411	0.11378002528445007
+4.202646502835539	0.0011378002528445006
+4.192060491493384	0.00018963337547408344
+4.181474480151229	0.00018963337547408344
+};
+
+\addplot[mark=none, domain=4.232:4.4] {0.1127 * x - 0.363};
+\draw[dash pattern={on 1pt off 1pt}] (4.23, 0.1137) -- (4.203,0.001138);
+
+  \node[pin={[pin distance=0.5cm]95:{$10^{-5}$ Ом}}] at (4.192, 0.00018) {};
 
 
-\coordinate (1) at (2, 6);
-\coordinate (2) at (6, 5);
-\coordinate (3) at (7, 1);
-\coordinate (4) at (3, 2);
-
-
-\draw[ultra thick, plotblue, fill=plotlightblue] (1) -- (2) -- (3) -- (4) -- cycle;
-
-\draw[gray, name path=4] let \p1=(3), \p2=(4) in (4) -- ++({atan((\y2-\y1)/(\x2-\x1))}:-2);
-\draw[gray] let \p1=(3), \p2=(4) in (3) -- ++({atan((\y2-\y1)/(\x2-\x1))}:1)  node[right, text=black]
-{$T - \Delta
-T$};
-
-\draw[gray] let \p1=(2), \p2=(1) in (1) -- ++({atan((\y2-\y1)/(\x2-\x1))}:-1);
-\draw[gray] let \p1=(2), \p2=(1) in (2) -- ++({atan((\y2-\y1)/(\x2-\x1))}:1) node[right, text=black]
-{$T$};
-
-\path[name path=1] (1) -- ++(0, -6);
-\draw[line width=1, >={LaTeX[width=5, length=5]},<->, name intersections={of=4 and 1, name=41}] (1)
--- node[left] {$\Delta P$} (41-1) coordinate (4');
-
-\path[name path=2] (2) -- ++(0, -5);
-\path[name path=43] (4) -- (3);
-\draw[dashed, plotblue, name intersections={of=2 and 43, name=23}] (2) -- (23-1) coordinate (3');
-
-\draw[gray] (2) -- ++(0,2);
-\draw[gray] (1) -- ++(0,1);
-
-\draw[<->] (1) -- node[above] {$\Delta V$} ($(2) + (0,1)$);
-
-
-
-  \path[]
-     (1) node[circle, fill, inner sep=1.5pt] {} node[above left] {$1$}
-     (2) node[circle, fill, inner sep=1.5pt] {} node[above right]  {$2$}
-     (3) node[circle, fill, inner sep=1.5pt] {} node[below]  {$3$}
-     (4) node[circle, fill, inner sep=1.5pt] {} node[below] {$4$}
-     (4') node[circle, fill, inner sep=1.5pt] {} node[below] {$4'$}
-     (3') node[circle, fill, inner sep=1.5pt] {} node[below] {$3'$};
-
+\end{axis}
 \end{tikzpicture}
-
-
-
-%\begin{tikzpicture}[
-%  fat arrow/.style={
-%    every to/.style={
-%      to path={
-%        let \p1 = ($(\tikztotarget)-(\tikztostart)$),
-%            \n1 = {veclen(\x1,\y1)},
-%            \n2 = {mod(scalar(atan2(\y1,\x1))+360, 360)}
-%        in
-%        -- (\tikztotarget)
-%        node[
-%          inner xsep=0pt, inner ysep=5pt,
-%          minimum height=\n1-\pgflinewidth,
-%          single arrow,
-%          rotate=\n2,
-%          anchor=tip,
-%          shading=axis,
-%          left color=orange,
-%          right color=red,
-%          draw=black,
-%          #1
-%        ] {}
-%        \tikztonodes
-%      }
-%    }
-%  },
-%  fat arrow/.default=
-%]
-%    \node[rectangle, rounded corners, fill=plotred!50, draw=black, minimum width=10cm] (H) at (0,5)
-%    {Нагрівач
-%    при $T_h$};
-%
-%
-%    \node[rectangle, rounded corners, fill=plotblue!50, draw=black, minimum width=10cm] (C) at (0,0)
-%    {Охолоджувач
-%    при $T_c$};
-%
-%    \node[ellipse, draw, fill=plotblue!20, minimum width=2cm] (EM) at ($(H)!.5!(C)-(2,0)$) {$\eta_M$};
-%    \node[ellipse, draw, fill=plotblue!20, minimum width=2cm] (EL) at ($(H)!.5!(C)+(2,0)$) {$\eta_L$};
-%
-%    \path[fat arrow={top color=plotred!50, bottom color=yellow, draw=black}]  ($(H.south)-(2,0)$) to
-%    node[left] {$Q$}
-%    (EM.north);
-%
-%    \path[fat arrow={top color=yellow, bottom color=plotblue!50, draw=black}]  (EM.south) to
-%    node[left] {$(1-\eta_M)Q$}
-%    ($(C.north)-(2,0)$);
-%
-%    % ---------------------------
-%
-%    \path[fat arrow={top color=plotred!50, bottom color=yellow, draw=black}]      (EL.north) to
-%    node[right=0.25cm] {$\frac{\eta_M}{\eta_L}Q$}      ($(H.south)+(2,0)$);
-%
-%    \path[fat arrow={top color=yellow, bottom color=plotblue!50, draw=black}]
-%($(C.north)+(2,0)$)
-%    to
-%    node[right=0.25cm] {$\eta_MQ\left(\frac1{\eta_L} - 1 \right)$}
-%(EL.south);
-%
-%
-% \path[fat arrow={left color=teal!10, right color=teal, draw=black}]      (EM.east) to
-%    node[above=0.25cm] {$A$} node[below=0.25cm] {$\eta_M Q$}      (EL.west);
-%
-%    \node[above  left=1cm] at (EM) {$\eta_M \ge \eta_L$};
-%
-%\end{tikzpicture}
-
-
 \end{document}

@@ -1,0 +1,14 @@
+\begin{tikzpicture}[]
+\node[] at (0,0) {\includegraphics[width=10cm]{Lec3/tikz/HeatMachine}};
+\node at (-2.35, 4) {Гарячий резервуар};
+\node at (-2.35, -4.1) {Холодний резервуар};
+\node at (-2.25,0) {$M$};
+\node at (-3.5, 2)  {$Q_2$};
+\node at (3, 2)  {$Q_2$};
+\node at (-3.5, -2)  {$Q_1$};
+\node at (1,3.75) {$T_2$};
+\node at (1,-4) {$T_1$};
+\node at (2,0) {$A$};
+%\draw[gray!20] (-5,-5) grid (5,5);
+%\node at (0,0) {$\times$};
+\end{tikzpicture}

@@ -1,0 +1,56 @@
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.5\linewidth,
+    height=0.75\linewidth,
+    xlabel={Температура, K},
+    ylabel={Опір, Ом},
+    xmin=4.0, xmax=4.4,
+    ymin=0, ymax=0.15,
+    xtick={4.0,4.1,4.2,4.3,4.4},
+    ytick={0.025,0.05,0.075,0.10,0.125,0.15},
+    % Стиль под старину
+    axis background/.style={fill=white},
+    axis line style={thick},
+    tick style={thick},
+    grid=both,
+    grid style={line width=.1pt, draw=gray!50, dotted},
+    x tick label style={font=\small, /pgf/number format/fixed, /pgf/number format/precision=2},
+    y tick label style={font=\small, /pgf/number format/fixed, /pgf/number format/precision=3},
+    label style={font=\small},
+    title style={font=\bfseries},
+    every axis plot/.append style={thick},
+    % Убираем современные элементы
+    axis on top=true,
+    tick align=outside,
+]
+
+% Данные
+\addplot [
+    only marks,
+    color=black,
+    mark=*,
+    mark size=1.5pt
+    ]
+table {
+4.372778827977316	0.12970922882427308
+4.333459357277883	0.12629582806573958
+4.232892249527411	0.11378002528445007
+4.202646502835539	0.0011378002528445006
+4.192060491493384	0.00018963337547408344
+4.181474480151229	0.00018963337547408344
+};
+
+% Аппроксимация
+\addplot[mark=none, domain=4.232:4.4, black] {0.1127 * x - 0.363};
+
+% Пунктирная линия
+\draw[dash pattern={on 1pt off 1pt}, thick] (4.23, 0.1137) -- (4.203,0.001138);
+
+% Аннотация старого стиля
+  \node[pin={[pin distance=0.5cm]95:{$10^{-5}$ Ом}}] at (4.192, 0.00018) {};
+
+% Рамка вокруг графика (старый стиль)
+\draw[thick] (current axis.south west) rectangle (current axis.north east);
+
+\end{axis}
+\end{tikzpicture}

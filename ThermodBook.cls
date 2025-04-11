@@ -419,7 +419,7 @@
 }
 
 \@newctr{footnote}[page] %  Лічильник зносок починаються з кожної сторінки
-\RequirePackage[pagestyles, explicit]{titlesec}
+\RequirePackage[pagestyles, explicit, calcwidth]{titlesec}
 \RequirePackage{titletoc}
 
 \newlength\chapnumb
@@ -458,17 +458,21 @@
 \titleformat{name=\section, numberless}
 {\normalsize\bfseries}{}{1em}{#1}
 
-\titleformat{\section}[block]{\large\bfseries\sffamily}%
-{\rlap{\color{themecolordark}\rule[-6pt]{\textwidth}{1.2pt}}\colorbox{themecolordark}{%
-        \raisebox{0pt}[13pt][3pt]{ \makebox[60pt]{% height, width
-                \color{white}{\thesection}}
-}}}%
-{15pt}%
-{ \color{themecolordark}#1
-    %
-}
+%\titleformat{\section}[block]
+%{\large\bfseries\sffamily}%
+%{\rlap{\color{themecolordark}\rule[-6pt]{\textwidth}{1.2pt}}\colorbox{themecolordark}{%
+%        \raisebox{0pt}[13pt][3pt]{ \makebox[60pt]{% height, width
+%                \color{white}{\thesection}}
+%}}}%
+%{15pt}%
+%{ \color{themecolordark}#1
+%    %
+%}
 
-
+\titleformat{\section}[block] {\normalsize\sffamily\bfseries}
+{\color{themecolordark}\S\,\thesection.}{0.5em}{\color{themecolordark}#1}
+%This creates a rule that matches the full page's width, rather than the title's
+ [\vspace{-1.5ex}\rule{\textwidth}{0.2pt}]
 
 
 %Underlining ruler for subsections

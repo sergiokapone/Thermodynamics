@@ -27,6 +27,10 @@
 
     \fill[pattern=gasdense] (0.25, 0.25) rectangle ++(2.5, 1.75);
 
+    \draw (3.25,0) -- ++(0.5,0);
+    \draw (3.25,2) -- ++(0.5,0);
+    \draw[<->] (3.5, 0) -- node[fill=white, inner sep=2pt] {$V$} ++(0, 2);
+
     \draw[gray, >={LaTeX[width=20,length=15,open]}, <-, line width=5pt] (2, 2.25) -- ++ (0, 2);
 
 \begin{scope}[yshift=-1cm]
@@ -43,6 +47,7 @@
 \begin{subfigure}[t]{0.45\linewidth}\centering
 \begin{tikzpicture}[]
 %    \draw[gray] (0, 0) grid  (5,5);
+%    \node at (0,0) {$\times$};
 
     \draw[piston] (0.25, 3) rectangle ++(2.5, 0.25);
 
@@ -56,6 +61,10 @@
     \draw[piston,shading angle=90] (1.325, 3.25) rectangle ++(0.25, 3);
 
     \fill[pattern=gas] (0.25, 0) rectangle ++(2.5, 3);
+
+    \draw (0,0) -- ++(-0.5,0);
+    \draw (0,3) -- ++(-0.5,0);
+    \draw[<->] (-0.25, 0) -- node[fill=white, inner sep=2pt] {$V_0$} ++(0, 3);
 
 %    \draw[gray, >={LaTeX[width=20,length=15,open]}, ->, line width=5pt] (2, 3.25) -- ++ (0, 2);
 
@@ -71,7 +80,8 @@ controls (1,2.5) and (1,.5) .. (0,0);
 \label{pic:Pic2.2b}
 \end{subfigure}
 %---------------------------------------------------------
-\caption{Адіабатичний \protect\subref{pic:Pic2.2a} та ізотермічний \protect\subref{pic:Pic2.2b} спосіб
+\caption{Адіабатичний (\protect\subref{pic:Pic2.2a}) та ізотермічний (\protect\subref{pic:Pic2.2b})
+спосіб
 змінити температуру газу}
 \end{figure}
 %=========================================================

@@ -1,0 +1,148 @@
+% !TeX root = ../../Thermod.tex
+
+\begin{tikzpicture}[
+  midarr/.style={decoration={markings,mark=at position #1 with {\arrow{stealth}-}},
+  postaction={decorate}}, midarr/.default=0.5, plotred/.style={red!80!black}]
+
+  \def\xmax{10}
+  \def\ymax{8}
+
+  % === ОСІ ===
+%  \draw[gray!30] (0,0) grid (\xmax, \ymax);
+  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax) node[anchor=south east] {$P$};
+  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0) node[anchor=north east] {$V$};
+
+  % === ГОЛОВНИЙ ЦИКЛ ===
+  \coordinate (A) at (1.5, 0);
+  \coordinate (B) at (1.5, 2);
+  \coordinate (C) at (1.5, 6);
+  \coordinate (D) at (7, 6);
+  \coordinate (E) at (7, 2);
+  \coordinate (F) at (7, 0);
+
+  \path (B) -- coordinate[pos=0.25] (1) (C);
+  \path (C) -- coordinate[pos=0.75] (2) (D);
+  \path (D) -- coordinate[pos=0.25] (3) (E);
+  \path (E) -- coordinate[pos=0.75] (4) (B);
+
+
+%
+%  % === МАЛІ ЦИКЛИ КАРНО ===
+%  \foreach \x in {1.75, 2.0, ..., 7.25} {
+%    \foreach \y in {1.5, 2.5, ..., 5.5} {
+%
+%      % Задаємо висоту та ширину для кожного ромба
+%      \def\height{0.4}  % висота (відповідає висоті ізотерми)
+%      \def\width{0.3}   % ширина (відповідає адіабатам)
+%
+%      % Позиції для ромбів
+%      \coordinate (A) at (\x,\y);
+%      \coordinate (B) at ($(A) + (\width, -0.5*\height)$);  % Ізотерма
+%      \coordinate (C) at ($(B) + (-\width, 1.2)$);          % Адіабата
+%      \coordinate (D) at ($(C) + (-\width, \height)$);  % Ізотерма
+%%      \coordinate (E) at ($(D) + (-0.6, -1.2)$);        % Адіабата
+%
+%%    \node at (A) {$A$};
+%%\node at (B) {$B$};
+%%\node at (C) {$C$};
+%%\node at (D) {$D$};
+%
+%      % Малюємо ромб (замкнуту лінію)
+%      \draw[blue!70!black, thick] (A)  to[bend right=5] (B);
+%      \draw[blue!70!black, thick] (B) to[bend left=5] (C);
+%      \draw[blue!70!black, thick] (C) to[bend left=5] (D);
+%      \draw[blue!70!black, thick] (D) to[bend right=5] (A);
+%    }
+%  }
+
+\begin{scope}[opacity=0.5]
+\clip (0,0) rectangle (\xmax, \ymax);
+%\clip (1) to[out=90, in=180] (2) to[out=0, in=90] (3) to[out=270, in=0] (4) to[out=180, in=270] (1);
+\foreach \t in {3,...,38} {
+\ifnum\t>3
+\draw[domain=0.5:\xmax, smooth, blue] plot (\x, {\t/\x});
+\fi
+}
+\foreach \t in {3, 3.25, 3.5, ...,15} {
+\draw[domain=0.5:\xmax, smooth, red] plot (\x, {\t/\x^(0.5)});
+}
+\end{scope}
+
+\begin{scope}[]
+\clip (0,0) rectangle (\xmax, \ymax);
+%\clip (1) to[out=90, in=180] (2) to[out=0, in=90] (3) to[out=270, in=0] (4) to[out=180, in=270] (1);
+
+\foreach \is/\adt/\adb in {
+4/3.75/3.00,
+5/4.5/3.25,
+6/5/3.5,
+7/5.5/4,
+8/6/4.25,
+9/6.5/4.5,
+10/7/5,
+11/7.5/5.25,
+12/8/5.5,
+13/8.25/5.75,
+14/8.75/6.25,
+15/9/6.5,
+16/9.5/6.75,
+17/9.75/7,
+18/10.25/7.5,
+19/10.5/7.75,
+20/10.75/8,
+21/11/8.5,
+22/11.5/8.75,
+23/11.75/9.25,
+24/12.00/9.5,
+25/12.25/9.75,
+26/12.5/10.25,
+27/12.75/10.5,
+28/13/11,
+29/13.25/11.25,
+30/13.5/11.5,
+31/13.75/12,
+32/14.00/12.25,
+33/14.25/12.75,
+34/14.5/13,
+35/14.5/13.5,
+36/14.75/13.75,
+37/15.00/14.25
+} {
+
+\pgfmathsetmacro\a{\is}
+\pgfmathsetmacro\A{\a+1}
+\pgfmathsetmacro\b{\adb}
+\pgfmathsetmacro\B{\adt}
+
+\pgfmathsetmacro\XaB{(\a/\B)^2}
+\pgfmathsetmacro\XAb{(\A/\b)^2}
+\pgfmathsetmacro\Xab{(\a/\b)^2}
+\pgfmathsetmacro\XAB{(\A/\B)^2}
+
+\draw[domain=\XaB:\Xab, smooth, blue, name path=11] plot (\x, {\a/\x});
+\draw[domain=\XAB:\XAb, smooth, blue, name path=12] plot (\x, {\A/\x});
+
+\draw[domain=\XaB:\XAB, smooth, red, name path=8] plot (\x, {\B/\x^(0.5)});
+\draw[domain=\Xab:\XAb, smooth, red, name path=5] plot (\x, {\b/\x^(0.5)});
+
+\tikzfillbetween[of=11 and 12]{blue, opacity=0.3};
+}
+
+\end{scope}
+
+
+
+
+  \draw[plotred, midarr, ultra thick] (1) to[out=90, in=180] (2);
+  \draw[plotred, midarr, ultra thick] (2) to[out=0, in=90] (3);
+  \draw[plotred, midarr, ultra thick] (3) to[out=270, in=0] (4);
+  \draw[plotred, midarr, ultra thick] (4) to[out=180, in=270] (1);
+
+%  \node[anchor=west] (formula) at (0.5,1) {$\frac{Q_C}{T_C} + \frac{Q_h}{T_h} = 0$}  ;
+
+     \draw[blue] (7, 7.5) -- ++(1,0) node[right] {Ізотерма};
+     \draw[red]  (7, 7.0) -- ++(1,0) node[right] {Адіабата};
+     \draw[blue!50, line width=5]  (7, 6.25) -- ++(1,0) node[right, text=black] {$\frac{Q_C}{T_c} +
+     \frac{Q_h}{T_h} = 0$};
+
+\end{tikzpicture}

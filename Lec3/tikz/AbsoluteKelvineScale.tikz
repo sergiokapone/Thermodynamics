@@ -1,0 +1,28 @@
+\begin{tikzpicture}[]
+\node[] at (0,0) {\includegraphics[height=10cm]{Lec3/tikz/AbsoluteKelvineScale}};
+
+
+\node at (0, 4.5) {$\theta_2$};
+\node at (0, -4.5) {$\theta_1$};
+\node at (-1.5, -0.25) {$\theta_0$};
+
+\node at (4, -0.25) {$A_C$};
+\node at (-4, 2) {$A_A$};
+\node at (-4, -2.5) {$A_B$};
+
+
+\node at (2.5, 2) {$Q_2$};
+\node at (2.5, -2) {$Q_1$};
+
+\node at (-0.5, 3) {$Q_2$};
+\node at (-0.5, 1) {$Q_0$};
+\node at (-0.5, -1.5) {$Q_0$};
+\node at (-0.5, -3.5) {$Q_1$};
+
+\node[text width=1.5cm, align=center, font=\scriptsize] at (1.25, -0.22) {Машина\\ $C$};
+\node[text width=1.5cm, align=center, font=\scriptsize] at (-1.5, 2.0) {Машина\\ $A$};
+\node[text width=1.5cm, align=center, font=\scriptsize] at (-1.5, -2.4) {Машина\\ $B$};
+
+%\draw[gray!20] (-5,-5) grid (5,5);
+%\node at (0,0) {$\times$};
+\end{tikzpicture}

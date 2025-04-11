@@ -1,0 +1,33 @@
+
+% !TeX root = ../../Thermod.tex
+
+
+\begin{tikzpicture}[midarr/.style={decoration={markings,mark=at position #1 with
+  {\arrow{stealth}}},postaction={decorate}},
+  midarr/.default=0.5]
+
+  \def\xmax{6}
+  \def\ymax{6}
+  % AXIS
+%  \draw[gray!50] (0,0) grid (\xmax, \ymax);
+  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax)
+    node[anchor=north east,inner sep=4,scale=1] {$T$};
+  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0)
+    node[anchor=north east,inner sep=4,scale=1] {$S$};
+
+\coordinate (3) at (4, 6);
+\coordinate (1) at (4, 1);
+\coordinate (2) at (1, 1);
+
+\draw[midarr, ultra thick, plotblue] (1) to node[below, text=black]  {$Q_{12}$} (2);
+\draw[midarr, ultra thick, plotblue] (2) to[bend right=25] node[left, text=black]  {$C = aT^2$} (3);
+\draw[midarr, ultra thick, plotblue] (3) -- (1);
+
+  \path[]
+     (1) node[circle, fill, inner sep=1.5pt] {} node[below] {$1$}
+     (2) node[circle, fill, inner sep=1.5pt] {} node[below]  {$2$}
+     (3) node[circle, fill, inner sep=1.5pt] {} node[above]  {$3$};
+
+
+
+\end{tikzpicture}

@@ -75,7 +75,7 @@
 &\Sigma_{BCDE} = A_C \\
 &\Sigma_{ACDF} = Q_C \\
 &\Sigma_{A123F} =Q_{1234}  \\
-&\Sigma_{A123F} -  \Sigma_{A143F} = \Sigma_{A1234}
+&\Sigma_{A123F} -  \Sigma_{A143F} = \Sigma_{1234}
 \end{align*}
 };
 
