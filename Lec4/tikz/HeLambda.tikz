@@ -1,65 +1,6 @@
-\documentclass[%
-%tikz,
-%border=1cm,
-%biblatex,
-%marginversioninfo
-]{ThermodBook}
-%\usepackage{ThermodImages}
-
-
-\begin{document}
-
-%\begin{tikzpicture}
-%\begin{axis}[
-%    width=0.5\linewidth,
-%    height=0.75\linewidth,
-%%    title={График зависимости сопротивления от температуры},
-%    xlabel={Температура, K},
-%    ylabel={Опір, Ом},
-%    xmin=4.0, xmax=4.4,
-%    ymin=0, ymax=0.15,
-%    xtick={4.0,4.1,4.2,4.3,4.4},
-%    ytick={0.025,0.05,0.075,0.10,0.125,0.15},
-%    ymajorgrids=true,
-%    xmajorgrids=true,
-%y tick label style={
-%    /pgf/number format/.cd,
-%    fixed,
-%    fixed zerofill,
-%    precision=3
-%  },
-%x tick label style={
-%    /pgf/number format/.cd,
-%    fixed,
-%    fixed zerofill,
-%    precision=2
-%  },
-%]
-%
-%\addplot [
-%    only marks,
-%    color=blue,
-%    mark=o,
-%    ]
-%table {
-%4.372778827977316	0.12970922882427308
-%4.333459357277883	0.12629582806573958
-%4.232892249527411	0.11378002528445007
-%4.202646502835539	0.0011378002528445006
-%4.192060491493384	0.00018963337547408344
-%4.181474480151229	0.00018963337547408344
-%};
-%
-%\addplot[mark=none, domain=4.232:4.4] {0.1127 * x - 0.363};
-%\draw[dash pattern={on 1pt off 1pt}] (4.23, 0.1137) -- (4.203,0.001138);
-%
-%  \node[pin={[pin distance=0.5cm]95:{$10^{-5}$ Ом}}] at (4.192, 0.00018) {};
-%
-%
-%\end{axis}
-%\end{tikzpicture}
-
-\begin{tikzpicture}[every node/.style={font=\scriptsize}]
+\begin{tikzpicture}[scale=1.5,
+% every node/.style={font=\scriptsize}
+]
 
 \def\xmax{5.2}
 \def\ymax{6}
@@ -132,5 +73,3 @@ name path=SL2
 
 
 \end{tikzpicture}
-
-\end{document}
