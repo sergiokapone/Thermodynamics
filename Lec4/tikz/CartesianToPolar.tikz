@@ -1,0 +1,45 @@
+% !TeX root = ../../Thermod.tex
+
+\begin{tikzpicture}[]
+  \def\xmax{7}
+  \def\ymax{7}
+
+  \def\sangle{40}
+  \def\angle{15}
+  \def\dr{1.6}
+  \def\r{5.5}
+
+  \coordinate (A) at  ({\sangle}:{\r});
+  \coordinate (B) at  ({\sangle+\angle}:{\r});
+  \coordinate (C) at  ({\sangle+\angle}:{\r+\dr});
+  \coordinate (D) at  ({\sangle}:{\r+\dr});
+  \coordinate (O) at (0,0);
+  \node[below left] at (O) {O};
+  \draw[->,thick] (0,-0.1*\ymax) -- (0,\ymax)
+    node[anchor=north east,inner sep=4,scale=1] {$y$};
+  \draw[->,thick] (-0.1*\xmax,0) -- (\xmax,0)
+    node[anchor=north east,inner sep=4,scale=1] {$x$};
+
+\fill[plotlightblue, draw=plotblue] (A)  arc(\sangle:{\sangle+\angle}:\r) -- (C)
+arc({\sangle+\angle}:\sangle:{\r+\dr}) -- cycle;
+
+\draw (O) -- node[below, pos=0.75] {$r$} (A);
+\draw (O) -- (B);
+
+\path (A) -- node[below, pos=0.7] {$dr$} (D);
+
+\draw[] (A) -- node[right] {$r\sin\phi$}++(0, {-\r*sin(\sangle)}) coordinate (x1);
+%\draw[dashed] (D) -- ++(0, {-(\r+\dr)*sin(\sangle)}) coordinate (x2);
+
+\draw ($(O)+(1, 0)$) arc(0:\sangle:1) node[pos=0.5, right] {$\phi$};
+
+\draw ($(O)+(\sangle:3)$) arc(\sangle:{\sangle+\angle}:3) node[pos=0.8, right] {$d\phi$};
+
+\path (A) -- node[below, sloped, pos=0.5] {$rd\phi$} (B);
+
+\path (O) -- node[below] {$r\cos\phi$} (x1);
+
+%\draw[<->, red, thick] (x1) -- node[below] {$dx$} (x2);
+
+
+\end{tikzpicture}
