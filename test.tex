@@ -1,3 +1,5 @@
+% !TeX TXS-program:compile = txs:///lualatex
+
 \documentclass[%
 %tikz,
 %border=1cm,
@@ -9,7 +11,7 @@
 
 \begin{document}
 
-    \input{Lec4/tikz/Carnot.tikz}
+    \input{Lec6/tikz/STH.tikz}
 
 %\begin{tikzpicture}
 %\begin{axis}[
@@ -135,5 +137,25 @@
 %
 %\end{tikzpicture}
 
+
+%\begin{tikzpicture}[>=latex]
+%    \def\L{2}
+%    \node[anchor=north] (S) at (0, \L) {{\color{red} S}[un]};
+%    \node[anchor=south] (T) at (0, -\L) {{\color{red} T}[ree]};
+%
+%    \draw[plotblue] (0,0) circle (\L);
+%
+%    \draw[plotblue, ->] (S) -- (T);
+%    \node[anchor=center, fill=white] (P) at (-\L, 0) {{\color{red} P}[eak]};
+%    \node[anchor=center, fill=white] (V) at (\L, 0) {{\color{red} V}[alley]};
+%
+%    \draw[plotblue, ->] (P) -- (V);
+%
+%    \node[anchor={180+45}, plotblue] at (45:\L) {$E(U)$};
+%    \node[anchor={180-45}, plotblue] at (-45:\L) {$F$};
+%    \node[anchor={-45}, plotblue] at ({90+45}:\L) {$H$};
+%    \node[anchor={45}, plotblue] at ({180+45}:\L) {$G$};
+%
+%\end{tikzpicture}
 
 \end{document}

@@ -1,0 +1,49 @@
+
+% !TeX root = ../../test.tex
+
+
+\begin{tikzpicture}[
+  declare function={
+    SH(\x) = -exp(-\x) + 2*\x + 0.1*\x^2;
+  }
+]
+
+
+
+		\coordinate [] (0) at (0, 0) ;
+		\coordinate [] (1) at (2.25, 4.25) ;
+		\coordinate [] (2) at (5.5, 5) ;
+		\coordinate [] (3) at (3, 3) ;
+		\coordinate [] (4) at (5.5, 3.75) ;
+
+        \node[right] at (2) {$H = 0$};
+         \node[right] at (4) {$H \neq 0$};
+
+		\draw [ultra thick, name path=A, smooth, plotred]  (0) to[in=-150, out=0, looseness=0.75] (1) to [in=185, out=30, looseness=0.50] (2);
+		\draw [ultra thick, name path=B, smooth, plotred] (0) to[in=215, out=0, looseness=1.50] (3) to [in=-165, out=35, looseness=0.50] (4);
+
+        \path[name path=L1] (1.7247, 0) -- ++(0, 6);
+        \path[name path=L2] (5, 0) -- ++(0, 6);
+        \path[name intersections={of=A and L1, name=I}] coordinate (A1) at (I-1);
+        \path[name intersections={of=B and L1, name=I}] coordinate (B1) at (I-1);
+        \path[name intersections={of=A and L2, name=I}] coordinate (A2) at (I-1);
+        \path[name intersections={of=B and L2, name=I}] coordinate (B2) at (I-1);
+
+        \draw[plotblue] (B1) -- node[above, sloped, inner sep=0.5pt, font=\scriptsize] {$\Delta S_\text{маг}$} node (IT) {} (A1) -- node[above, font=\scriptsize,inner sep=0.5pt] {$\Delta T_\text{ад}$} node (AD) {}   (B2) -- (A2);
+
+        \node[circle, inner sep=1.5pt, fill] at (B1) {}; \node[right] at (B1) {$4$};
+        \node[circle, inner sep=1.5pt, fill] at (A1) {}; \node[below right] at (A1) {$3$};
+        \node[circle, inner sep=1.5pt, fill] at (B2) {}; \node[below] at (B2) {$2$};
+        \node[circle, inner sep=1.5pt, fill] at (A2) {}; \node[above] at (A2) {$1$};
+
+        \node[font=\scriptsize\sffamily] (AT) at (5, 1.5) {Адіабатичний процес};
+        \node[font=\scriptsize\sffamily] (TT) at (5, 1) {Ізотермічний процес};
+
+        \draw[->, ultra thick, cyan] (AT) to[out=90, in=270]  (AD.south west);
+        \draw[->, ultra thick, cyan] (TT.west) to[out=180, in=0] (IT.east);
+
+
+  % Осі
+  \draw[->, thick] (0,-0.5) -- (0,6) node[above] {$S$};
+  \draw[->, thick] (-0.5,0) -- (6,0) node[right] {$T$};
+\end{tikzpicture}

@@ -4,17 +4,10 @@
 % !BIB program = biber
 
 \documentclass[%
-biblatex,
 %marginversioninfo
 ]{ThermodBook}
 
-\usepackage{gensymb}
-\newcommand{\lppr}[2]{\left(\dfrac{\partial #1}{\partial #2}\right)}
-\newcommand{\lpdr}[3]{\left(\dfrac{\partial #1}{\partial #2}\right)_{#3}}
-\newcommand{\integ}[2]{\int\limits_{#1}^{#2}}
-\newcommand{\jacobi}[2]{\dfrac{\partial\left(#1\right)}{\partial\left(#2\right)}}
-\newcommand{\spdr}[2]{\left(\dfrac{\partial^2{#1}}{\partial{#2}^{2}}\right)}
-\newcommand{\sppdr}[3]{\left(\dfrac{\partial^2{#1}}{\partial{#2}\partial{#3}}\right)}
+
 
 %===============================================================================
 %
@@ -29,7 +22,7 @@ biblatex,
 %======================================== Бібліографія
 %
 \addbibresource{Literature.bib}
-%\addbibresource{Kvant.bib}
+\addbibresource{Articles.bib}
 %
 %===============================================================================
 
@@ -41,12 +34,12 @@ biblatex,
 
 \begin{document}
 \pagestyle{empty}
-\setcounter{page}{0}
+%\setcounter{page}{0}
 %\ifelectronic\CoverPage\setcounter{page}{0}\fi
 %\CoverPage
 \pagenumbering{arabic}
 \maketitle
-%\makeinfopage
+\makeinfopage
 %===============================================================================
 %
 \clearpage\pagestyle{plain}
@@ -71,11 +64,10 @@ biblatex,
 	Lec2,
 	Lec3,
 	Lec4,
-	%Lec5,
-	%Lec6,
+	Lec5,
+	Lec6,
 	%Lec7,
 }
-
 
 \pagestyle{main}
 
@@ -106,7 +98,6 @@ biblatex,
 %===============================================================================
 %\appendix
 
-
 %%==============================================================================
 %
 %									       Вставка бібліографії
@@ -114,8 +105,10 @@ biblatex,
 %===============================================================================
 %\clearpage\pagestyle{bibliography}
 
-%\nocite{*}
-%\printbibliography[title={Література}]
+\begin{refsection}[Literature.bib]
+	\nocite{*}
+	\printbibliography[heading=bibintoc]
+\end{refsection}
 
 %\makelastpage
 \end{document}

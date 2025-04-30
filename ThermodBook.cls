@@ -18,7 +18,6 @@
 
 
 \newif\ifelectronic
-\newif\ifbiblatex
 \newif\ifmarginversioninfo
 
 \DeclareOption{print}{
@@ -38,10 +37,6 @@
 
 \DeclareOption{marginversioninfo}{%
 	\marginversioninfotrue
-}
-
-\DeclareOption{biblatex}{
-	\biblatextrue
 }
 
 \ExecuteOptions{electronic}
@@ -86,9 +81,10 @@
 %\setmainfont{Bookman Old Style}%{CMU Serif}%{Times New Roman}
 \setmonofont{CMU Typewriter Text}%{Consolas}
 \defaultfontfeatures{Ligatures={TeX}}
-\newfontfamily\Annabelle{Annabelle}
+%\newfontfamily\Annabelle{Annabelle}
 \RequirePackage{luacolor}
 %\RequirePackage{lua-widow-control}
+\RequirePackage{csquotes}
 \RequirePackage[english,russian,ukrainian]{babel}
 
 
@@ -149,6 +145,8 @@
 %%> \subsection{Floats}
 %%% --------------------------------------------------------
 
+\RequirePackage{footnote}
+\makesavenoteenv{figure}
 \RequirePackage{caption}
 \RequirePackage{subcaption}
 %\RequirePackage[justification=centering,labelsep=period]{caption}
@@ -178,7 +176,7 @@
 
 
 \renewcommand\thesubfigure{\alph{subfigure}}
-\RequirePackage{wrapfig}
+\RequirePackage{wrapfig2}
 \RequirePackage{wrapstuff}
 
 
@@ -198,16 +196,23 @@
 %\numberwithin{equation}{chapter}
 \RequirePackage{esint}
 \RequirePackage{nicefrac}
+\RequirePackage{gensymb}
 \let\nfrac\nicefrac
 \allowdisplaybreaks
 \newcommand{\vect}[1]{\symbf{#1}}
+\newcommand{\Laplasian}{\Delta}
+\newcommand{\lppr}[2]{\left(\dfrac{\partial #1}{\partial #2}\right)}
+\newcommand{\lpdr}[3]{\left(\dfrac{\partial #1}{\partial #2}\right)_{#3}}
+\newcommand{\integ}[2]{\int\limits_{#1}^{#2}}
+\newcommand{\jacobi}[2]{\dfrac{\partial\left(#1\right)}{\partial\left(#2\right)}}
+\newcommand{\spdr}[2]{\left(\dfrac{\partial^2{#1}}{\partial{#2}^{2}}\right)}
+\newcommand{\sppdr}[3]{\left(\dfrac{\partial^2{#1}}{\partial{#2}\partial{#3}}\right)}
 \AtBeginDocument{%
 	\let\pot\phi
 	\let\phi\varphi
 	\let\epsilon\varepsilon
 	\DeclareMathOperator{\const}{const}
 	\DeclareMathOperator{\inv}{inv}
-	\newcommand{\Laplasian}{\Delta}
 }
 
 \RequirePackage{mhchem}
@@ -281,7 +286,9 @@
 \setlength\epigraphwidth{0.7\textwidth}
 \setlength\epigraphrule{0pt}
 \renewcommand{\textflush}{flushepinormal}
-\RequirePackage{lastpage,refcount}
+\RequirePackage{refcount}
+\RequirePackage[pagecontinue]{pageslts}
+\pagenumbering{arabic}
 \RequirePackage[disable]{todonotes}
 \RequirePackage{pdftexcmds}
 
@@ -420,7 +427,7 @@
 
 \@newctr{footnote}[page] %  Лічильник зносок починаються з кожної сторінки
 \RequirePackage[pagestyles, explicit, calcwidth]{titlesec}
-\RequirePackage{titletoc}
+\RequirePackage[dotinlabels]{titletoc}
 
 \newlength\chapnumb
 \setlength\chapnumb{4cm}
@@ -470,7 +477,7 @@
 %}
 
 \titleformat{\section}[block] {\normalsize\sffamily\bfseries}
-{\color{themecolordark}\S\,\thesection.}{0.5em}{\color{themecolordark}#1}
+{\color{themecolordark}\thesection.}{0.5em}{\color{themecolordark}#1}
 %This creates a rule that matches the full page's width, rather than the title's
  [\vspace{-1.5ex}\rule{\textwidth}{0.2pt}]
 
@@ -483,6 +490,23 @@
 {#1}
 [{\titlerule[0.8pt]}]
 
+
+% Оформление для глав
+
+%\titlecontents{chapter}
+%  [0pt]                        % отступ
+%  {\normalfont\bfseries\sffamily}   % формат перед номером (увеличенный шрифт)
+%  {\thecontentslabel.\quad}     % формат номера (точка после номера!)
+%  {}                            % формат перед заголовком
+%  {\titlerule*[0.5pc]{.}\hspace{1ex}\contentspage} % линия и отступ от линии до страницы
+
+% Оформление для секций
+%\titlecontents{section}
+%  [4em]
+%  {}
+%  {\contentslabel[\hfill\S\,\thecontentslabel.]{3em}\enspace}
+%  {}
+%  {\titlerule*[0.75pc]{.}\hspace{1ex}\contentspage} % линия и отступ от линии до страницы
 
 
 %\titleformat{\subsection}
@@ -568,7 +592,7 @@
 	linktocpage = true,
 	hypertexnames=false,
 	pdftoolbar=false,
-	pdfpagelayout=TwoPageLeft,
+	pdfpagelayout=TwoPagRight,
 	pdfauthor={Ponomarenko S.M.},
 	pdfdisplaydoctitle=false,
 	pdfkeywords={Gas Lows, Thermodynamics, Kinetic Theory},
@@ -577,6 +601,8 @@
 {hyperref}
 %\RequirePackage[all]{hypcap}
 \RequirePackage{bookmark}
+\RequirePackage{pdfcomment}
+
 
 % -------------- Патч для україомовної назви розділу для nameref ------------------ %
 \addto\extrasukrainian{%
@@ -597,32 +623,24 @@
 %%% --------------------------------------------------------
 
 
-\ifbiblatex
-	\RequirePackage[backend=biber,
-		bibstyle=gost-numeric,
-		maxnames = 10,
-		babel=other,
-		isbn=true,
-		url=false,
-		defernumbers=true
-	]{biblatex}
-	\newbibmacro{string+url}[1]{%
-		\iffieldundef{url}{#1}{\href{\thefield{url}}{#1}}%
-	}
-	\DeclareFieldFormat{title}{\usebibmacro{string+url}{#1}}
-	\RequirePackage{csquotes}
+\RequirePackage[backend=biber,
+	bibstyle=gost-numeric,
+	maxnames = 10,
+	babel=other,
+	isbn=true,
+	url=false,
+	defernumbers=true
+]{biblatex}
+\newbibmacro{string+url}[1]{%
+	\iffieldundef{url}{#1}{\href{\thefield{url}}{#1}}%
+}
+\DeclareFieldFormat{title}{\usebibmacro{string+url}{#1}}
 
-	\DefineBibliographyStrings{ukrainian}{%
-		bibliography = {Література},
-	}
-	\DeclareBibliographyCategory{Textbooks}
-	\DeclareBibliographyCategory{Problems}
-\else
-	\renewcommand{\@biblabel}[1]{#1.}
-	\addto\captionsukrainian{%
-		\renewcommand{\bibname}{Література}%
-	}
-\fi
+\DefineBibliographyStrings{ukrainian}{%
+	bibliography = {Література},
+}
+\DeclareBibliographyCategory{Textbooks}
+\DeclareBibliographyCategory{Problems}
 
 
 

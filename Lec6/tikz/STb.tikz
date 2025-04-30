@@ -1,0 +1,53 @@
+\begin{tikzpicture}[
+  declare function={
+    a=0.1;
+    A=1;
+    b=0.05;
+    B=1;
+    %
+    g(\x)=a*\x^2 + A;
+    f(\x)=b*\x^2 + B;
+    %
+    N(\x)=sqrt( (g(\x) - B)/b );  % <-- загальний вигляд
+  },
+  ultra thick
+]
+
+  % Графіки функцій
+  \draw[red, samples=100, domain=0:6] plot ({\x}, {g(\x)});
+  \draw[red, samples=100, domain=0:6] plot ({\x}, {f(\x)});
+
+  % Параметри
+  \def\xstart{1}
+  \def\numSteps{5}
+
+  % Початкове x
+  \pgfmathsetmacro\x{\xstart}
+
+  % Цикл для сходинок
+  \foreach \i in {1,...,\numSteps} {
+    \pgfmathsetmacro\yLow{f(\x)}
+    \pgfmathsetmacro\yHigh{g(\x)}
+    \pgfmathsetmacro\xNext{N(\x)}
+    \pgfmathsetmacro\yNextHigh{g(\xNext)}
+
+    % Вгору, вправо, вгору
+    \draw[blue]
+      (\x,\yHigh) coordinate (a\i) -- (\xNext,\yHigh) coordinate (b\i) -- ({\xNext}, {\yNextHigh}) coordinate (c\i);
+
+    % Оновити x
+    \global\let\x\xNext
+  }
+
+%   \node[right] at (c3) {$1$};
+    \node[above] at (c\numSteps) {$X_1$};
+%   \node[right] at (b3) {$2$};
+    \node[below] at (b\numSteps) {$X_2$};
+%   \node[left] at (a3) {$3$};
+
+  % Осі
+  \draw[->, thick] (0,-0.5) -- (0,6) node[above] {$S$};
+  \draw[->, thick] (-0.5,0) -- (6,0) node[right] {$T$};
+  \node[below right] at (0,0) {$T=0$};
+
+\end{tikzpicture}

@@ -1,0 +1,47 @@
+% !TeX root = ../../test.tex
+
+
+\begin{tikzpicture}[]
+        \pgfmathsetmacro\hl{0.25}
+
+% Magnetic moments at T1 (higher temperature)
+\foreach \x in {0,...,3}
+    \foreach \y in {0,...,3} {
+        \pgfmathsetmacro{\angle}{90 + rand*100}
+            \draw[->, plotblue, thick]
+              ({\x - \hl*cos(\angle)}, {\y - \hl*sin(\angle)})
+                --
+              ({\x + 1.5*\hl*cos(\angle)}, {\y + 1.5*\hl*sin(\angle)});
+        \node[ball color=plotred, minimum size=0.25cm, circle, inner sep=0] at (\x, \y) {};
+    }
+\node[below] at (1.5,-0.6) {$T_1$};
+
+%% Magnetic moments at T2 < T1 (lower temperature)
+\begin{scope}[xshift=5cm]
+\foreach \x in {0,...,3}
+    \foreach \y in {0,...,3} {
+        \pgfmathsetmacro{\angle}{90 + rand*60}
+            \draw[->, plotblue, thick]
+              ({\x - \hl*cos(\angle)}, {\y - \hl*sin(\angle)})
+                --
+              ({\x + 1.5*\hl*cos(\angle)}, {\y + 1.5*\hl*sin(\angle)});
+        \node[ball color=plotred, minimum size=0.25cm, circle, inner sep=0] at (\x, \y) {};
+    }
+\node[below] at (1.5,-0.6) {$T_2 < T_1$};
+\end{scope}
+%
+%% Magnetic moments at T → 0K (all aligned)
+\begin{scope}[xshift=10cm]
+\foreach \x in {0,...,3}
+    \foreach \y in {0,...,3} {
+        \pgfmathsetmacro{\angle}{90 + rand*10}
+            \draw[->, plotblue, thick]
+              ({\x - \hl*cos(\angle)}, {\y - \hl*sin(\angle)})
+                --
+              ({\x + 1.5*\hl*cos(\angle)}, {\y + 1.5*\hl*sin(\angle)});
+        \node[ball color=plotred, minimum size=0.25cm, circle, inner sep=0] at (\x, \y) {};
+    }
+\node[below] at (1.5,-0.6) {$T\to0$ K};
+\end{scope}
+
+\end{tikzpicture}
