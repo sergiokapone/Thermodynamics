@@ -2,6 +2,7 @@ _minted*/
 tmp/
 .orig/
 .archive/
+Thermod_*.pdf
 *_v*.*
 *.aux
 *.synctex.gz
