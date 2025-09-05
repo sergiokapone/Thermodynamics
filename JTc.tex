@@ -1,0 +1,176 @@
+\documentclass{article}
+\usepackage[fontsize=12pt]{fontsize}
+
+\usepackage{fontsetup}
+\usepackage[english, russian, ukrainian]{babel}
+\usepackage{microtype}
+
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+
+
+\usepackage[%
+	a4paper,%
+	footskip=1cm,%
+	headsep=0.3cm,%
+	top=2cm, %поле сверху
+	bottom=2cm, %поле снизу
+	left=2cm, %поле ліворуч
+	right=2cm, %поле праворуч
+    ]{geometry}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{floatflt}
+
+\usepackage[%colorlinks=true,
+	%urlcolor = blue, %Colour for external hyperlinks
+	%linkcolor  = malina, %Colour of internal links
+	%citecolor  = green, %Colour of citations
+	bookmarks = true,
+	bookmarksnumbered=true,
+	unicode,
+	linktoc = all,
+	hypertexnames=false,
+	pdftoolbar=false,
+	pdfpagelayout=TwoPageRight,
+	pdfauthor={Ponomarenko S.M. aka sergiokapone},
+	pdfdisplaydoctitle=true,
+	pdfencoding=auto
+	]%
+	{hyperref}
+
+\usepackage{booktabs}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+
+\title{Коефіцієнт Джоуля-Томсона}
+\date{}
+\begin{document}
+\maketitle
+
+%Коефіцієнт Джоуля-Томсона визначається як
+%\begin{equation}
+%  \mu\equiv \left(\frac{\partial T}{\partial p}\right)_{H}
+%  = \frac{1}{C_p}\left[T\left(\frac{\partial V}{\partial T}\right)_{p} - V\right].
+%\end{equation}
+%
+%У наближенні малих тисків через коефіцієнт стисливості $Z = \tfrac{pV}{RT}$:
+%\[
+%\mu = \frac{R T^2}{p C_p}\left(\frac{\partial Z}{\partial T}\right)_p.
+%\]
+%
+%Використовуючи віриальне розкладання $Z = 1 + \tfrac{B(T)p}{RT} + \dots$,
+%\[
+%\mu \;\approx\; \frac{1}{C_p}\,\Big[T B'(T) - B(T)\Big].
+%\]
+%
+Для газу ван-дер-Ваальса
+%другий віриальний коефіцієнт:
+%\[
+%B(T) = b - \frac{a}{R T},
+%\]
+%тому
+\begin{equation}
+  \boxed{\;\mu^{\text{vdW}}(T) \;\approx\; \frac{1}{C_p}
+   \left(\frac{2a}{R T} - b\right),} \quad \text{температура інверсії}\ T_B \approx \frac{2a}{R b}.
+\end{equation}
+
+%Температура інверсії:
+%\[
+%T_B \approx \frac{2a}{R b}.
+%\]
+
+
+Одиниці: $1\,\text{л}\cdot\text{бар}=100\,\text{Дж}$.
+
+
+\begin{table}[h!]
+\centering
+\caption{Константи для газів}
+\begin{tblr}{%
+colspec={XXXX[c,m]X}
+}
+\toprule
+Газ
+&
+$a$, $\frac{\text{л}^2\cdot\text{бар}}{\text{моль}^{2}}$
+&
+$b$, $\frac{\text{л}}{\text{моль}}$ & {$C_p$, $\frac{\text{л}\cdot\text{бар}}{\text{моль}\cdot\text{К}}$ \\ (близько $300$ K)} & $T_B$, K \\
+\midrule
+He   & 0.0341 & 0.0237 & 0.208 & $\approx 35$ \\
+H$_2$ & 0.244  & 0.0266 & 0.285 & $\approx 210$ \\
+N$_2$ & 1.352  & 0.0387 & 0.290 & $\approx 845$ \\
+Ar   & 1.355  & 0.0320 & 0.208 & $\approx 990$ \\
+CO$_2$& 3.592  & 0.0427 & 0.370 & $\approx 2030$ \\
+\bottomrule
+\end{tblr}
+\end{table}
+
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=\linewidth,
+  height=0.6\linewidth,
+  title={Температурна залежність коефіцієнту Джоуля-Томсона},
+  xlabel={Температура $T$ (K)},
+  ylabel={$\mu$ (K/бар)},
+  grid=both, xmin=0, xmax=1000, ymin=-0.15, ymax=0.5,
+  legend pos=north east,
+  ytick distance=0.1,
+  mark=none,
+  thick,
+    xticklabel style={
+        /pgf/number format/1000 sep={} % прибирає роздільник тисяч
+    }
+]
+\pgfmathsetmacro{\R}{0.08314} % L bar / mol K
+
+% N2
+\pgfmathsetmacro{\aN}{1.352}
+\pgfmathsetmacro{\bN}{0.0387}
+\pgfmathsetmacro{\CpN}{0.29}
+\addplot+[domain=80:1000, samples=300, gray, mark=none, ultra thick]
+  {(2*\aN/(\R*x)-\bN)/\CpN};
+\addlegendentry{N$_2$}
+
+% Ar
+\pgfmathsetmacro{\aA}{1.355}
+\pgfmathsetmacro{\bA}{0.0320}
+\pgfmathsetmacro{\CpA}{0.208}
+\addplot+[domain=80:1000, samples=300, red, mark=none, ultra thick]
+  {(2*\aA/(\R*x)-\bA)/\CpA};
+\addlegendentry{Ar}
+
+% CO2
+\pgfmathsetmacro{\aC}{3.592}
+\pgfmathsetmacro{\bC}{0.04267}
+\pgfmathsetmacro{\CpC}{0.37}
+\addplot+[domain=200:1000, samples=300,  blue, mark=none, ultra thick]
+  {(2*\aC/(\R*x)-\bC)/\CpC};
+\addlegendentry{CO$_2$}
+
+% H2
+\pgfmathsetmacro{\aH}{0.244}
+\pgfmathsetmacro{\bH}{0.0266}
+\pgfmathsetmacro{\CpH}{0.285}
+\addplot+[domain=20:1000, samples=300, cyan, mark=none, ultra thick]
+  {(2*\aH/(\R*x)-\bH)/\CpH};
+\addlegendentry{H$_2$}
+
+% He
+\pgfmathsetmacro{\aHe}{0.0341}
+\pgfmathsetmacro{\bHe}{0.0237}
+\pgfmathsetmacro{\CpHe}{0.208}
+\addplot+[domain=5:1000, samples=500, green!50!black, mark=none, ultra thick]
+  {(2*\aHe/(\R*x)-\bHe)/\CpHe};
+\addlegendentry{He}
+
+\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+\end{document}
