@@ -11,55 +11,6 @@
 
 \begin{document}
 
-\begin{tikzpicture}[
-    declare function = {
-    cm=0.03515;
-    T = 0.85;
-    isotherm(\x) = (8*T)/(3*\x-1) - 3/(\x^2);
-    },
-    scale=2,
-    ]
-  \def\tick{0.05*\xmax}
-  \def\xmax{4}
-  \def\ymax{3}
-  \def\N{100}
-  \def\s{1}
-  \def\R{4}
-  \coordinate (C) at (\s,1);
+\input{Lec8/tikz/LJP.tikz}
 
-  % AXIS
-  \draw[->,thick] (0,{-0.1*\ymax-0.5}) -- (0,\ymax)
-    node[anchor=north east,inner sep=4,scale=0.8] {$P$};
-  \draw[->,thick] (-0.1*\xmax, -0.5) -- (\xmax,-0.5)
-    node[anchor=north east,inner sep=4,scale=0.8] {$V$};
-
-  % ISOTHERMS
-  \begin{scope}
-    \clip (-0.2*\xmax,-0.2*\ymax) rectangle (1.11*\xmax,\ymax);
-        \draw[black, thin, domain=0.36:{.96*\xmax/\s},range=0:1,samples=\N,smooth, name path=isotherm]
-          plot (\s*\x,isotherm{\x});
-
-        \path[dashed, name path=line] plot[domain=0:{.96*\xmax/\s}] (\x, 0.5) ;
-        \path [name intersections={of=isotherm and line, by={a,b,c}}];
-        \coordinate (d) at (0.67167977, isotherm{0.67167977} ) ;
-         \coordinate (e) at (1.72093, isotherm{1.72093}) ;
-        \draw[dashed] (a) -- (c);
-        \draw[dashed] (a) node[left]  {$a$} -- (a|-0,-0.5);
-%        \draw[dashed] (b) node[above] {$b$} -- (b|-0,-0.5);
-%        \draw[dashed] (d) node[right] {$d$} -- (d|-0,-0.5);
-        \draw[dashed] (c) node[above] {$c$} -- (c|-0,-0.5);
-        \node[above] at (e) {$e$};
-
-        \draw[ultra thick, blue] let \p1=(a), \p2=(d), \n1={\x1*cm}, \n2={\x2*cm}
-     in [domain=\n1:\n2, samples=\N] plot (\s*\x,isotherm{\x});
-
-     \draw[ultra thick, red] let \p1=(d), \p2=(e), \n1={\x1*cm}, \n2={\x2*cm}
-     in [domain=\n1:\n2, samples=\N] plot (\s*\x,isotherm{\x});
-
-    \draw[ultra thick, green!50!black] let \p1=(e), \p2=(c), \n1={\x1*cm}, \n2={\x2*cm}
-     in [domain=\n1:\n2, samples=\N] plot (\s*\x,isotherm{\x});
-
-  \end{scope}
-
-\end{tikzpicture}
 \end{document}

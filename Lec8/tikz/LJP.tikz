@@ -1,0 +1,55 @@
+\begin{tikzpicture}[
+    >=latex,
+    declare function = {
+    eps = 6;
+    sig = 1.5;
+    Repuls(\x) = 4*eps*(sig/\x)^12;
+    Attract(\x) = -4*eps*(sig/\x)^6;
+    V(\x) =  4*eps*((sig/\x)^12-(sig/\x)^6);
+    xmin = sig * 2^(1/6);
+    Vmin = V(xmin);
+    },
+    ]
+    \begin{axis}[
+        xlabel={$r$},
+        ylabel={$U$},
+            yticklabels={},
+            xticklabels={},
+        xtick=\empty,
+        ytick=\empty,
+        axis lines = middle,
+        samples=2000,
+        clip=false,
+        restrict y to domain =-6:9,
+        domain=1:4,
+        xmin=1,xmax=4.2,ymin=-6,ymax=9
+    ];
+        \addplot[very thick,red,] plot {V(x)};
+        \addplot[very thick,dashed] plot {Repuls(x)};
+        \addplot[very thick,dashed] plot {Attract(x)};
+        \node[circle, ball color=blue, minimum size=0.3cm] (A1) at (3,2) {};
+        \node[circle, ball color=blue, minimum size=0.3cm] (A2) at (3.5,2) {};
+
+        \draw[thick] (A1.north) -- ([yshift=0.2cm]A1.north);
+        \draw[thick] (A2.north) -- ([yshift=0.2cm]A2.north);
+        \draw[<->] ([yshift=0.1cm]A1.north) -- node [above] {$r$} ([yshift=0.1cm]A2.north);
+
+        \draw[dashed] (xmin, 0) node[above] {$\sigma$} -- (xmin, Vmin);
+
+        \node[circle, ball color=blue, minimum size=0.3cm] (B1) at ({xmin-0.11},{Vmin-0.5}) {};
+        \node[circle, ball color=blue, minimum size=0.3cm] (B2) at ({xmin+0.11},{Vmin-0.5}) {};
+
+        \node[font=\small\itshape, align=center] (R) at (3,6) {Відштовхування $+{A}/{r^{12}}$};
+        \node[font=\small\itshape, align=center] (A) at (3,-4) {Притяжіння $-{B}/{r^{6}}$};
+        \node[font=\small\itshape, align=center] (sig) at (xmin,-9) {Радіус ван-дер-Ваальса};
+
+        \coordinate (Rt) at (1.7, {Repuls(1.7)});
+        \coordinate (At) at (2, {Attract(2)});
+
+        \draw[->, green!50!black] (R.west) to[bend right] (Rt);
+        \draw[->, green!50!black] (A) to[bend left] (At);
+
+        \draw[->] (sig.north) -- ([yshift=0.4cm]sig.north);
+    \end{axis}
+\end{tikzpicture}
+
