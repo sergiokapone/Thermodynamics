@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={$\tau$},
+    ylabel={$\pi$},
+    grid=major,
+    samples=200,
+    no markers,
+    width=12cm,
+    height=8cm,
+    xmin=0, xmax=7,
+    ymin=0, ymax=12
+]
+% Левая часть (до фазового равновесия)
+\addplot[red, ultra thick, smooth, domain=0:7] {24*sqrt(3*x) - 12*x - 27} node[pos=0.3, above] {$\pi(T_r)$};
+\node[font=\Large, text=red] at (3,4) {$\mu > 0$};
+\node[font=\Large, text=red] at (5,9) {$\mu < 0$};
+\end{axis}
+\end{tikzpicture}
