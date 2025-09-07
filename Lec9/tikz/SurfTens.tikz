@@ -1,0 +1,67 @@
+\pgfplotstableread[]{
+x       y1          y2          y3          y4          y5          y6          y7          y8
+-20     0.00859     0.0122      0.0128      0.01494     0.01542     nan         nan         0.01440
+-10     0.00650     0.0107      0.0114      0.01354     0.01429     0.01602     nan         0.01299
+0       0.0045      0.00936     0.0101      0.01219     0.01301     0.01485     nan         0.01148
+10      0.00273     0.00806     0.00886     0.01084     0.01186     0.01361     nan         0.01011
+20      0.00118     0.00679     0.00758     0.00953     0.01066     0.01243     0.01600     0.00873
+30      0           0.00557     0.00638     0.00818     0.00955     0.01126     0.01494     0.00736
+40      nan         0.00444     0.00523     0.00698     0.00840     0.01011     0.01389     0.00612
+50      nan         0.00337     0.00408     0.00574     0.00734     0.00895     0.01281     0.00496
+60      nan         0.00240     0.00304     0.00454     0.00625     0.00787     0.01177     0.00368
+70      nan         0.00146     0.00206     0.00346     0.00516     0.00680     0.01070     0.00259
+80      nan         0.000755    0.00113     0.00246     0.00417     0.00581     0.00968     0.00162
+90      nan         0.000155    0.000355    0.00144     0.00324     0.00481     0.00866     0.00071
+100     nan         nan         nan         0.00058     0.00237     0.00386     0.00769     0.00000
+110     nan         nan         nan         nan         0.00153     0.00295     0.00671     nan
+120     nan         nan         nan         nan         0.00080     0.00211     0.00576     nan
+130     nan         nan         nan         nan         0.00020     0.00126     0.00488     nan
+140     nan         nan         nan         nan         nan         0.00060     0.00397     nan
+150     nan         nan         nan         nan         nan         0.00004     0.00310     nan
+160     nan         nan         nan         nan         nan         nan         0.00230     nan
+170     nan         nan         nan         nan         nan         nan         0.00157     nan
+180     nan         nan         nan         nan         nan         nan         0.00084     nan
+
+}\datatable
+
+\begin{tikzpicture}
+
+\begin{axis}[%
+xlabel={$T$, $^\circ$C},
+ylabel={Поверхневий натяг, Н/м},
+width=0.75\linewidth,
+height=0.5\linewidth,
+scale only axis,
+enlargelimits=false,
+line join=round,
+% === Налаштування сітки ===
+grid = both,
+grid style={line width=.1pt, draw=gray!10},
+major grid style={line width=.2pt,draw=gray!50},
+minor tick num = 5,
+minor grid style = {line width=.1pt,draw=gray!10},
+at={(7cm,0)},
+xtick distance=20
+]
+
+\addplot[blue, thick, mark=none, smooth] table[x=x, y=y8] \datatable;
+\addlegendentry{R134a \ce{CO2}}
+\addplot[black, thick, mark=square, mark size=3pt, smooth] table[x=x, y=y1] \datatable;
+\addlegendentry{R744}
+\addplot[green!50!black, thick, mark=triangle, mark size=3pt, smooth] table[x=x, y=y2] \datatable;
+\addlegendentry{R1234yf}
+\addplot[violet, thick, mark=diamond, mark size=3pt, smooth] table[x=x, y=y3] \datatable;
+\addlegendentry{R290 (Пропан)}
+\addplot[blue!50!black, thick, mark=triangle, mark options={rotate=180}, mark size=3pt, smooth] table[x=x, y=y4] \datatable;
+\addlegendentry{R1234ze}
+\addplot[pink!80!black, thick, mark=o, mark size=3pt, smooth] table[x=x, y=y5] \datatable;
+\addlegendentry{R600a (Ізобутан)}
+\addplot[orange, thick, mark=*, mark size=3pt, smooth] table[x=x, y=y6] \datatable;
+\addlegendentry{R600 (Бутан)}
+\addplot[red, thick, mark=star, mark size=3pt, smooth] table[x=x, y=y7] \datatable;
+\addlegendentry{R601 (Пентан)}
+
+
+\end{axis}
+
+\end{tikzpicture}%

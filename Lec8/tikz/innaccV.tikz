@@ -1,0 +1,19 @@
+\begin{tikzpicture}[>=latex, scale=0.75, transform shape]
+
+    \fill[blue!20] (-3, -3) rectangle (5.5,3);
+
+
+    \draw[dashed, fill=white] (0,0) circle (2);
+
+    % Левый круг (молекула)
+    \draw[ball color=blue!40] (0,0) coordinate (A) circle (1);
+    % Правый круг (молекула)
+    \draw[ball color=blue!40] (-45:2)  coordinate (B) circle (1);
+
+    \draw[<->, sloped, ultra thick] (A) -- node[above, pos=0.3] {$2\sigma$} (B);
+
+    \node[text width=3cm, align=center, fill=white, inner sep=1pt, font=\scriptsize] (T) at (3.5, 2) {об'єм, недоступний\\ молекулі при\\ зіткненнях\\ $\frac43\pi (2\sigma)^3$};
+
+    \draw[->, ultra thick] (T.west) to[bend right] (0, 1.5);
+
+\end{tikzpicture}
