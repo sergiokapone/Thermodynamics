@@ -1,13 +1,14 @@
 \begin{tikzpicture}[
     point/.style ={circle, draw, blue, fill=red, minimum size=4pt, inner sep=0pt},
 declare function={
+        po = 0.65;
+        pt = 1.25;
         isotherm(\x,\t)=(8*\t)/(3*\x-1)-3/(\x^2);
     },
 ]
 \begin{axis}[
     xlabel={$\phi$},
     ylabel={$\pi$},
-    title={Изотермы ван дер Ваальса в приведённых единицах},
     grid=both,
     samples=200,
     no markers,
@@ -22,30 +23,50 @@ declare function={
     ytick distance = 0.5,
     xmode=log,
     log ticks with fixed point,
-    extra y ticks={0.65, 1.25},
-    extra y tick labels={$0.65$, $1.25$},
+    extra y ticks={po, pt},
+    extra y tick labels={
+        \pgfmathparse{po}$\pgfmathprintnumber\pgfmathresult$,
+        \pgfmathparse{pt}$\pgfmathprintnumber\pgfmathresult$
+        },
     extra y tick style={
-        tick label style={plotdarkgreen},
+        tick label style={gray},
         major tick length=3pt,
-        tick style={plotdarkgreen}
+        tick style={gray}
     },
 ]
+1    2   3    4   5    6   7    8 9
+0.65 0.7 0.75 0.8 0.85 0.9 0.95 1 1.05 1.1 1.15 1.2
+
+
 \foreach[count=\n] \t in {0.65, 0.7,...,1.2} {
-    \begingroup
-    \edef\x{\endgroup\noexpand\addplot[name path global=path\n, blue, thick, smooth]}
+\pgfmathparse{ifthenelse(\n==6 || \n==8 || \n==9, 1, 0)}
+\ifnum\pgfmathresult=1
+    \def\c{plotred}
+\else
+    \def\c{plotblue}
+\fi
+    \edef\x{\noexpand\addplot[name path global=path\n, \c, thick, smooth]}
     \x {isotherm(x,\t)} ;
+
 }
-\addplot [domain=0.1:10, name path global=hl1, plotdarkgreen, thick] {0.65};
+
+\addplot [domain=0.1:10, name path global=hl1, gray, thick] {po};
 \addplot [domain=0.1:10, name path global=hl2, plotred, thick] {1};
-\addplot [domain=0.1:10, name path global=hl3, plotdarkgreen, thick] {1.25};
+\addplot [domain=0.1:10, name path global=hl3, gray, thick] {pt};
 
 \path [name intersections={of=hl1 and path6, name=i, total=\t}]
     \foreach \s in {1,...,\t}{(i-\s)
         node[point]  {}
     };
 
+\node[below=2pt, red, font=\scriptsize] at (0.7, 0.4) {$\tau=0.9$};
+
 \path [name intersections={of=hl3 and path9, name=i}]  (i-1) node[point]  {} ;
 
+\node[below, red, font=\scriptsize] at (i-1) {$\tau=1.05$};
+
 \node[point] at (1,1) {};
+\node[below, red, font=\scriptsize] at (1,1) {$\tau = 1$};
+
 \end{axis}
 \end{tikzpicture}
