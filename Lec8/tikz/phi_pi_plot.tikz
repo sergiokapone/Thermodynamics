@@ -1,4 +1,5 @@
 \begin{tikzpicture}[
+    point/.style ={circle, draw, blue, fill=red, minimum size=4pt, inner sep=0pt},
 declare function={
         isotherm(\x,\t)=(8*\t)/(3*\x-1)-3/(\x^2);
     },
@@ -14,18 +15,37 @@ declare function={
     legend style={font=\small},
     width=12cm,
     height=8cm,
+    domain=0.4:10,
 %    axis lines=middle,
     xmin=0.1, xmax=10,
     ymin=0, ymax=1.5,
     ytick distance = 0.5,
     xmode=log,
-    log ticks with fixed point, % Заставляет метки отображаться как числа
+    log ticks with fixed point,
+    extra y ticks={0.65, 1.25},
+    extra y tick labels={$0.65$, $1.25$},
+    extra y tick style={
+        tick label style={plotdarkgreen},
+        major tick length=3pt,
+        tick style={plotdarkgreen}
+    },
 ]
-\foreach \t in {0.65, 0.7,...,1.2} {
-    \addplot [blue, thick, smooth, domain=0.4:10] {isotherm(x,\t)} ;
+\foreach[count=\n] \t in {0.65, 0.7,...,1.2} {
+    \begingroup
+    \edef\x{\endgroup\noexpand\addplot[name path global=path\n, blue, thick, smooth]}
+    \x {isotherm(x,\t)} ;
 }
+\addplot [domain=0.1:10, name path global=hl1, plotdarkgreen, thick] {0.65};
+\addplot [domain=0.1:10, name path global=hl2, plotred, thick] {1};
+\addplot [domain=0.1:10, name path global=hl3, plotdarkgreen, thick] {1.25};
 
-\addplot[red, thick, domain=0.1:10] {1};
-\node[circle, draw, blue, fill=red, minimum size=4pt, inner sep=0pt] at (1,1) {};
+\path [name intersections={of=hl1 and path6, name=i, total=\t}]
+    \foreach \s in {1,...,\t}{(i-\s)
+        node[point]  {}
+    };
+
+\path [name intersections={of=hl3 and path9, name=i}]  (i-1) node[point]  {} ;
+
+\node[point] at (1,1) {};
 \end{axis}
 \end{tikzpicture}
