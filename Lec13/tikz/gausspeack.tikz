@@ -1,0 +1,21 @@
+\begin{tikzpicture}[
+  declare function={
+    sigma=300;
+    gauss(\x)=1/(sigma*sqrt(2*pi))*exp(-(\x)^2/(2*sigma^2));
+  }
+]
+\begin{axis}[
+    width=12cm, height=7cm,
+    domain=-1000:1000,
+    axis lines=middle,
+    xlabel={$x$},
+    ylabel={},
+    xtick={-1000,-750,-500,-250,0,250,500,750,1000},
+    ytick={0.0002,0.0004,0.0006,0.0008,0.001,0.0012,0.0014},
+    yticklabels={$0.0002$,$0.0004$,$0.0006$,$0.0008$,$0.001$,$0.0012$,$0.0014$},
+    ymin=0, ymax=0.0015,
+    /pgf/number format/1000 sep={}
+]
+\addplot[samples=400, color=plotblue, thick] {gauss(x)};
+\end{axis}
+\end{tikzpicture}

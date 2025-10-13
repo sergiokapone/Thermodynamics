@@ -1,0 +1,32 @@
+\begin{tikzpicture}[>=latex,
+    bnode/.style = {circle, ball color=plotred, inner sep=5pt},
+    declare function = {
+    alpha = 30;
+    D=5;
+    L = 3;
+    },
+    ]
+    \draw[->] (0, 0) -- (6, 0) node[below] {$x$};
+    \draw[->] (0, 0) -- (0, 6) node[left]  {$y$};
+
+    \draw[line width=3pt] (D, 1) coordinate (b) -- coordinate (Cs) ++(0, L) coordinate (t);
+    \draw[dashed] (t) -- ++({180-alpha}:3);
+    \draw[dashed] (b) -- ++({180-alpha}:3);
+
+    \coordinate (Cs) at (D, {1+L/2});
+    \draw (Cs) -- ++({180-alpha}:3) node[bnode] (A) {};
+    \draw (Cs) -- ++({180+alpha}:1.5) node[bnode] (B) {};
+
+    \draw[->, blue] (A.east) -- node[above] {$v_{0x}$} ++(1, 0);
+    \draw[->, blue] (A.south) -- node[left]  {$v_{0y}$} ++(0, {-tan(alpha)});
+    \draw[->, red, thick]  (A.-alpha) -- ++({-alpha}: {veclen(1, tan(alpha))});
+
+    \draw[->, blue] (B.west) -- node[above] {$v_{x}$} ++(-1, 0);
+    \draw[->, blue] (B.south) -- node[right]  {$v_{0y}$} ++(0, {-tan(alpha)});
+    \draw[->, red, thick]  (B.{180+alpha}) -- ++({180+alpha}: {veclen(1, tan(alpha))});
+
+    \node[right] at (D, {1+ L/2}) {$d\sigma$};
+
+    \draw[<->] ({D - 3*cos(alpha)}, 0.25) -- node[above] {$v_x dt$} (D, 0.25);
+
+\end{tikzpicture}

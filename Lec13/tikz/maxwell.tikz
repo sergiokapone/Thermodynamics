@@ -1,0 +1,53 @@
+\begin{tikzpicture}[
+  declare function={
+    % "схематичная" максвелловская функция
+    % параметр a управляет шириной и скошенностью
+    a = 0.75e-5;
+    f(\v) = \v^2 * exp(-a*\v^2);
+    vp = 1/sqrt(a);  % положение v_p
+    vrms = sqrt(3/(2*a)); % положение v_rms
+    factor=1;
+  }
+]
+\begin{axis}[
+    width=13cm, height=7cm,
+    domain=0:1200, samples=300,
+    axis lines=left,
+    xlabel={$v$, м/с},
+    ylabel={$\phi(v)$},
+    xmin=0, xmax=1300,
+    ymin=0,
+    xtick distance =200,
+    ytick=\empty,
+%    xtick={0,200,400,600,800,1000,1200},
+%    xticklabels={0,200,400,600,800,1000,1200},
+    /pgf/number format/1000 sep={},
+   clip=false
+ ]
+
+
+% сама кривая
+\addplot[very thick, red!80!black, smooth]
+  {f(x)/factor}; % делим для нормализации высоты (чтобы красиво влезло)
+
+% пунктирные линии для vp и vrms
+\draw[dashed] (vp,0) -- (vp,{f(vp)/factor});
+\draw[dashed] (vrms,0) -- (vrms,{f(vrms)/factor});
+
+% точки на кривой
+\addplot[only marks, mark=*, mark size=1.5pt, color=black]
+  coordinates {(vp,{f(vp)/factor}) (vrms,{f(vrms)/factor})};
+%
+% подписи к ним
+\node[above] at (axis cs:vp,{f(vp)/factor}) {$v_m$};
+\node[above right] at (axis cs:vrms,{f(vrms)/factor}) {$\sqrt{\langle v^2 \rangle}$};
+
+% подписи на оси X
+%\node[below] at (vp,0) {\small $v_m$};
+%\node[below] at (vrms,0) {\small $v_{\mathrm{rms}}$};
+
+% подпись справа
+%\node[right] at (800,2e4) {\ce{O2} при $T=300\,\mathrm{K}$};
+
+\end{axis}
+\end{tikzpicture}

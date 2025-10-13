@@ -1,0 +1,34 @@
+\begin{tikzpicture}[
+    xscale=2,
+    >=latex,
+    declare function={
+        v(\x) = -(4/3)*pi*\x^3*0.3;      % Об'ємна енергія (від'ємна)
+        s(\x) = 4*pi*\x^2*0.3;           % Поверхнева енергія (додатна)
+        t(\x) = v(\x) + s(\x);           % Загальна енергія Гібса
+        rcrit = 2;                       % Критичний радіус
+        dgmax = t(2);                    % Максимальна енергія при r*
+    },
+]
+    % Сітка для кращого сприйняття
+    \draw[gray!30, very thin] (0,0) grid[step=0.5] (4,6);
+
+
+
+    % Осі координат
+    \draw[->, line width=1.5pt] (0,0) -- (4,0) node[below right] {$T$};
+    \draw[->, line width=1.5pt] (0,0) -- (0,6) node[above left] {$G$};
+
+    \draw[plotblue, ultra thick, name path=GL] (0.5,5) --   (3.5, 1.5) coordinate (GL) node[below, text=black] {$G_L$};
+    \draw[plotblue, ultra thick, name path=GS] (0.5,3.5) -- (3.5, 2.5) coordinate (GS) node[below, text=black] {$G_S$};
+    \draw[plotblue, ultra thick, dashed, name path=GSP] (0.5,4.5) -- (3.5, 3.5)  coordinate (GSP);
+    \draw[name intersections={of=GL and GS, name=Tm}] (Tm-1) --  (Tm-1 |- 0,0)  coordinate (T1) node[below=1ex] {$T_m$};
+    \draw[decorate,decoration={brace,amplitude=5pt,raise=2pt}, thick] (GSP) -- node[right=1ex] {$\frac{2\gamma}{r_c}$} (GS);
+
+%    \draw[name intersections={of=GL and GS, name=Tm}] (Tm-1) --  (Tm-1 |- 0,0)   node[below right] {$T_m$};
+
+    \draw[name intersections={of=GL and GSP, name=Ts}, dashed] (Ts-1) --  (Ts-1 |- 0,0) coordinate (T2) ;
+
+    \draw[decorate,decoration={brace,amplitude=5pt,raise=2pt}, thick] (T1) -- node[below=1ex] {$\Delta T$} (T2);
+
+    \node at (0.75, 4) {$\Delta G_c$};
+\end{tikzpicture}

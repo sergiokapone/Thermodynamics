@@ -1,0 +1,59 @@
+\begin{tikzpicture}[
+    xscale=2,
+    >=latex,
+    declare function={
+        v(\x) = -(4/3)*pi*\x^3*0.3;      % Об'ємна енергія (від'ємна)
+        s(\x) = 4*pi*\x^2*0.3;           % Поверхнева енергія (додатна)
+        t(\x) = v(\x) + s(\x);           % Загальна енергія Гібса
+        rcrit = 2;                       % Критичний радіус
+        dgmax = t(2);                    % Максимальна енергія при r*
+    },
+]
+    % Сітка для кращого сприйняття
+    \draw[gray!30, very thin] (0,-3) grid[step=0.5] (4,6);
+
+    \begin{scope}
+    \clip (-1, -3) rectangle (5,6);
+    % Графіки функцій
+    \draw[samples=100, smooth, domain=0:3.5, line width=2.5pt, red!70!black]
+        plot (\x, {v(\x)});
+
+    \draw[samples=100, smooth, domain=0:3.3, line width=2.5pt, blue!70!black]
+        plot (\x, {s(\x)});
+
+    \draw[samples=100, smooth, domain=0:4, line width=2.5pt, green!60!black]
+        plot (\x, {t(\x)});
+    \end{scope}
+
+    % Осі координат
+    \draw[->, line width=1.5pt] (0,0) -- (4,0) node[below right] {$R$ (радіус)};
+    \draw[->, line width=1.5pt] (0,0) -- (0,6) node[above left] {$\Delta G$};
+
+    % Критичний радіус та максимум
+
+    \node[circle, fill=red, draw=green!70!black, inner sep=3pt] (critical) at (2, {t(2)})  {};
+
+    % Пунктирні лінії для r* та ΔG*
+    \draw[dashed, gray!70, line width=1pt] (2,0) -- (critical);
+    \draw[dashed, gray!70, line width=1pt] (0,{t(2)}) -- (critical);
+
+    % Підписи критичних точок
+    \node[below] at (2,0) {$R_c$};
+    \node[left] at (0,{t(2)}) {$\Delta G_c$};
+
+    % Легенда
+    \begin{scope}[shift={(4.5, 5)}]
+        \draw[red!70!black, line width=2pt] (0,0.5) -- (0.5,0.5);
+        \node[right, font=\small] at (0.5,0.5) {Об'ємна енергія};
+
+        \draw[blue!70!black, line width=2pt] (0,0) -- (0.5,0);
+        \node[right, font=\small] at (0.5,0) {Поверхнева енергія};
+
+        \draw[green!60!black, line width=2pt] (0,-0.5) -- (0.5,-0.5);
+        \node[right, font=\small] at (0.5,-0.5) {Загальна енергія};
+
+        % Рамка навколо легенди
+        \draw[gray!50] (-0.1,-0.75) rectangle (2.8,0.75);
+    \end{scope}
+
+\end{tikzpicture}
