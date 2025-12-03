@@ -1,0 +1,20 @@
+\begin{tikzpicture}[line join=round, every node/.style={font=\scriptsize},
+declare function={
+th = 35;
+dth = 10;
+l= 3;
+},
+]
+
+    \node[trapezium, draw, very thin, trapezium left angle=60, trapezium right angle=120, shape aspect=0.5, inner sep=1pt, fill=plotblue!30, scale=20] at (0,0) {};
+
+    \draw[fill=plotblue!50] (0,0) -- (th:l) coordinate (A)  arc(0:-180:{l*sin(90-th)} and 0.1) coordinate (B) -- (0,0);
+    \draw[fill=plotblue!30] (0,0) -- ({th+dth}:l) coordinate (A')  arc(0:-180:{l*sin(90-th-dth)} and 0.1) coordinate (B') -- (0,0) -- cycle;
+    \draw[->] (0, 0) -- ++(0, {l+0.75}) node[left] {$x$};
+    \draw[fill=plotblue!50] (A) arc(0:-180:{l*sin(90-th)} and 0.1) (B) -- (B') arc(180:360:{l*sin(90-th-dth)} and 0.1) -- (A') -- (A);
+    \draw[fill=plotblue!30, opacity=0.5] (B') arc(180:360:{l*sin(90-th-dth)} and 0.1) arc(0:180:{l*sin(90-th-dth)} and 0.1)  -- cycle;
+    \draw[red] (0,1)  arc (90:{th + dth}:1) node[above, anchor=south, pos=0.5, text=black] {$\theta$};
+    \draw[red] ({th+dth}:1.5)  arc ({th+dth}:th:1.5) node[above, anchor=south west, pos=0.5, text=black] {$d\theta$};
+    \node[left, anchor=south east, inner sep=1pt] at (B) {$d\Omega$};
+    \node[below left, inner sep=1pt] at (0,0) {$d\sigma$};
+\end{tikzpicture}

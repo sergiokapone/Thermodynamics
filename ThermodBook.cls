@@ -392,9 +392,11 @@
     \setcounter{section}{0}%
 	\gdef\thesection{\@Alph\c@section}
 	\@addtoreset{table}{section}
+    \@addtoreset{figure}{section}
 	\renewcommand\thetable%
 	{\thesection.\@arabic\c@table}
 	\renewcommand{\theequation}{\thesection.\arabic{equation}}
+    \renewcommand{\thefigure}{\thesection.\arabic{figure}}
 	\clearpage\pagestyle{appendix}
 	\def\@sectiontitlemark{\appendixname}
 	\if@twocolumn
@@ -508,6 +510,14 @@
 %  {}
 %  {\titlerule*[0.75pc]{.}\hspace{1ex}\contentspage} % линия и отступ от линии до страницы
 
+
+% Для секций
+\titlecontents{section}
+[2.5em] % левый отступ
+{\addvspace{0.5em}} % выше заголовка
+{\contentslabel{3.0em}} % увеличиваем место для номера
+{} % без номера
+{\titlerule*[0.5em]{.}\contentspage} % номер страницы
 
 %\titleformat{\subsection}
 %{\normalsize\bfseries\itshape}{\thesubsection.}{1em}{#1}
@@ -624,7 +634,7 @@
 
 
 \RequirePackage[backend=biber,
-	bibstyle=gost-numeric,
+	bibstyle=numeric,
 	maxnames = 10,
 	babel=other,
 	isbn=true,
@@ -639,6 +649,13 @@
 \DefineBibliographyStrings{ukrainian}{%
 	bibliography = {Література},
 }
+
+% Цитирования в тексте остаются [1]
+\DeclareFieldFormat{labelnumber}{#1}
+
+% В списке литературы - номер с точкой
+\DeclareFieldFormat{labelnumberwidth}{#1.}
+
 \DeclareBibliographyCategory{Textbooks}
 \DeclareBibliographyCategory{Problems}
 
