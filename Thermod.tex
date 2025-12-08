@@ -113,12 +113,27 @@
 %									       Вставка бібліографії
 %
 %===============================================================================
-%\clearpage\pagestyle{bibliography}
 
-\begin{refsection}[Literature.bib]
-	\nocite{*}
-	\printbibliography[heading=bibintoc]
-\end{refsection}
+\clearpage\pagestyle{bibliography}
+
+\printbibheading[heading=bibintoc]
+
+
+\defbibheading{subheading}[\bibname]{%
+	\section*{#1\label{BibPage}}
+}
+
+\addtocategoryNoCi{Textbooks}{Fermi1956,
+        Atkins2023,
+        terHaar1966,
+       Kubo1968
+}
+
+\printbibliography[
+    title={Основна},
+    heading=subbibliography,
+]
+
 
 %\makelastpage
 \end{document}

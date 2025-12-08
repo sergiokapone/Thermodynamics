@@ -639,7 +639,6 @@
 	babel=other,
 	isbn=true,
 	url=false,
-	defernumbers=true
 ]{biblatex}
 \newbibmacro{string+url}[1]{%
 	\iffieldundef{url}{#1}{\href{\thefield{url}}{#1}}%
@@ -660,7 +659,7 @@
 \DeclareBibliographyCategory{Problems}
 
 
-
+\newcommand*{\addtocategoryNoCi}[2]{\addtocategory{#1}{#2}\nocite{#2}}
 
 %%% --------------------------------------------------------
 %%> \section{Boxes typesetting}
